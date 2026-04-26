@@ -105,8 +105,8 @@ export default function Footer() {
               512-910-0980
             </a>
             <span className="text-zinc-800">·</span>
-            <a href="mailto:info@aimpacttech.com" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">
-              info@aimpacttech.com
+            <a href="mailto:landon@aimpacttechnology.com" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">
+              landon@aimpacttechnology.com
             </a>
           </div>
         </div>

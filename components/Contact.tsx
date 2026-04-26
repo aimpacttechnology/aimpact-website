@@ -84,7 +84,7 @@ export default function Contact() {
                   </div>
                 </a>
                 <a
-                  href="mailto:info@aimpacttech.com"
+                  href="mailto:landon@aimpacttechnology.com"
                   className="flex items-center gap-3 text-zinc-400 hover:text-white transition-colors"
                 >
                   <div className="w-9 h-9 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center flex-shrink-0">
@@ -92,7 +92,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs text-zinc-600 mb-0.5">Email</p>
-                    <p className="text-sm font-medium">info@aimpacttech.com</p>
+                    <p className="text-sm font-medium">landon@aimpacttechnology.com</p>
                   </div>
                 </a>
                 <div className="flex items-center gap-3 text-zinc-400">
