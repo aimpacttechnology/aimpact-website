@@ -95,7 +95,7 @@ export default function ReportPage() {
               <span className="text-indigo-400"> Time & Money</span>
             </h1>
             <p className="text-zinc-400 text-lg mb-8 leading-relaxed">
-              Answer 8 questions about your business. Get a personalized AI Opportunity Report — written by Claude AI, reviewed by our consultants — delivered to your inbox in minutes.
+              Answer 8 questions about your business. Get a personalized AI Opportunity Report — built by AiMpact's proprietary AI engine, reviewed by our consultants — delivered to your inbox in minutes.
             </p>
 
             <div className="flex items-center gap-4 mb-10">

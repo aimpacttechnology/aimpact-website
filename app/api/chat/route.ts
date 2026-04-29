@@ -22,7 +22,7 @@ SERVICES & PRICING:
 THE AI OPPORTUNITY REPORT (your primary goal):
 - A personalized AI audit of the visitor's business
 - They fill out a short questionnaire about their workflows
-- Claude AI generates a custom report showing exactly where AI can save them time and money
+- AiMpact's AI engine generates a custom report showing exactly where AI can save them time and money
 - Costs $147, delivered instantly by email
 - No commitment, no sales call needed
 - Perfect first step — low risk, high value
