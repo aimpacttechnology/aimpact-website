@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X, Zap } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
 
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
 
@@ -32,13 +33,8 @@ export default function Nav() {
     >
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center">
-            <Zap className="w-4 h-4 text-white" />
-          </div>
-          <span className="font-bold text-white text-lg tracking-tight">
-            AiMpact<span className="text-indigo-400">.</span>
-          </span>
+        <a href="#" className="flex items-center">
+          <Image src="/aimpact-logo.png" alt="AiMpact Technology" width={140} height={40} className="h-10 w-auto" priority />
         </a>
 
         {/* Desktop links */}
