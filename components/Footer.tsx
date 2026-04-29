@@ -108,6 +108,14 @@ export default function Footer() {
             <a href="mailto:landon@aimpacttechnology.com" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">
               landon@aimpacttechnology.com
             </a>
+            <span className="text-zinc-800">·</span>
+            <a href="https://aimpactos.vercel.app/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">
+              Privacy Policy
+            </a>
+            <span className="text-zinc-800">·</span>
+            <a href="https://aimpactos.vercel.app/sms-terms.html" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">
+              SMS Terms
+            </a>
           </div>
         </div>
       </div>
