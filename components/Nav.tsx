@@ -13,6 +13,8 @@ const links = [
   { label: 'Contact', href: '#contact' },
 ]
 
+const OS_HREF = '/aimpact-os'
+
 export default function Nav() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -48,6 +50,12 @@ export default function Nav() {
               {link.label}
             </a>
           ))}
+          <a
+            href={OS_HREF}
+            className="text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors"
+          >
+            AiMpact OS
+          </a>
         </div>
 
         {/* Desktop CTA */}
@@ -86,6 +94,13 @@ export default function Nav() {
                 {link.label}
               </a>
             ))}
+            <a
+              href={OS_HREF}
+              onClick={() => setOpen(false)}
+              className="text-indigo-400 hover:text-indigo-300 py-1 font-semibold transition-colors"
+            >
+              AiMpact OS
+            </a>
             <a
               href={CAL_URL}
               target="_blank"
