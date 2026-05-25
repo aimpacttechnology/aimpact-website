@@ -7,13 +7,14 @@ import Image from 'next/image'
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
 
 const links = [
-  { label: 'Services', href: '#services' },
-  { label: 'How It Works', href: '#how-it-works' },
-  { label: 'Pricing', href: '#pricing' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Services', href: '/#services' },
+  { label: 'How It Works', href: '/#how-it-works' },
+  { label: 'Pricing', href: '/#services' },
+  { label: 'Contact', href: '/#contact' },
 ]
 
 const OS_HREF = '/aimpact-os'
+const EXIT_HREF = '/exit-ready'
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
@@ -50,6 +51,12 @@ export default function Nav() {
               {link.label}
             </a>
           ))}
+          <a
+            href={EXIT_HREF}
+            className="text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors"
+          >
+            Exit Planning
+          </a>
           <a
             href={OS_HREF}
             className="text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors"
@@ -94,6 +101,13 @@ export default function Nav() {
                 {link.label}
               </a>
             ))}
+            <a
+              href={EXIT_HREF}
+              onClick={() => setOpen(false)}
+              className="text-indigo-400 hover:text-indigo-300 py-1 font-semibold transition-colors"
+            >
+              Exit Planning
+            </a>
             <a
               href={OS_HREF}
               onClick={() => setOpen(false)}

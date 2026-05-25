@@ -19,7 +19,7 @@ export default function ReportSuccessPage() {
 
           <h1 className="text-3xl font-bold mb-3">You're all set!</h1>
           <p className="text-zinc-400 text-lg mb-8">
-            Your AI Opportunity Report is being generated right now. It'll hit your inbox within the next few minutes.
+            Your Business Readiness Report is being prepared now. It&apos;ll hit your inbox within 24 hours.
           </p>
 
           <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 mb-8 text-left space-y-4">
@@ -27,7 +27,7 @@ export default function ReportSuccessPage() {
               <Mail className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
               <div>
                 <p className="text-sm font-semibold text-white">Check your inbox</p>
-                <p className="text-sm text-zinc-500">Your personalized report is on its way. Check your spam folder if it doesn't arrive within 5 minutes.</p>
+                <p className="text-sm text-zinc-500">Your personalized report is on its way. Check your spam folder if it doesn&apos;t arrive within 24 hours.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">

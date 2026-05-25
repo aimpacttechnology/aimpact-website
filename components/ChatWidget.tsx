@@ -10,11 +10,11 @@ interface Message {
 
 const INITIAL_MESSAGE: Message = {
   role: 'assistant',
-  content: "Hi! I'm Aria, AiMpact's AI assistant 👋 What kind of business do you run? I can show you exactly where AI could save you time.",
+  content: "Hi! I'm Aria, your AiMpact assistant 👋 What kind of business do you run? I can show you exactly where better systems could save you time and make your business more valuable.",
 }
 
 const QUICK_REPLIES = [
-  'What is the AI Opportunity Report?',
+  'What is the Business Readiness Report?',
   'How much does it cost?',
   'What industries do you work with?',
 ]
@@ -94,7 +94,7 @@ export default function ChatWidget() {
               </div>
               <div>
                 <p className="text-white font-semibold text-sm">Aria</p>
-                <p className="text-indigo-200 text-xs">AiMpact AI Assistant</p>
+                <p className="text-indigo-200 text-xs">AiMpact Assistant</p>
               </div>
             </div>
             <button onClick={() => setOpen(false)} className="text-white/70 hover:text-white transition-colors">
@@ -148,7 +148,7 @@ export default function ChatWidget() {
               onChange={e => setInput(e.target.value)}
               placeholder="Type a message..."
               disabled={loading}
-              className="flex-1 text-sm px-3.5 py-2 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-indigo-400 transition-colors disabled:opacity-50"
+              className="flex-1 text-sm px-3.5 py-2 bg-gray-50 text-gray-900 border border-gray-200 rounded-xl focus:outline-none focus:border-indigo-400 transition-colors disabled:opacity-50"
             />
             <button
               type="submit"

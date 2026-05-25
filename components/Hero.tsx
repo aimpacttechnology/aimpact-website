@@ -25,20 +25,21 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-sm font-medium mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
-          AI Consulting & Automation
+          Business Systems & Exit Planning
         </div>
 
         {/* Headline */}
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.08] tracking-tight">
-          Not Sure Where AI Can
+          Is Your Business Ready to
           <br />
-          <span className="text-gradient">Help Your Business?</span>
+          <span className="text-gradient">Run Without You?</span>
         </h1>
 
         {/* Subheading */}
         <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-          We analyze your workflows, identify high-impact automation opportunities, and deliver a
-          clear roadmap with ROI projections — no commitment required.
+          We map your workflows, eliminate owner-dependency, and build the systems that make your
+          business more valuable — whether you're planning to sell, step back, or simply reclaim
+          your time.
         </p>
 
         {/* CTAs */}

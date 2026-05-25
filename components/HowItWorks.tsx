@@ -6,23 +6,23 @@ const steps = [
     icon: Search,
     title: 'Discovery & Analysis',
     description:
-      'We start by understanding your operations. Deep-dive interviews, process mapping, and bottleneck identification to find your highest-impact automation opportunities.',
-    details: ['Workflow interviews', 'Process mapping', 'Bottleneck identification', 'ROI analysis'],
+      'We start by understanding your operations — identifying which processes depend entirely on you, where institutional knowledge lives only in your head, and where a buyer would see risk.',
+    details: ['Workflow interviews', 'Process mapping', 'Owner-dependency audit', 'Valuation analysis'],
   },
   {
     number: '02',
     icon: Cpu,
-    title: 'AI Implementation',
+    title: 'Systems Implementation',
     description:
-      'We build and deploy tailored AI solutions — custom integrations, automated workflows, and AI models — all with full documentation. You own everything we create.',
-    details: ['Custom AI development', 'System integrations', 'Data migration', 'You own all IP'],
+      'We build documented, repeatable workflows — custom integrations, automated processes, and a platform your team can run without you. You own everything we create.',
+    details: ['Custom platform development', 'System integrations', 'Data migration', 'You own all IP'],
   },
   {
     number: '03',
     icon: LifeBuoy,
     title: 'Training & Ongoing Support',
     description:
-      'Automation only works if your team adopts it. We provide structured training, change management, and ongoing support to ensure maximum impact across your organization.',
+      'Systems only work if your team runs them independently. We provide structured training, change management, and ongoing support to ensure your business operates without you in the room.',
     details: ['Team onboarding', 'Change management', 'Documentation', 'Ongoing support'],
   },
 ]
@@ -95,7 +95,7 @@ export default function HowItWorks() {
           {[
             { title: 'No Vendor Lock-In', desc: 'You own everything we create — code, docs, and systems.' },
             { title: 'Custom Integrations', desc: 'We connect your existing tools into a unified workflow.' },
-            { title: 'Milestone Delivery', desc: 'Clear milestones and transparent progress at every step.' },
+            { title: 'Exit-Ready Systems', desc: 'Documented processes and repeatable workflows buyers pay a premium for.' },
             { title: 'Measurable Results', desc: 'Clients typically save 15–30 hours per week on manual work.' },
           ].map((item) => (
             <div

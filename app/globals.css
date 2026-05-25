@@ -34,6 +34,12 @@ body {
   background: #52525b;
 }
 
+/* Ensure select option elements are visible on dark backgrounds */
+option {
+  background-color: #18181B;
+  color: #FAFAFA;
+}
+
 /* Grid background utility */
 .bg-grid {
   background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),

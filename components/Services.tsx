@@ -4,14 +4,14 @@ const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
 
 const services = [
   {
-    name: 'AI Opportunity Assessment',
+    name: 'Business Readiness Assessment',
     price: '$2,500',
     billing: 'one-time',
     description:
-      "Not sure where AI can help? We\u2019ll show you. A 2\u20133 day deep-dive analysis of your workflows with ROI projections and a clear implementation roadmap.",
+      "Not sure what\u2019s holding your business back? We analyze your workflows and identify bottlenecks \u2014 delivering a clear picture of where to invest and a roadmap to get there.",
     features: [
       'Full workflow analysis & mapping',
-      'Automation opportunity identification',
+      'Bottleneck & dependency identification',
       'Bottleneck analysis',
       'ROI projections per opportunity',
       'Implementation roadmap',
@@ -22,11 +22,11 @@ const services = [
     popular: false,
   },
   {
-    name: 'Guided Implementation',
+    name: 'Systems Implementation',
     price: '$9,500',
     billing: 'one-time',
     description:
-      'Ready to automate? We build your highest-impact workflows end-to-end — includes the full assessment plus implementation, training, and 30 days of free support.',
+      'Ready to build? We implement your highest-impact workflows end-to-end — so your business runs on documented, repeatable processes instead of institutional knowledge.',
     features: [
       'Everything in Assessment',
       'Full workflow implementation',
@@ -45,10 +45,10 @@ const services = [
     price: '$25,000',
     billing: 'one-time',
     description:
-      'Full operational buildout with custom AI solutions. For businesses needing comprehensive transformation across multiple workflows and departments.',
+      'Full operational buildout with a custom-built platform. For businesses needing comprehensive transformation across multiple workflows and departments.',
     features: [
-      'Everything in Guided Implementation',
-      'Custom AI model development',
+      'Everything in Systems Implementation',
+      'Custom platform development',
       'Advanced analytics dashboard',
       'Multi-department automation',
       'Workflow monitoring',
@@ -74,8 +74,8 @@ export default function Services() {
             Our Services
           </h2>
           <p className="text-zinc-400 text-lg max-w-xl mx-auto">
-            Start with an assessment or jump straight to implementation. Every engagement delivers
-            measurable results.
+            Start with an assessment or jump straight to building. Every engagement delivers
+            documented systems, measurable results, and IP you own outright.
           </p>
         </div>
 

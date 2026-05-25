@@ -5,10 +5,10 @@ import { CheckCircle2, ArrowRight, Loader2, Zap, Clock, DollarSign, BarChart3, S
 import Image from 'next/image'
 
 const WHAT_YOU_GET = [
-  { icon: BarChart3, title: 'Top Automation Opportunities', desc: 'Exactly where AI can eliminate your biggest time drains — specific to your business.' },
+  { icon: BarChart3, title: 'Top Automation Opportunities', desc: 'Exactly where manual work is slowing you down — and what to systematize first.' },
   { icon: Clock, title: '90-Day Implementation Roadmap', desc: 'Phase-by-phase action plan. Quick wins in week one, full transformation by month three.' },
   { icon: DollarSign, title: 'ROI Analysis', desc: 'Real numbers. Hours saved per week, estimated monthly savings, revenue opportunity.' },
-  { icon: Zap, title: 'Recommended AI Stack', desc: 'The exact tools and automations built for your industry, team size, and goals.' },
+  { icon: Zap, title: 'Recommended Systems Stack', desc: 'The exact tools and workflows built for your industry, team size, and goals.' },
 ]
 
 const STEPS = ['Your Business', 'Operations', 'Goals']
@@ -88,14 +88,14 @@ export default function ReportPage() {
           {/* Left — Value prop */}
           <div className="lg:sticky lg:top-16">
             <div className="inline-flex items-center gap-2 bg-indigo-950/50 border border-indigo-500/20 text-indigo-400 text-xs font-semibold px-3 py-1.5 rounded-full mb-6">
-              <Zap className="w-3.5 h-3.5" /> AI-Powered Business Audit
+              <Zap className="w-3.5 h-3.5" /> Business Readiness Report
             </div>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 leading-tight">
-              Find Out Exactly Where AI Can Save Your Business
-              <span className="text-indigo-400"> Time & Money</span>
+              Find Out Exactly Where Your Business
+              <span className="text-indigo-400"> Can Run More Efficiently</span>
             </h1>
             <p className="text-zinc-400 text-lg mb-8 leading-relaxed">
-              Answer 8 questions about your business. Get a personalized AI Opportunity Report — built by AiMpact's proprietary AI engine, reviewed by our consultants — delivered to your inbox in minutes.
+              Answer 8 questions about your business. Get a personalized Business Readiness Report — built by our consultants and delivered to your inbox within 24 hours.
             </p>
 
             <div className="flex items-center gap-4 mb-10">

@@ -1,4 +1,4 @@
-import { Zap } from 'lucide-react'
+import Image from 'next/image'
 
 const socials = [
   {
@@ -39,85 +39,118 @@ const socials = [
   },
 ]
 
-const footerLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'How It Works', href: '#how-it-works' },
-  { label: 'Pricing', href: '#pricing' },
-  { label: 'Contact', href: '#contact' },
+const navColumns = [
+  {
+    heading: 'Services',
+    links: [
+      { label: 'Business Readiness Assessment', href: '/#services' },
+      { label: 'Systems Implementation', href: '/#services' },
+      { label: 'Complete Transformation', href: '/#services' },
+      { label: 'Enterprise', href: '/#contact' },
+    ],
+  },
+  {
+    heading: 'Products',
+    links: [
+      { label: 'AiMpact OS', href: '/aimpact-os' },
+      { label: 'Exit Planning', href: '/exit-ready' },
+      { label: 'Business Readiness Report', href: '/report' },
+    ],
+  },
+  {
+    heading: 'Company',
+    links: [
+      { label: 'How It Works', href: '/#how-it-works' },
+      { label: 'Contact', href: '/#contact' },
+      { label: 'Affiliates', href: '/affiliates' },
+    ],
+  },
 ]
 
 export default function Footer() {
   return (
     <footer className="border-t border-zinc-800 bg-[#09090B]">
-      <div className="max-w-6xl mx-auto px-6 py-12">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 mb-10">
+      <div className="max-w-6xl mx-auto px-6 py-16">
+
+        {/* Top row — brand + columns */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-14">
+
           {/* Brand */}
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center">
-                <Zap className="w-3.5 h-3.5 text-white" />
-              </div>
-              <span className="font-bold text-white tracking-tight">
-                AiMpact<span className="text-indigo-400">.</span>
-              </span>
-            </div>
-            <p className="text-zinc-500 text-sm max-w-xs">
-              Automate workflows. Reclaim your time.
+          <div className="col-span-2 md:col-span-1">
+            <a href="/" className="inline-block mb-4">
+              <Image
+                src="/aimpact-logo.png"
+                alt="AiMpact Technology"
+                width={120}
+                height={36}
+                className="h-9 w-auto"
+              />
+            </a>
+            <p className="text-zinc-500 text-sm leading-relaxed max-w-[200px]">
+              Custom platforms and workflow systems that make businesses run without their owners.
             </p>
+            <div className="flex items-center gap-3 mt-5">
+              {socials.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.name}
+                  className="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-600 text-zinc-500 hover:text-zinc-300 flex items-center justify-center transition-all"
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
           </div>
 
-          {/* Links */}
-          <div className="flex flex-wrap gap-6">
-            {footerLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm text-zinc-500 hover:text-zinc-300 transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-
-          {/* Socials */}
-          <div className="flex items-center gap-3">
-            {socials.map((social) => (
-              <a
-                key={social.name}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={social.name}
-                className="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-600 text-zinc-500 hover:text-zinc-300 flex items-center justify-center transition-all"
-              >
-                {social.icon}
-              </a>
-            ))}
-          </div>
+          {/* Nav columns */}
+          {navColumns.map((col) => (
+            <div key={col.heading}>
+              <p className="text-xs font-semibold text-zinc-400 uppercase tracking-widest mb-4">
+                {col.heading}
+              </p>
+              <ul className="space-y-3">
+                {col.links.map((link) => (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      className="text-sm text-zinc-500 hover:text-zinc-200 transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
+        {/* Bottom bar */}
         <div className="border-t border-zinc-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-zinc-600 text-xs">
             © {new Date().getFullYear()} AiMpact Technology. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
             <a href="tel:5129100980" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">
               512-910-0980
             </a>
-            <span className="text-zinc-800">·</span>
+            <span className="text-zinc-800 hidden sm:inline">·</span>
             <a href="mailto:landon@aimpacttechnology.com" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">
               landon@aimpacttechnology.com
             </a>
-            <span className="text-zinc-800">·</span>
+            <span className="text-zinc-800 hidden sm:inline">·</span>
             <a href="https://aimpactos.vercel.app/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">
               Privacy Policy
             </a>
-            <span className="text-zinc-800">·</span>
+            <span className="text-zinc-800 hidden sm:inline">·</span>
             <a href="https://aimpactos.vercel.app/sms-terms.html" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">
               SMS Terms
             </a>
           </div>
         </div>
+
       </div>
     </footer>
   )

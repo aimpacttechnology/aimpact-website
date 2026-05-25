@@ -10,17 +10,17 @@ export default function CTA() {
 
       <div className="relative max-w-4xl mx-auto px-6 text-center">
         <p className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-4">
-          Stop wasting time on manual work
+          Stop being the bottleneck in your own business
         </p>
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-          Automate Workflows.
+          Build Systems That Run.
           <br />
           <span className="text-gradient">Reclaim Your Time.</span>
         </h2>
         <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-10">
-          Get a detailed AI Opportunity Assessment. We analyze your workflows, identify automation
-          opportunities, and deliver a clear roadmap with ROI projections. Start with clarity,
-          implement with confidence.
+          Get a detailed Business Readiness Assessment. We analyze your workflows, identify where
+          your business depends too much on you, and deliver a clear roadmap with ROI projections.
+          Start with clarity, implement with confidence.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
