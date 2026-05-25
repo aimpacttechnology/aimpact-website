@@ -54,7 +54,7 @@ const faqs = [
   },
   {
     q: 'Is there a cost to join?',
-    a: 'No. The affiliate program is free to join. We only make money when a referred engagement closes — so we're aligned with your success.',
+    a: "No. The affiliate program is free to join. We only make money when a referred engagement closes — so we're aligned with your success.",
   },
   {
     q: 'What if my referral already knows AiMpact?',
