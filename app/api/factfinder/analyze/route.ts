@@ -47,45 +47,115 @@ Be specific and actionable. Reference their actual answers where possible. Focus
 
   const analysis = message.content[0].type === 'text' ? message.content[0].text : ''
 
-  // Save lead to Supabase (best-effort, don't fail the request if this errors)
-  try {
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL!,
-      process.env.SUPABASE_SERVICE_ROLE_KEY!
-    )
-    const orgId = process.env.FRONT_DESK_ORG_ID!
-
-    const nameParts = String(responses.ownerName ?? '').split(' ')
-    const firstName = nameParts[0] ?? ''
-    const lastName = nameParts.slice(1).join(' ')
-
-    const { data: contact } = await supabase
-      .from('contacts')
-      .insert({
-        org_id: orgId,
-        first_name: firstName,
-        last_name: lastName || null,
-        email: responses.email,
-        phone: responses.phone || null,
-        company: responses.businessName || null,
-        source: 'factfinder',
-      })
-      .select('id')
-      .single()
-
-    if (contact?.id) {
-      await supabase.from('leads').insert({
-        org_id: orgId,
-        contact_id: contact.id,
-        title: `FactFinder — ${responses.businessName ?? responses.email}`,
-        source: 'factfinder',
-        status: 'new',
-        notes: `Industry: ${responses.industry ?? '—'} | Revenue: ${responses.revenue ?? '—'} | Team: ${responses.teamSize ?? '—'} | Urgency: ${responses.urgencyScale ?? '—'}/10\n\nTop pain points: ${responses.topPainPoints ?? '—'}\n\nMagic wand: ${responses.magicWand ?? '—'}`,
-      })
-    }
-  } catch (err) {
-    console.error('[FactFinder] Lead save failed:', err)
-  }
+  // Run all side effects in parallel after the report is generated
+  await Promise.allSettled([
+    saveLead(responses, analysis),
+    notifyDiscord(responses, analysis),
+    notifyN8n(responses, analysis),
+  ])
 
   return NextResponse.json({ analysis })
+}
+
+async function saveLead(responses: Record<string, unknown>, analysis: string) {
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!
+  )
+  const orgId = process.env.FRONT_DESK_ORG_ID!
+
+  const nameParts = String(responses.ownerName ?? '').split(' ')
+  const firstName = nameParts[0] ?? ''
+  const lastName = nameParts.slice(1).join(' ')
+
+  const { data: contact } = await supabase
+    .from('contacts')
+    .insert({
+      org_id: orgId,
+      first_name: firstName,
+      last_name: lastName || null,
+      email: responses.email,
+      phone: responses.phone || null,
+      company: responses.businessName || null,
+      source: 'factfinder',
+    })
+    .select('id')
+    .single()
+
+  if (contact?.id) {
+    await supabase.from('leads').insert({
+      org_id: orgId,
+      contact_id: contact.id,
+      title: `FactFinder — ${responses.businessName ?? responses.email}`,
+      source: 'factfinder',
+      status: 'new',
+      notes: [
+        `Industry: ${responses.industry ?? '—'}`,
+        `Revenue: ${responses.revenue ?? '—'} | Team: ${responses.teamSize ?? '—'}`,
+        `Urgency: ${responses.urgencyScale ?? '—'}/10`,
+        `Budget: ${responses.monthlyBudget ?? '—'}`,
+        `\nTop pain points: ${responses.topPainPoints ?? '—'}`,
+        `Magic wand: ${responses.magicWand ?? '—'}`,
+        `Consequences of inaction: ${responses.consequencesOfInaction ?? '—'}`,
+        `\n--- AI REPORT ---\n${analysis}`,
+      ].join('\n'),
+    })
+  }
+}
+
+async function notifyDiscord(responses: Record<string, unknown>, analysis: string) {
+  const webhookUrl = process.env.DISCORD_WEBHOOK_URL
+  if (!webhookUrl) return
+
+  const urgency = Number(responses.urgencyScale ?? 0)
+  const urgencyBar = '🟥'.repeat(Math.min(urgency, 5)) + '⬜'.repeat(Math.max(0, 5 - Math.min(urgency, 5)))
+
+  const embed = {
+    title: `📋 New FactFinder — ${responses.businessName ?? 'Unknown Business'}`,
+    color: urgency >= 7 ? 0xe74c3c : urgency >= 4 ? 0xf39c12 : 0x2ecc71,
+    fields: [
+      { name: 'Contact', value: `${responses.ownerName}\n${responses.email}${responses.phone ? `\n${responses.phone}` : ''}`, inline: true },
+      { name: 'Business', value: `${responses.industry ?? '—'}\n${responses.revenue ?? '—'} · ${responses.teamSize ?? '—'}`, inline: true },
+      { name: `Urgency ${urgencyBar}`, value: `${urgency}/10`, inline: true },
+      { name: 'Budget', value: String(responses.monthlyBudget ?? '—'), inline: true },
+      { name: 'Primary Goal', value: String(responses.primaryGoal ?? '—'), inline: true },
+      { name: 'Best Time to Call', value: String(responses.bestTime ?? '—'), inline: true },
+      { name: '🪄 Magic Wand Fix', value: String(responses.magicWand ?? '—').slice(0, 200) },
+      { name: '🔥 Top Pain Points', value: String(responses.topPainPoints ?? '—').slice(0, 200) },
+      { name: '⚠️ Consequences of Inaction', value: String(responses.consequencesOfInaction ?? '—') },
+    ],
+    footer: { text: 'AiMpact FactFinder · aimpacttechnology.com/factfinder' },
+    timestamp: new Date().toISOString(),
+  }
+
+  await fetch(webhookUrl, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ embeds: [embed] }),
+  })
+}
+
+async function notifyN8n(responses: Record<string, unknown>, analysis: string) {
+  const webhookUrl = process.env.N8N_FACTFINDER_WEBHOOK_URL
+  if (!webhookUrl) return
+
+  await fetch(webhookUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      ...(process.env.N8N_WEBHOOK_SECRET ? { 'x-webhook-secret': process.env.N8N_WEBHOOK_SECRET } : {}),
+    },
+    body: JSON.stringify({
+      source: 'factfinder',
+      submitted_at: new Date().toISOString(),
+      contact: {
+        name: responses.ownerName,
+        email: responses.email,
+        phone: responses.phone,
+        business: responses.businessName,
+      },
+      assessment: responses,
+      ai_report: analysis,
+    }),
+  })
 }
