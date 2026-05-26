@@ -1,63 +1,55 @@
-import { Check, ArrowRight } from 'lucide-react'
+import { ArrowRight, MessageSquare, Layers, Cpu, LayoutDashboard } from 'lucide-react'
 
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
 
-const services = [
+const builds = [
   {
-    name: 'Business Readiness Assessment',
-    price: '$2,500',
-    billing: 'one-time',
+    icon: MessageSquare,
+    title: 'AI Front Desk & Lead Systems',
     description:
-      "Not sure what\u2019s holding your business back? We analyze your workflows and identify bottlenecks \u2014 delivering a clear picture of where to invest and a roadmap to get there.",
-    features: [
-      'Full workflow analysis & mapping',
-      'Bottleneck & dependency identification',
-      'Bottleneck analysis',
-      'ROI projections per opportunity',
-      'Implementation roadmap',
-      'Email & chat support',
+      'Custom-built customer intake, qualification, and follow-up automation. Every inquiry gets an immediate, intelligent response — 24/7. Leads are qualified, scored, and routed before you ever pick up the phone.',
+    outcomes: [
+      'Instant AI response to every inbound lead',
+      'Custom qualification criteria for your business',
+      'Automated booking & calendar integration',
+      'CRM-synced lead tracking and follow-up sequences',
     ],
-    cta: 'Get Assessment',
-    href: CAL_URL,
-    popular: false,
   },
   {
-    name: 'Systems Implementation',
-    price: '$9,500',
-    billing: 'one-time',
+    icon: Layers,
+    title: 'Custom Business Platforms',
     description:
-      'Ready to build? We implement your highest-impact workflows end-to-end — so your business runs on documented, repeatable processes instead of institutional knowledge.',
-    features: [
-      'Everything in Assessment',
-      'Full workflow implementation',
-      'System integrations',
-      'Data migration',
-      'Team onboarding & training',
-      'Process documentation',
-      '30 days free support',
+      'Replace your patchwork of CRM, project management, billing, and communication tools with one platform built specifically for how your business operates. No bloat. No workarounds. Just your workflow, automated.',
+    outcomes: [
+      'Single platform replacing 4–8 disconnected tools',
+      'Built around your exact business processes',
+      'Full data migration from legacy systems',
+      'You own the code and all intellectual property',
     ],
-    cta: 'Start Project',
-    href: CAL_URL,
-    popular: true,
   },
   {
-    name: 'Complete Transformation',
-    price: '$25,000',
-    billing: 'one-time',
+    icon: Cpu,
+    title: 'Business Operations Automation',
     description:
-      'Full operational buildout with a custom-built platform. For businesses needing comprehensive transformation across multiple workflows and departments.',
-    features: [
-      'Everything in Systems Implementation',
-      'Custom platform development',
-      'Advanced analytics dashboard',
-      'Multi-department automation',
-      'Workflow monitoring',
-      'Priority support',
-      'Quarterly strategy reviews',
+      'Document your processes, automate the handoffs, and eliminate the manual work that lives in your team\'s heads. We identify your highest-value automation opportunities and build systems that run without oversight.',
+    outcomes: [
+      'Process documentation & knowledge capture',
+      'Automated workflows between your existing tools',
+      'Bottleneck elimination & time savings analysis',
+      'SOPs that run themselves',
     ],
-    cta: 'Contact Us',
-    href: '#contact',
-    popular: false,
+  },
+  {
+    icon: LayoutDashboard,
+    title: 'AiMpact OS — White-Label Deployment',
+    description:
+      'AiMpact OS is the operating system we built for our own business. We deploy a custom version for your organization — configured to your team, your clients, and your workflows — as a fully supported platform.',
+    outcomes: [
+      'AI Front Desk, CRM, pipeline, and client management',
+      'Configured to your industry and team size',
+      'Custom branding and domain',
+      'Ongoing support and updates included',
+    ],
   },
 ]
 
@@ -65,94 +57,65 @@ export default function Services() {
   return (
     <section id="services" className="py-28 bg-[#09090B]">
       <div className="max-w-6xl mx-auto px-6">
-        {/* Header */}
         <div className="text-center mb-16">
           <p className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-3">
-            What We Offer
+            What We Build
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-            Our Services
+            Custom PAAS for
+            <br />
+            <span className="text-gradient">Every Stage of Your Business.</span>
           </h2>
           <p className="text-zinc-400 text-lg max-w-xl mx-auto">
-            Start with an assessment or jump straight to building. Every engagement delivers
-            documented systems, measurable results, and IP you own outright.
+            Every project is scoped to your business. No off-the-shelf packages — just a platform
+            built around exactly what you need.
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
-          {services.map((service) => (
-            <div
-              key={service.name}
-              className={`relative rounded-2xl border p-8 flex flex-col transition-all duration-200 ${
-                service.popular
-                  ? 'border-indigo-500/60 bg-indigo-950/20 shadow-xl shadow-indigo-950/20'
-                  : 'border-zinc-800 bg-zinc-900/30 hover:border-zinc-700'
-              }`}
-            >
-              {service.popular && (
-                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                  <span className="px-3 py-1 bg-indigo-600 text-white text-xs font-semibold rounded-full">
-                    Most Popular
-                  </span>
-                </div>
-              )}
-
-              <div className="mb-6">
-                <h3 className="text-lg font-semibold text-white mb-2">{service.name}</h3>
-                <div className="flex items-baseline gap-2 mb-4">
-                  <span className="text-4xl font-bold text-white">{service.price}</span>
-                  <span className="text-zinc-500 text-sm">{service.billing}</span>
-                </div>
-                <p className="text-zinc-400 text-sm leading-relaxed">{service.description}</p>
-              </div>
-
-              <ul className="space-y-3 mb-8 flex-1">
-                {service.features.map((f) => (
-                  <li key={f} className="flex items-start gap-3 text-sm text-zinc-300">
-                    <Check className="w-4 h-4 text-indigo-400 mt-0.5 flex-shrink-0" />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-
-              <a
-                href={service.href}
-                target={service.href.startsWith('http') ? '_blank' : undefined}
-                rel={service.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className={`group inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl font-semibold text-sm transition-all duration-200 ${
-                  service.popular
-                    ? 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-600/20'
-                    : 'border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white'
-                }`}
+        <div className="grid md:grid-cols-2 gap-6 mb-10">
+          {builds.map((build) => {
+            const Icon = build.icon
+            return (
+              <div
+                key={build.title}
+                className="rounded-2xl border border-zinc-800 bg-zinc-900/20 p-8 hover:border-zinc-700 transition-all duration-200 flex flex-col"
               >
-                {service.cta}
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-              </a>
-            </div>
-          ))}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center flex-shrink-0">
+                    <Icon className="w-5 h-5 text-indigo-400" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-white">{build.title}</h3>
+                </div>
+                <p className="text-zinc-400 text-sm leading-relaxed mb-5">{build.description}</p>
+                <ul className="space-y-2.5 mt-auto">
+                  {build.outcomes.map((outcome) => (
+                    <li key={outcome} className="flex items-start gap-2.5 text-sm text-zinc-300">
+                      <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-1.5 flex-shrink-0" />
+                      {outcome}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )
+          })}
         </div>
 
-        {/* Enterprise row */}
-        <div className="rounded-2xl border border-zinc-800 bg-zinc-900/20 p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="rounded-2xl border border-indigo-500/20 bg-indigo-500/5 p-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <div className="flex items-center gap-3 mb-2">
-              <h3 className="text-lg font-semibold text-white">Enterprise</h3>
-              <span className="px-2 py-0.5 bg-zinc-800 text-zinc-400 text-xs rounded-md">
-                Custom Pricing
-              </span>
-            </div>
+            <h3 className="text-lg font-semibold text-white mb-1">Every project is custom-scoped.</h3>
             <p className="text-zinc-400 text-sm max-w-2xl">
-              For organizations with 10+ employees needing adoption support, dedicated account
-              management, custom training programs, onsite workshops, SLA options, and ongoing
-              monthly optimization.
+              We don&apos;t have packages because no two businesses are the same. Book a free discovery call
+              and we&apos;ll map out exactly what your business needs — and what it would take to build it.
             </p>
           </div>
           <a
-            href="#contact"
-            className="flex-shrink-0 px-6 py-3 border border-zinc-700 hover:border-indigo-500 text-zinc-300 hover:text-white font-semibold text-sm rounded-xl transition-all duration-200"
+            href={CAL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm rounded-xl transition-all duration-200"
           >
-            Inquire
+            Book Discovery Call
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
           </a>
         </div>
       </div>

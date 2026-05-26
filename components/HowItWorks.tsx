@@ -4,26 +4,26 @@ const steps = [
   {
     number: '01',
     icon: Search,
-    title: 'Discovery & Analysis',
+    title: 'Discovery & Scoping',
     description:
-      'We start by understanding your operations — identifying which processes depend entirely on you, where institutional knowledge lives only in your head, and where a buyer would see risk.',
-    details: ['Workflow interviews', 'Process mapping', 'Owner-dependency audit', 'Valuation analysis'],
+      'We start with the Exit Readiness Assessment and a deep-dive discovery call. We map your workflows, identify your biggest operational gaps, and define exactly what platform your business needs.',
+    details: ['Business Exit Assessment', 'Workflow mapping & interviews', 'Gap analysis & ROI scoping', 'Custom project proposal'],
   },
   {
     number: '02',
     icon: Cpu,
-    title: 'Systems Implementation',
+    title: 'Custom PAAS Build',
     description:
-      'We build documented, repeatable workflows — custom integrations, automated processes, and a platform your team can run without you. You own everything we create.',
-    details: ['Custom platform development', 'System integrations', 'Data migration', 'You own all IP'],
+      'We build your platform from the ground up — custom integrations, AI automations, and a unified dashboard. Clear milestones, transparent progress, and full documentation along the way. You own everything.',
+    details: ['Custom AI & automation development', 'System integrations & data migration', 'Full documentation', 'You own all IP & code'],
   },
   {
     number: '03',
     icon: LifeBuoy,
-    title: 'Training & Ongoing Support',
+    title: 'Deploy, Train & Support',
     description:
-      'Systems only work if your team runs them independently. We provide structured training, change management, and ongoing support to ensure your business operates without you in the room.',
-    details: ['Team onboarding', 'Change management', 'Documentation', 'Ongoing support'],
+      'We deploy, train your team, and stay involved. Automation only works if your people adopt it. We provide structured onboarding and ongoing support to make sure the platform performs.',
+    details: ['Team onboarding & training', 'Change management support', 'Ongoing platform updates', 'Direct support access'],
   },
 ]
 
@@ -31,23 +31,20 @@ export default function HowItWorks() {
   return (
     <section id="how-it-works" className="py-28 bg-[#0D0D10]">
       <div className="max-w-6xl mx-auto px-6">
-        {/* Header */}
         <div className="text-center mb-16">
           <p className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-3">
             Our Process
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-            How We Work
+            How We Build
           </h2>
           <p className="text-zinc-400 text-lg max-w-xl mx-auto">
-            A proven process that delivers measurable results — whether you're exploring
-            opportunities or ready to implement.
+            A proven process from discovery to deployment — every build is scoped, built, and
+            supported with the same rigor.
           </p>
         </div>
 
-        {/* Steps */}
         <div className="relative">
-          {/* Connecting line (desktop) */}
           <div className="hidden md:block absolute top-16 left-[calc(16.67%+1rem)] right-[calc(16.67%+1rem)] h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent" />
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -55,7 +52,6 @@ export default function HowItWorks() {
               const Icon = step.icon
               return (
                 <div key={step.number} className="relative">
-                  {/* Step indicator */}
                   <div className="flex items-center justify-center mb-8">
                     <div className="relative">
                       <div className="w-14 h-14 rounded-2xl bg-indigo-600/10 border border-indigo-500/30 flex items-center justify-center">
@@ -67,7 +63,6 @@ export default function HowItWorks() {
                     </div>
                   </div>
 
-                  {/* Content */}
                   <div className="text-center">
                     <p className="text-indigo-400/60 text-xs font-mono font-bold tracking-widest mb-2">
                       {step.number}
@@ -90,13 +85,12 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        {/* Value props */}
         <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
             { title: 'No Vendor Lock-In', desc: 'You own everything we create — code, docs, and systems.' },
-            { title: 'Custom Integrations', desc: 'We connect your existing tools into a unified workflow.' },
-            { title: 'Exit-Ready Systems', desc: 'Documented processes and repeatable workflows buyers pay a premium for.' },
-            { title: 'Measurable Results', desc: 'Clients typically save 15–30 hours per week on manual work.' },
+            { title: 'Custom Integrations', desc: 'We connect your existing tools into a unified platform.' },
+            { title: 'Milestone Delivery', desc: 'Clear milestones and transparent progress at every step.' },
+            { title: 'Measurable Results', desc: 'Clients typically eliminate 15–30 hours of manual work per week.' },
           ].map((item) => (
             <div
               key={item.title}
