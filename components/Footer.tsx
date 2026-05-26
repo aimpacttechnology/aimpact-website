@@ -46,6 +46,7 @@ const footerLinks = [
   { label: 'What We Build', href: '#services' },
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'AiMpact OS', href: '/aimpact-os' },
+  { label: 'FactFinder', href: '/factfinder' },
   { label: 'Exit Assessment', href: ASSESSMENT_URL, external: true },
   { label: 'Partner Program', href: PARTNER_URL, external: true },
   { label: 'Contact', href: '#contact' },
