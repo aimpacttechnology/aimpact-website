@@ -10,9 +10,9 @@ const ASSESSMENT_URL = 'https://aimpactos.vercel.app/assessment'
 const links = [
   { label: 'What We Build', href: '#services' },
   { label: 'How It Works', href: '#how-it-works' },
+  { label: 'DevOps Monthly', href: '/devops-monthly', external: false },
   { label: 'AiMpact OS', href: '/aimpact-os', external: false },
   { label: 'FactFinder', href: '/factfinder', external: false },
-  { label: 'Exit Assessment', href: ASSESSMENT_URL, external: true },
   { label: 'Partner Program', href: PARTNER_URL, external: true },
 ]
 
