@@ -1,4 +1,4 @@
-import { ArrowRight, Code2, ShieldCheck, Clock } from 'lucide-react'
+import { ArrowRight, Code2, ShieldCheck, Clock, ClipboardList, TrendingUp } from 'lucide-react'
 
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
 const ASSESSMENT_URL = 'https://aimpactos.vercel.app/assessment'
@@ -35,26 +35,41 @@ export default function Hero() {
           you — built to last, built to scale, and owned entirely by you.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
-          <a
-            href={ASSESSMENT_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-indigo-600/20 hover:shadow-indigo-500/30"
-          >
-            Take the Free Exit Assessment
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-          </a>
+        {/* Primary CTA */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <a
             href={CAL_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white font-semibold rounded-xl transition-all duration-200"
+            className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-indigo-600/20 hover:shadow-indigo-500/30"
           >
             Book a Discovery Call
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
           </a>
         </div>
 
+        {/* Free tools row */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-16">
+          <p className="text-xs text-zinc-600 uppercase tracking-widest font-medium">Free tools:</p>
+          <a
+            href="/factfinder"
+            className="inline-flex items-center gap-2 px-4 py-2 border border-zinc-700 hover:border-indigo-500/50 text-zinc-400 hover:text-white text-sm font-medium rounded-lg transition-all duration-200"
+          >
+            <ClipboardList className="w-3.5 h-3.5" />
+            Operations FactFinder
+          </a>
+          <a
+            href={ASSESSMENT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 border border-zinc-700 hover:border-indigo-500/50 text-zinc-400 hover:text-white text-sm font-medium rounded-lg transition-all duration-200"
+          >
+            <TrendingUp className="w-3.5 h-3.5" />
+            Business Exit Assessment
+          </a>
+        </div>
+
+        {/* Stats row */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12">
           {stats.map(({ icon: Icon, label }) => (
             <div key={label} className="flex items-center gap-2.5 text-zinc-400">
