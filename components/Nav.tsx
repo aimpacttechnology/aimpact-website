@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { Menu, X, Zap } from 'lucide-react'
 
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
-const PARTNER_URL = 'https://aimpactos.vercel.app/affiliate/onboarding'
+const PARTNER_URL = 'https://aimpactos.vercel.app/affiliate/apply'
 const ASSESSMENT_URL = 'https://aimpactos.vercel.app/assessment'
 
 const links = [

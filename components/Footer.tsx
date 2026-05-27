@@ -1,7 +1,7 @@
 import { Zap } from 'lucide-react'
 
 const ASSESSMENT_URL = 'https://aimpactos.vercel.app/assessment'
-const PARTNER_URL = 'https://aimpactos.vercel.app/affiliate/onboarding'
+const PARTNER_URL = 'https://aimpactos.vercel.app/affiliate/apply'
 
 const socials = [
   {

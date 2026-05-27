@@ -1,7 +1,7 @@
 import { ArrowRight, Users } from 'lucide-react'
 
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
-const PARTNER_URL = 'https://aimpactos.vercel.app/affiliate/onboarding'
+const PARTNER_URL = 'https://aimpactos.vercel.app/affiliate/apply'
 
 export default function CTA() {
   return (
