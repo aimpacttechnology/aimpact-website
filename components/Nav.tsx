@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react'
 import { Menu, X, Zap } from 'lucide-react'
 
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
-const PARTNER_URL = 'https://aimpactos.vercel.app/affiliate/apply'
-const ASSESSMENT_URL = 'https://aimpactos.vercel.app/assessment'
 
 const links = [
   { label: 'What We Build', href: '#services' },
@@ -13,7 +11,7 @@ const links = [
   { label: 'DevOps Monthly', href: '/devops-monthly', external: false },
   { label: 'AiMpact OS', href: '/aimpact-os', external: false },
   { label: 'FactFinder', href: '/factfinder', external: false },
-  { label: 'Partner Program', href: PARTNER_URL, external: true },
+  { label: 'Partner Program', href: '/affiliates#apply', external: false },
 ]
 
 export default function Nav() {
