@@ -1,4 +1,4 @@
-import { ArrowRight, Code2, ShieldCheck, Clock, ClipboardList, TrendingUp } from 'lucide-react'
+import { ArrowRight, ShieldCheck, Clock, ClipboardList, TrendingUp, Wrench } from 'lucide-react'
 
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
 const ASSESSMENT_URL = 'https://aimpactos.vercel.app/assessment'
@@ -6,7 +6,7 @@ const ASSESSMENT_URL = 'https://aimpactos.vercel.app/assessment'
 const stats = [
   { icon: ShieldCheck, label: 'You own all code & IP' },
   { icon: Clock, label: 'Live in 4–8 weeks' },
-  { icon: Code2, label: 'Built for your workflows' },
+  { icon: Wrench, label: 'Built for your workflows' },
 ]
 
 export default function Hero() {
@@ -20,22 +20,25 @@ export default function Hero() {
       <div className="relative max-w-6xl mx-auto px-6 pt-32 pb-24 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-sm font-medium mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
-          Custom PAAS Development
+          Custom Operational Platforms
         </div>
 
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.08] tracking-tight">
-          We Build the Platform
+          Custom Operational Platforms
           <br />
-          <span className="text-gradient">Your Business Runs On.</span>
+          <span className="text-gradient">for Small Businesses.</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Small businesses shouldn&apos;t run on duct-taped SaaS. We build custom platforms that
-          replace legacy tools, automate your operations, and make your business run without
-          you — built to last, built to scale, and owned entirely by you.
+        <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-4 leading-relaxed">
+          We design and build centralized business systems that reduce manual work, connect your
+          workflows, and help your team scale without adding more administrative overhead.
         </p>
 
-        {/* Primary CTA */}
+        <p className="text-base text-zinc-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+          From reporting and scheduling to CRM workflows and field operations — we turn scattered
+          processes into one connected platform your business actually owns.
+        </p>
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <a
             href={CAL_URL}
@@ -46,9 +49,14 @@ export default function Hero() {
             Book a Discovery Call
             <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
           </a>
+          <a
+            href="#services"
+            className="inline-flex items-center justify-center px-8 py-4 border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white font-semibold rounded-xl transition-all duration-200"
+          >
+            See What We Can Build
+          </a>
         </div>
 
-        {/* Free tools row */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-16">
           <p className="text-xs text-zinc-600 uppercase tracking-widest font-medium">Free tools:</p>
           <a
@@ -69,7 +77,6 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Stats row */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12">
           {stats.map(({ icon: Icon, label }) => (
             <div key={label} className="flex items-center gap-2.5 text-zinc-400">

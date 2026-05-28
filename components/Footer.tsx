@@ -1,7 +1,6 @@
 import { Zap } from 'lucide-react'
 
 const ASSESSMENT_URL = 'https://aimpactos.vercel.app/assessment'
-const PARTNER_URL = 'https://aimpactos.vercel.app/affiliate/apply'
 
 const socials = [
   {
@@ -48,7 +47,7 @@ const footerLinks = [
   { label: 'AiMpact OS', href: '/aimpact-os' },
   { label: 'FactFinder', href: '/factfinder' },
   { label: 'Exit Assessment', href: ASSESSMENT_URL, external: true },
-  { label: 'Partner Program', href: PARTNER_URL, external: true },
+  { label: 'Partner Program', href: '/affiliates', external: false },
   { label: 'Contact', href: '#contact' },
 ]
 

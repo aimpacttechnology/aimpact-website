@@ -4,26 +4,26 @@ const steps = [
   {
     number: '01',
     icon: Search,
-    title: 'Discovery & Scoping',
+    title: 'Map the Work',
     description:
-      'We start with the Exit Readiness Assessment and a deep-dive discovery call. We map your workflows, identify your biggest operational gaps, and define exactly what platform your business needs.',
-    details: ['Business Exit Assessment', 'Workflow mapping & interviews', 'Gap analysis & ROI scoping', 'Custom project proposal'],
+      'We start with a deep-dive discovery call. We map your workflows, identify the manual tasks and disconnected tools slowing your team down, and define exactly what platform your business needs.',
+    details: ['Workflow mapping & interviews', 'Bottleneck and gap analysis', 'Tool inventory review', 'Custom project proposal'],
   },
   {
     number: '02',
     icon: Cpu,
-    title: 'Custom PAAS Build',
+    title: 'Build the Platform',
     description:
-      'We build your platform from the ground up — custom integrations, AI automations, and a unified dashboard. Clear milestones, transparent progress, and full documentation along the way. You own everything.',
-    details: ['Custom AI & automation development', 'System integrations & data migration', 'Full documentation', 'You own all IP & code'],
+      'We design and deploy a custom system around your real workflow — not a generic template. Clear milestones, transparent progress, and full documentation along the way. You own everything we build.',
+    details: ['Custom platform development', 'System integrations & data migration', 'Full documentation', 'You own all IP & code'],
   },
   {
     number: '03',
     icon: LifeBuoy,
-    title: 'Deploy, Train & Support',
+    title: 'Improve Over Time',
     description:
-      'We deploy, train your team, and stay involved. Automation only works if your people adopt it. We provide structured onboarding and ongoing support to make sure the platform performs.',
-    details: ['Team onboarding & training', 'Change management support', 'Ongoing platform updates', 'Direct support access'],
+      'We deploy, train your team, and stay involved. Your business changes — your platform should too. We provide structured onboarding and ongoing support to keep your systems aligned with how your team works.',
+    details: ['Team onboarding & training', 'Ongoing platform updates', 'Workflow refinement', 'Direct support access'],
   },
 ]
 
@@ -36,11 +36,12 @@ export default function HowItWorks() {
             Our Process
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-            How We Build
+            A Simple Plan to Get Your
+            <br />
+            <span className="text-gradient">Operations Under Control.</span>
           </h2>
           <p className="text-zinc-400 text-lg max-w-xl mx-auto">
-            A proven process from discovery to deployment — every build is scoped, built, and
-            supported with the same rigor.
+            Three steps. A proven process. No surprises.
           </p>
         </div>
 
