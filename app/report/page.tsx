@@ -146,7 +146,7 @@ export default function ReportPage() {
                   <h2 className="text-lg font-semibold text-white mb-4">Tell us about yourself</h2>
                   <div>
                     <label className={labelClass}>Your Name *</label>
-                    <input className={inputClass} placeholder="Landon McDuff" value={responses.ownerName} onChange={e => set('ownerName', e.target.value)} required />
+                    <input className={inputClass} placeholder="Jane Smith" value={responses.ownerName} onChange={e => set('ownerName', e.target.value)} required />
                   </div>
                   <div>
                     <label className={labelClass}>Business Name *</label>

@@ -4,7 +4,7 @@ const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
 const ASSESSMENT_URL = 'https://aimpactos.vercel.app/assessment'
 
 const stats = [
-  { icon: ShieldCheck, label: 'You own all code & IP' },
+  { icon: ShieldCheck, label: 'Ongoing platform partnership' },
   { icon: Clock, label: 'Live in 4–8 weeks' },
   { icon: Wrench, label: 'Built for your workflows' },
 ]

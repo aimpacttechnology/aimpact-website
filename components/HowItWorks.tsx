@@ -14,8 +14,8 @@ const steps = [
     icon: Cpu,
     title: 'Build the Platform',
     description:
-      'We design and deploy a custom system around your real workflow — not a generic template. Clear milestones, transparent progress, and full documentation along the way. You own everything we build.',
-    details: ['Custom platform development', 'System integrations & data migration', 'Full documentation', 'You own all IP & code'],
+      'We design and deploy a custom system around your real workflow — not a generic template. Clear milestones, transparent progress, and full documentation along the way.',
+    details: ['Custom platform development', 'System integrations & data migration', 'Full documentation', 'Deployed on your infrastructure'],
   },
   {
     number: '03',
@@ -88,7 +88,7 @@ export default function HowItWorks() {
 
         <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
-            { title: 'No Vendor Lock-In', desc: 'You own everything we create — code, docs, and systems.' },
+            { title: 'Ongoing Partnership', desc: 'We stay involved as your platform evolves — not just at launch.' },
             { title: 'Custom Integrations', desc: 'We connect your existing tools into a unified platform.' },
             { title: 'Milestone Delivery', desc: 'Clear milestones and transparent progress at every step.' },
             { title: 'Measurable Results', desc: 'Clients typically eliminate 15–30 hours of manual work per week.' },

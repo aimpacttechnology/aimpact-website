@@ -77,8 +77,8 @@ const steps = [
     icon: Cpu,
     title: 'Systems & Documentation Build',
     description:
-      "We build everything that's missing — documented SOPs, automated workflows, and a custom platform — so your business runs on repeatable systems instead of institutional knowledge. You own every asset we create.",
-    details: ['SOP & playbook creation', 'Custom workflow automation', 'Platform development', 'You own all IP'],
+      "We build everything that's missing — documented SOPs, automated workflows, and a custom platform — so your business runs on repeatable systems instead of institutional knowledge.",
+    details: ['SOP & playbook creation', 'Custom workflow automation', 'Platform development', 'Deployed on your infrastructure'],
   },
   {
     number: '03',
@@ -107,7 +107,7 @@ const buildIncludes = [
   'Team onboarding and training',
   'Buyer-readiness review',
   'Support through the transition',
-  'You own all IP — code, docs, everything',
+  'Ongoing support through transition',
 ]
 
 const faqs = [
@@ -190,7 +190,7 @@ export default function ExitReadyPage() {
               {[
                 { icon: TrendingUp, label: '3–5x higher valuation multiples' },
                 { icon: Clock, label: '90-day transition timeline' },
-                { icon: Shield, label: 'You own everything we build' },
+                { icon: Shield, label: 'Ongoing partnership & support' },
               ].map(({ icon: Icon, label }) => (
                 <div key={label} className="flex items-center gap-2.5 text-zinc-400">
                   <div className="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center flex-shrink-0">
@@ -291,7 +291,7 @@ export default function ExitReadyPage() {
                 <span className="text-gradient">Close the Valuation Gap.</span>
               </h2>
               <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-                Everything we build is custom to your business — and you own it outright when we&apos;re done.
+                Everything we build is custom to your business — scoped around your exact workflows and goals.
               </p>
             </div>
 

@@ -58,7 +58,7 @@ export default function AffiliateApplyForm() {
         <CheckCircle className="w-12 h-12 text-indigo-400 mx-auto mb-4" />
         <h3 className="text-2xl font-bold text-white mb-2">Application Received</h3>
         <p className="text-zinc-400 text-sm leading-relaxed max-w-sm mx-auto">
-          Landon will review your application and reach out within 1–2 business days to walk you
+          We'll review your application and reach out within 1–2 business days to walk you
           through the program and get you set up.
         </p>
       </div>

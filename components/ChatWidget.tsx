@@ -10,13 +10,13 @@ interface Message {
 
 const INITIAL_MESSAGE: Message = {
   role: 'assistant',
-  content: "Hi! I'm Aria, your AiMpact assistant 👋 What kind of business do you run? I can show you exactly where better systems could save you time and make your business more valuable.",
+  content: "Hi! I'm Aria 👋 AiMpact builds custom platforms for small businesses — replacing scattered software and manual processes with one system built around how you actually operate. What does your business do?",
 }
 
 const QUICK_REPLIES = [
-  'What is the Business Readiness Report?',
-  'How much does it cost?',
-  'What industries do you work with?',
+  'What does AiMpact build?',
+  'How does the process work?',
+  'What does it cost?',
 ]
 
 export default function ChatWidget() {
@@ -62,7 +62,7 @@ export default function ChatWidget() {
       const data = await res.json()
       setMessages(prev => [...prev, { role: 'assistant', content: data.reply ?? "Sorry, I ran into an issue. Try refreshing!" }])
     } catch {
-      setMessages(prev => [...prev, { role: 'assistant', content: "Something went wrong on my end. Feel free to email us at landon@aimpacttechnology.com!" }])
+      setMessages(prev => [...prev, { role: 'assistant', content: "Something went wrong on my end. Feel free to email us at hello@aimpacttechnology.com!" }])
     }
     setLoading(false)
   }
@@ -77,8 +77,8 @@ export default function ChatWidget() {
       {/* Attention bubble */}
       {showBubble && !open && (
         <div className="bg-white text-gray-800 text-sm px-4 py-2.5 rounded-2xl rounded-br-sm shadow-lg border border-gray-100 max-w-[220px] animate-bounce-subtle">
-          <p className="font-medium">Wondering where AI can help? 🤔</p>
-          <p className="text-gray-500 text-xs mt-0.5">Ask me — it's instant.</p>
+          <p className="font-medium">Could a custom platform help your business?</p>
+          <p className="text-gray-500 text-xs mt-0.5">Ask Aria — it's free.</p>
         </div>
       )}
 

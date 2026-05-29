@@ -206,7 +206,7 @@ export default function AffiliatesPage() {
                 Ready to Start Referring?
               </h2>
               <p className="text-zinc-400 text-lg max-w-xl mx-auto">
-                Fill out the form below and Landon will follow up within 1–2 business days to walk
+                Fill out the form below and we'll follow up within 1–2 business days to walk
                 you through the program and get you set up.
               </p>
             </div>
