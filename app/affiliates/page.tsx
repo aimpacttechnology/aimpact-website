@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import AffiliateApplyForm from '@/components/AffiliateApplyForm'
 import { ArrowRight, DollarSign, Users, Share2, Shield, Check } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -10,7 +11,6 @@ export const metadata: Metadata = {
 }
 
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
-const AFFILIATE_EMAIL = 'landon@aimpacttechnology.com'
 
 const howItWorks = [
   {
@@ -94,7 +94,7 @@ export default function AffiliatesPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href={`mailto:${AFFILIATE_EMAIL}?subject=Affiliate Program Inquiry`}
+                href="#apply"
                 className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-indigo-600/20"
               >
                 Apply to Join
@@ -197,37 +197,34 @@ export default function AffiliatesPage() {
           </div>
         </section>
 
-        {/* ── CTA ──────────────────────────────────────────────────────── */}
-        <section className="py-24 bg-[#09090B] relative overflow-hidden">
+        {/* ── APPLY FORM ───────────────────────────────────────────────── */}
+        <section id="apply" className="py-24 bg-[#09090B] relative overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none" />
-          <div className="relative max-w-3xl mx-auto px-6 text-center">
-            <h2 className="text-4xl font-bold text-white mb-4 tracking-tight">
-              Ready to Start Referring?
-            </h2>
-            <p className="text-zinc-400 text-lg max-w-xl mx-auto mb-8">
-              Email us to apply or book a quick call and we&apos;ll walk you through the program, answer
-              your questions, and get you set up.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <a
-                href={`mailto:${AFFILIATE_EMAIL}?subject=Affiliate Program Inquiry`}
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-indigo-600/20"
-              >
-                Email Us to Apply
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-              </a>
+          <div className="relative max-w-2xl mx-auto px-6">
+            <div className="text-center mb-10">
+              <h2 className="text-4xl font-bold text-white mb-4 tracking-tight">
+                Ready to Start Referring?
+              </h2>
+              <p className="text-zinc-400 text-lg max-w-xl mx-auto">
+                Fill out the form below and Landon will follow up within 1–2 business days to walk
+                you through the program and get you set up.
+              </p>
+            </div>
+            <AffiliateApplyForm />
+            <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <div className="flex items-center gap-2 text-zinc-600 text-sm">
+                <Shield className="w-3.5 h-3.5" />
+                Free to join · No minimums · Paid within 30 days of project kickoff
+              </div>
+              <span className="hidden sm:block text-zinc-700">·</span>
               <a
                 href={CAL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white font-semibold rounded-xl transition-all duration-200"
+                className="text-zinc-500 hover:text-zinc-300 text-sm transition-colors"
               >
-                Book a Call
+                Prefer to talk first? Book a call
               </a>
-            </div>
-            <div className="flex items-center justify-center gap-2 text-zinc-600 text-sm">
-              <Shield className="w-3.5 h-3.5" />
-              Free to join · No minimums · Paid within 30 days of project kickoff
             </div>
           </div>
         </section>

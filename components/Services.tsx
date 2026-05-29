@@ -1,63 +1,49 @@
-import { Check, ArrowRight } from 'lucide-react'
+import { ArrowRight, FileText, Users, LayoutDashboard, Calendar, FolderCheck, Globe } from 'lucide-react'
 
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
 
-const services = [
+const platforms = [
   {
-    name: 'Business Readiness Assessment',
-    price: '$2,500',
-    billing: 'one-time',
-    description:
-      "Not sure what\u2019s holding your business back? We analyze your workflows and identify bottlenecks \u2014 delivering a clear picture of where to invest and a roadmap to get there.",
-    features: [
-      'Full workflow analysis & mapping',
-      'Bottleneck & dependency identification',
-      'Bottleneck analysis',
-      'ROI projections per opportunity',
-      'Implementation roadmap',
-      'Email & chat support',
-    ],
-    cta: 'Get Assessment',
-    href: CAL_URL,
-    popular: false,
+    icon: FileText,
+    title: 'Field Reporting Platforms',
+    problem: 'Reports, photos, and job notes are scattered across texts, emails, and clipboards.',
+    outcome: 'Mobile-friendly reports, photo uploads, supervisor review, and client-ready PDF generation.',
+    result: 'Faster reporting and fewer end-of-day admin headaches.',
   },
   {
-    name: 'Systems Implementation',
-    price: '$9,500',
-    billing: 'one-time',
-    description:
-      'Ready to build? We implement your highest-impact workflows end-to-end — so your business runs on documented, repeatable processes instead of institutional knowledge.',
-    features: [
-      'Everything in Assessment',
-      'Full workflow implementation',
-      'System integrations',
-      'Data migration',
-      'Team onboarding & training',
-      'Process documentation',
-      '30 days free support',
-    ],
-    cta: 'Start Project',
-    href: CAL_URL,
-    popular: true,
+    icon: Users,
+    title: 'Lead & CRM Workflows',
+    problem: 'Leads come in from everywhere and follow-up is inconsistent.',
+    outcome: 'Intake forms, qualification steps, reminders, customer records, and follow-up workflows.',
+    result: 'Fewer missed opportunities and better customer response time.',
   },
   {
-    name: 'Complete Transformation',
-    price: '$25,000',
-    billing: 'one-time',
-    description:
-      'Full operational buildout with a custom-built platform. For businesses needing comprehensive transformation across multiple workflows and departments.',
-    features: [
-      'Everything in Systems Implementation',
-      'Custom platform development',
-      'Advanced analytics dashboard',
-      'Multi-department automation',
-      'Workflow monitoring',
-      'Priority support',
-      'Quarterly strategy reviews',
-    ],
-    cta: 'Contact Us',
-    href: '#contact',
-    popular: false,
+    icon: LayoutDashboard,
+    title: 'Operations Dashboards',
+    problem: 'Owners cannot see what is happening across jobs, tasks, clients, and reports.',
+    outcome: 'Central dashboards for jobs, tasks, bottlenecks, performance, and open items.',
+    result: 'Better visibility and faster decisions — without asking five people.',
+  },
+  {
+    icon: Calendar,
+    title: 'Scheduling & Admin Automation',
+    problem: 'Too much time is lost coordinating, reminding, updating, and chasing information.',
+    outcome: 'Scheduling workflows, automated reminders, status updates, and admin automations.',
+    result: 'Less coordination drag and more time for real work.',
+  },
+  {
+    icon: FolderCheck,
+    title: 'Document & Compliance Systems',
+    problem: 'Procedures, forms, approvals, and records are hard to find and harder to manage.',
+    outcome: 'Organized document workflows, approval steps, searchable records, and reporting support.',
+    result: 'Cleaner documentation and less compliance chaos.',
+  },
+  {
+    icon: Globe,
+    title: 'Custom Business Portals',
+    problem: 'Employees, clients, vendors, or partners have no single place to interact with your business.',
+    outcome: 'Secure portals tailored to your exact workflow and user types.',
+    result: 'A smoother experience for everyone involved.',
   },
 ]
 
@@ -65,94 +51,60 @@ export default function Services() {
   return (
     <section id="services" className="py-28 bg-[#09090B]">
       <div className="max-w-6xl mx-auto px-6">
-        {/* Header */}
         <div className="text-center mb-16">
           <p className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-3">
-            What We Offer
+            What We Build
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-            Our Services
+            Platforms Built Around
+            <br />
+            <span className="text-gradient">How Your Business Actually Works.</span>
           </h2>
           <p className="text-zinc-400 text-lg max-w-xl mx-auto">
-            Start with an assessment or jump straight to building. Every engagement delivers
-            documented systems, measurable results, and IP you own outright.
+            Every project is scoped to your operation. No off-the-shelf templates — just a
+            platform built around what your team actually does every day.
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
-          {services.map((service) => (
-            <div
-              key={service.name}
-              className={`relative rounded-2xl border p-8 flex flex-col transition-all duration-200 ${
-                service.popular
-                  ? 'border-indigo-500/60 bg-indigo-950/20 shadow-xl shadow-indigo-950/20'
-                  : 'border-zinc-800 bg-zinc-900/30 hover:border-zinc-700'
-              }`}
-            >
-              {service.popular && (
-                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                  <span className="px-3 py-1 bg-indigo-600 text-white text-xs font-semibold rounded-full">
-                    Most Popular
-                  </span>
-                </div>
-              )}
-
-              <div className="mb-6">
-                <h3 className="text-lg font-semibold text-white mb-2">{service.name}</h3>
-                <div className="flex items-baseline gap-2 mb-4">
-                  <span className="text-4xl font-bold text-white">{service.price}</span>
-                  <span className="text-zinc-500 text-sm">{service.billing}</span>
-                </div>
-                <p className="text-zinc-400 text-sm leading-relaxed">{service.description}</p>
-              </div>
-
-              <ul className="space-y-3 mb-8 flex-1">
-                {service.features.map((f) => (
-                  <li key={f} className="flex items-start gap-3 text-sm text-zinc-300">
-                    <Check className="w-4 h-4 text-indigo-400 mt-0.5 flex-shrink-0" />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-
-              <a
-                href={service.href}
-                target={service.href.startsWith('http') ? '_blank' : undefined}
-                rel={service.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className={`group inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl font-semibold text-sm transition-all duration-200 ${
-                  service.popular
-                    ? 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-600/20'
-                    : 'border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white'
-                }`}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+          {platforms.map((p) => {
+            const Icon = p.icon
+            return (
+              <div
+                key={p.title}
+                className="rounded-2xl border border-zinc-800 bg-zinc-900/20 p-7 hover:border-zinc-700 transition-all duration-200 flex flex-col"
               >
-                {service.cta}
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-              </a>
-            </div>
-          ))}
+                <div className="w-10 h-10 rounded-xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center mb-4">
+                  <Icon className="w-5 h-5 text-indigo-400" />
+                </div>
+                <h3 className="text-base font-semibold text-white mb-3">{p.title}</h3>
+                <p className="text-zinc-500 text-sm leading-relaxed mb-3 italic">&ldquo;{p.problem}&rdquo;</p>
+                <p className="text-zinc-400 text-sm leading-relaxed mb-4">{p.outcome}</p>
+                <div className="mt-auto flex items-start gap-2 pt-3 border-t border-zinc-800">
+                  <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-1.5 flex-shrink-0" />
+                  <span className="text-xs text-zinc-300">{p.result}</span>
+                </div>
+              </div>
+            )
+          })}
         </div>
 
-        {/* Enterprise row */}
-        <div className="rounded-2xl border border-zinc-800 bg-zinc-900/20 p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="rounded-2xl border border-indigo-500/20 bg-indigo-500/5 p-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <div className="flex items-center gap-3 mb-2">
-              <h3 className="text-lg font-semibold text-white">Enterprise</h3>
-              <span className="px-2 py-0.5 bg-zinc-800 text-zinc-400 text-xs rounded-md">
-                Custom Pricing
-              </span>
-            </div>
+            <h3 className="text-lg font-semibold text-white mb-1">Every project is custom-scoped.</h3>
             <p className="text-zinc-400 text-sm max-w-2xl">
-              For organizations with 10+ employees needing adoption support, dedicated account
-              management, custom training programs, onsite workshops, SLA options, and ongoing
-              monthly optimization.
+              We don&apos;t have packages because no two businesses are the same. Book a free discovery
+              call and we&apos;ll map out exactly what your operation needs — and what it would take to build it.
             </p>
           </div>
           <a
-            href="#contact"
-            className="flex-shrink-0 px-6 py-3 border border-zinc-700 hover:border-indigo-500 text-zinc-300 hover:text-white font-semibold text-sm rounded-xl transition-all duration-200"
+            href={CAL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm rounded-xl transition-all duration-200"
           >
-            Inquire
+            Book Discovery Call
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
           </a>
         </div>
       </div>

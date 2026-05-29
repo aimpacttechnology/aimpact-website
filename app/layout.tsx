@@ -10,13 +10,24 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'AiMpact Technology — AI Consulting & Automation',
+  title: 'AiMpact Technology — Custom Operational Platforms for Small Businesses',
   description:
-    'We assess your workflows, identify automation opportunities, and implement AI solutions that save your team 15–30 hours every week. No commitment required.',
-  keywords: ['AI consulting', 'automation', 'workflow automation', 'AI solutions', 'business automation'],
+    'AiMpact Technology builds custom operational platforms for small businesses, helping owners centralize workflows, automate reporting, reduce admin work, and scale without vendor lock-in.',
+  keywords: [
+    'custom business platform',
+    'operational systems',
+    'workflow automation',
+    'small business platform',
+    'custom PaaS',
+    'business process automation',
+    'operations dashboard',
+    'field reporting platform',
+    'custom business portal',
+  ],
   openGraph: {
-    title: 'AiMpact Technology — AI Consulting & Automation',
-    description: "Not sure where AI can help your business? We\u2019ll show you.",
+    title: 'AiMpact Technology — Custom Operational Platforms for Small Businesses',
+    description:
+      'We build the operational platform your small business has been missing — centralized workflows, automated reporting, and systems your team actually owns.',
     url: 'https://aimpacttechnology.com',
     siteName: 'AiMpact Technology',
     type: 'website',

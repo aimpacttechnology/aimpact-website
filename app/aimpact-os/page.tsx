@@ -3,32 +3,26 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import {
   ArrowRight,
-  Play,
   CheckCircle,
   MessageSquare,
   CalendarCheck,
   FileText,
-  Share2,
   LayoutDashboard,
   Shield,
-  Dumbbell,
-  Heart,
-  Leaf,
-  Video,
-  Star,
   Zap,
-  Clock,
   Users,
+  TrendingUp,
+  Settings,
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'AiMpact OS — AI Business Operating System for Independent Professionals',
+  title: 'AiMpact OS — The Operating System We Built For Our Business',
   description:
-    'Capture leads, book clients, and run your business automatically. The AI-powered operating system built for fitness trainers, coaches, dieticians, and solo professionals. Starting at $97/month.',
+    'AiMpact OS is the internal operating system AiMpact Technology built to run its own operations — and now deploys as a custom platform for every client it serves.',
   openGraph: {
-    title: 'AiMpact OS — Your Business Runs 24/7. You Shouldn\'t Have To.',
+    title: 'AiMpact OS — Built In-House. Deployed for Your Business.',
     description:
-      'AI Front Desk, lead qualification, proposals, and social content — all automated. Starting at $97/month.',
+      'AI Front Desk, lead pipeline, client management, and team operations — one unified platform configured to how your business actually works.',
     url: 'https://aimpacttechnology.com/aimpact-os',
     siteName: 'AiMpact Technology',
     type: 'website',
@@ -36,125 +30,67 @@ export const metadata: Metadata = {
 }
 
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
+const ASSESSMENT_URL = 'https://aimpactos.vercel.app/assessment'
 
-const personas = [
-  { icon: Dumbbell, label: 'Fitness Trainers' },
-  { icon: Heart, label: 'Health Coaches' },
-  { icon: Leaf, label: 'Yoga Instructors' },
-  { icon: Users, label: 'Dieticians' },
-  { icon: Video, label: 'Content Creators' },
-  { icon: Star, label: 'Solo Professionals' },
-]
-
-const features = [
+const capabilities = [
   {
     icon: MessageSquare,
     title: 'AI Front Desk',
-    subtitle: 'Always on. Always responsive.',
     description:
-      'The moment someone texts or fills out your contact form, your AI Front Desk responds instantly — day or night. It has a real conversation, qualifies the lead, and books them directly onto your calendar. While you\'re with a client. In a session. Asleep.',
-    highlight: 'No missed messages. No manual follow-up. No leads going cold.',
+      'Every inbound inquiry — text, web form, or email — gets an immediate, intelligent response. The system qualifies the lead, gathers context, and books directly onto your calendar. No missed messages, no manual follow-up.',
   },
   {
     icon: CalendarCheck,
-    title: 'Discovery Prep & Summaries',
-    subtitle: 'Walk in prepared. Walk out with the notes done.',
+    title: 'Lead Pipeline & CRM',
     description:
-      'Before every discovery call, AiMpact OS builds a prep brief — their goals, hesitations, and the questions to ask. After the call, it writes the summary and captures everything you need to move forward.',
-    highlight: 'Two hours of prep and follow-up becomes two minutes.',
+      'A full lead pipeline built around your sales process. Leads are captured, scored, and tracked from first contact through close. No spreadsheets. No separate CRM subscription.',
   },
   {
     icon: FileText,
-    title: 'Proposals Written For You',
-    subtitle: 'In your voice. Scoped to their situation.',
+    title: 'Client Management',
     description:
-      'Based on your discovery session, AiMpact OS drafts a custom proposal for each client — professional, persuasive, and ready to send in one click. No starting from a blank page ever again.',
-    highlight: 'More proposals sent means more clients closed.',
-  },
-  {
-    icon: Share2,
-    title: 'Daily Social Media Content',
-    subtitle: 'Consistent presence without the grind.',
-    description:
-      'Every day, your AI agent finds relevant articles in your industry and drafts a LinkedIn post in your voice — ready to review and publish in one click. Stay visible without burning hours on content.',
-    highlight: 'Zero extra time. Real engagement.',
+      'Active clients, project status, check-ins, and notes — all in one place. The system tracks health scores, flags overdue follow-ups, and keeps your team aligned without a daily standup.',
   },
   {
     icon: LayoutDashboard,
-    title: 'One Dashboard for Everything',
-    subtitle: 'Your entire business in one screen.',
+    title: 'Operations Dashboard',
     description:
-      'Leads, discovery sessions, proposals, active clients, and conversations — all in one place, all talking to each other. No spreadsheets. No jumping between five apps. Just clarity.',
-    highlight: 'Run your whole business from a single screen.',
+      'One dashboard that shows you the full state of your business — leads, clients, revenue, and team activity. Built around your KPIs, not generic metrics that don\'t apply to your business.',
+  },
+  {
+    icon: Settings,
+    title: 'Workflow Automation',
+    description:
+      'Manual handoffs, reminder sequences, follow-up emails, proposal drafting — the repetitive work that eats your team\'s time. AiMpact OS automates it so your people work on what requires a human.',
+  },
+  {
+    icon: Users,
+    title: 'Team Collaboration',
+    description:
+      'Role-based access, shared activity feeds, task assignment, and internal notes — all tied to the client record. Everyone knows what\'s happening without a 10-person group text.',
   },
 ]
 
-const steps = [
+const differentiators = [
   {
-    number: '01',
-    icon: MessageSquare,
-    title: 'Lead Reaches Out',
-    description:
-      'Someone texts your number or fills out your web form. AiMpact OS responds within seconds — even at 2am.',
-    details: ['SMS & web form capture', 'Instant AI response', 'Real conversation, not a bot script'],
+    icon: Zap,
+    title: 'We built this for ourselves first.',
+    desc: 'AiMpact OS runs AiMpact Technology\'s daily operations. Every feature was built because we needed it — not because a product manager thought someone might want it.',
   },
   {
-    number: '02',
-    icon: CalendarCheck,
-    title: 'AI Qualifies & Books',
-    description:
-      'The AI asks the right questions, scores the lead, and books qualified prospects directly onto your calendar.',
-    details: ['Custom qualification criteria', 'Lead scoring', 'Automatic calendar booking'],
+    icon: Settings,
+    title: 'Every deployment is custom.',
+    desc: 'We don\'t drop a generic SaaS login in your inbox. We configure AiMpact OS to your workflows, your team structure, and your clients — then train your team on day one.',
   },
   {
-    number: '03',
-    icon: FileText,
-    title: 'You Show Up Ready',
-    description:
-      'Your prep brief is waiting. After the call, the summary writes itself. Proposal drafted and ready to send.',
-    details: ['Pre-call discovery brief', 'Post-call AI summary', 'One-click proposal generation'],
-  },
-]
-
-const pricingStarter = [
-  '200 AI conversations/month',
-  'AI Front Desk (SMS + web form)',
-  'Lead capture & qualification',
-  'Basic CRM & contact management',
-  'Done-for-you onboarding call',
-  'Email support',
-]
-
-const pricingGrowth = [
-  'Unlimited AI conversations',
-  'Everything in Starter',
-  'Discovery prep briefs & summaries',
-  'AI-drafted proposals',
-  'Daily social media content agent',
-  'White-glove onboarding session',
-  'Priority support + 30-day check-in',
-]
-
-const faqs = [
-  {
-    q: 'Is this hard to set up?',
-    a: "No. That's what the onboarding session is for. We build your AI front desk with you — your name, your voice, your services — and we have it live within a week. You don't touch any code.",
+    icon: Shield,
+    title: 'You own the data. We own the support.',
+    desc: 'Your business data lives in your Supabase instance. We handle maintenance, updates, and support. No vendor lock-in. No data hostage situations.',
   },
   {
-    q: 'Will it sound like a robot texting my leads?',
-    a: "It sounds like you — because we write it to sound like you. We spend time in onboarding capturing your tone, your services, and how you talk to clients. Your leads won't know it's automated unless you tell them.",
-  },
-  {
-    q: 'What if I already use other tools?',
-    a: 'AiMpact OS works alongside your existing tools — your calendar, your booking system, your phone number. We sort out integrations during onboarding so you don\'t have to throw anything away.',
-  },
-  {
-    q: "What's the difference between this and a chatbot?",
-    a: "A chatbot answers questions. AiMpact OS runs a process — it qualifies the lead, scores them, books the call, preps your brief, drafts your proposal, and logs everything in your CRM. It's a system, not a widget.",
-  },
-  {
-    q: "What if it doesn't work for my business?",
-    a: "That's what the 30-day guarantee is for. If you don't get a qualified lead booked in your first 30 days, we refund your setup fee. No questions asked. We're not in the business of charging people for something that isn't delivering.",
+    icon: TrendingUp,
+    title: 'It grows with your business.',
+    desc: 'Need a new module? A new integration? A new workflow? AiMpact OS is built to extend. We add to it as your business grows — because we\'re already inside the codebase.',
   },
 ]
 
@@ -165,212 +101,137 @@ export default function AiMpactOSPage() {
       <main>
 
         {/* ── HERO ─────────────────────────────────────────────────────── */}
-        <section className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-[#09090B]">
+        <section className="relative min-h-[80vh] flex flex-col justify-center overflow-hidden bg-[#09090B]">
           <div className="absolute inset-0 bg-grid opacity-100" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-indigo-600/10 rounded-full blur-[140px] pointer-events-none" />
-          <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] bg-cyan-600/5 rounded-full blur-[100px] pointer-events-none" />
           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#09090B] to-transparent" />
 
           <div className="relative max-w-6xl mx-auto px-6 pt-32 pb-24 text-center">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-sm font-medium mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
-              AI Business Operating System
+              Built In-House. Deployed for Clients.
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.08] tracking-tight">
-              Your Business Runs 24/7.
+              The Operating System
               <br />
-              <span className="text-gradient">You Shouldn&apos;t Have To.</span>
+              <span className="text-gradient">We Built For Ourselves.</span>
             </h1>
 
             <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-              AiMpact OS is the AI-powered operating system for independent professionals — built to
-              capture leads, book clients, and run your business while you focus on your craft.
+              AiMpact OS is what runs AiMpact Technology&apos;s daily operations — lead pipeline,
+              client management, AI Front Desk, and team workflows in one custom-built platform.
+              We now deploy a version of it for every client we serve.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={CAL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-indigo-600/20 hover:shadow-indigo-500/30"
+                className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-indigo-600/20"
               >
-                Book Your Free Demo
+                See It In Action
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
               </a>
               <a
-                href="#how-it-works"
+                href={ASSESSMENT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white font-semibold rounded-xl transition-all duration-200"
               >
-                See How It Works
+                Take the Free Exit Assessment
               </a>
-            </div>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12">
-              {[
-                { icon: Zap, label: 'Responds in under 60 seconds' },
-                { icon: Clock, label: '10+ hours saved per week' },
-                { icon: Shield, label: '30-day lead guarantee' },
-              ].map(({ icon: Icon, label }) => (
-                <div key={label} className="flex items-center gap-2.5 text-zinc-400">
-                  <div className="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center flex-shrink-0">
-                    <Icon className="w-4 h-4 text-indigo-400" />
-                  </div>
-                  <span className="text-sm font-medium">{label}</span>
-                </div>
-              ))}
             </div>
           </div>
         </section>
 
-        {/* ── PROBLEM ──────────────────────────────────────────────────── */}
-        <section className="py-24 bg-[#0D0D10]">
+        {/* ── CONTEXT ──────────────────────────────────────────────────── */}
+        <section className="py-20 bg-[#0D0D10]">
           <div className="max-w-4xl mx-auto px-6 text-center">
             <p className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-4">
-              The Real Problem
+              Why We Built It
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight leading-tight">
-              You&apos;re Losing Clients
-              <br />
-              <span className="text-gradient">You Never Knew You Had.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">
+              Most small businesses run on duct tape.
             </h2>
-            <div className="space-y-5 text-zinc-400 text-lg leading-relaxed max-w-3xl mx-auto">
+            <div className="space-y-4 text-zinc-400 text-lg leading-relaxed max-w-3xl mx-auto">
               <p>
-                Every day, people search for exactly what you offer. Some find you. Some reach out.
-                And then — because you&apos;re in a session, or on a call, or just living your life
-                — they don&apos;t hear back fast enough.
+                A CRM they don&apos;t fully use. A scheduling tool that doesn&apos;t talk to anything.
+                A billing system in one tab. Leads in a spreadsheet. Follow-ups in someone&apos;s head.
               </p>
               <p>
-                So they go with someone else. <em className="text-white not-italic">Not because that person is better.</em> Because they
-                replied first.
+                We built AiMpact OS because we needed a platform that actually ran our business — not
+                five tools pretending to work together. We&apos;ve been running on it for over a year.
               </p>
               <p className="text-white font-medium">
-                That&apos;s not a lead problem. That&apos;s a systems problem. And it&apos;s costing
-                you thousands of dollars a month in revenue you don&apos;t even know you&apos;re
-                missing.
+                Now we deploy a custom version for every client we build for. It&apos;s not generic
+                SaaS. It&apos;s your business, automated.
               </p>
             </div>
           </div>
         </section>
 
-        {/* ── WHO IT'S FOR ─────────────────────────────────────────────── */}
-        <section className="py-20 bg-[#09090B]">
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-center text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-4">
-              Built For
-            </p>
-            <h2 className="text-center text-3xl md:text-4xl font-bold text-white mb-12 tracking-tight">
-              Independent Professionals Who Are Done
-              <br />
-              <span className="text-zinc-400 font-normal">Running Their Business From Their Inbox</span>
-            </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-              {personas.map(({ icon: Icon, label }) => (
-                <div
-                  key={label}
-                  className="flex flex-col items-center gap-3 p-5 rounded-xl border border-zinc-800 bg-zinc-900/20 hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all duration-200 group"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center group-hover:bg-indigo-600/20 transition-colors">
-                    <Icon className="w-5 h-5 text-indigo-400" />
-                  </div>
-                  <span className="text-zinc-300 text-sm font-medium text-center leading-tight">{label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── VIDEO ────────────────────────────────────────────────────── */}
-        <section className="py-24 bg-[#0D0D10]">
-          <div className="max-w-5xl mx-auto px-6">
-            <div className="text-center mb-10">
-              <p className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-3">
-                See It In Action
-              </p>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-                From First Text to Signed Client.
-                <br />
-                <span className="text-gradient">Automatically.</span>
-              </h2>
-              <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-                Watch how AiMpact OS handles your entire client journey — from the first inquiry to
-                a booked discovery call to a sent proposal — without you lifting a finger.
-              </p>
-            </div>
-
-            {/* Video placeholder */}
-            <div className="relative aspect-video rounded-2xl border border-zinc-800 bg-zinc-900/40 overflow-hidden group cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/20 to-cyan-900/10" />
-              <div className="absolute inset-0 bg-grid opacity-30" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                <div className="w-20 h-20 rounded-full bg-indigo-600/20 border border-indigo-500/30 flex items-center justify-center group-hover:bg-indigo-600/30 transition-colors backdrop-blur-sm">
-                  <Play className="w-8 h-8 text-indigo-400 ml-1" fill="currentColor" />
-                </div>
-                <p className="text-zinc-400 text-sm">Watch the 3-minute demo</p>
-              </div>
-              {/* Replace the div above with an actual video embed or iframe when ready */}
-            </div>
-
-            <div className="mt-8 text-center">
-              <a
-                href={CAL_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex items-center justify-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition-all duration-200"
-              >
-                Book a Live Demo Instead
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* ── FEATURES ─────────────────────────────────────────────────── */}
-        <section id="features" className="py-28 bg-[#09090B]">
+        {/* ── CAPABILITIES ─────────────────────────────────────────────── */}
+        <section className="py-28 bg-[#09090B]">
           <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-16">
               <p className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-3">
                 What&apos;s Inside
               </p>
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-                One System. Every Step of
+                One Platform. Every Part
                 <br />
-                <span className="text-gradient">Your Client Journey.</span>
+                <span className="text-gradient">of How You Operate.</span>
               </h2>
             </div>
 
-            <div className="space-y-6">
-              {features.map((feature, i) => {
-                const Icon = feature.icon
-                const isEven = i % 2 === 0
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {capabilities.map((cap) => {
+                const Icon = cap.icon
                 return (
                   <div
-                    key={feature.title}
-                    className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-0 rounded-2xl border border-zinc-800 overflow-hidden bg-zinc-900/20 hover:border-zinc-700 transition-colors`}
+                    key={cap.title}
+                    className="rounded-2xl border border-zinc-800 bg-zinc-900/20 p-6 hover:border-zinc-700 transition-colors"
                   >
-                    {/* Text */}
-                    <div className="flex-1 p-8 lg:p-10 flex flex-col justify-center">
-                      <div className="flex items-center gap-3 mb-4">
-                        <div className="w-10 h-10 rounded-xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center flex-shrink-0">
-                          <Icon className="w-5 h-5 text-indigo-400" />
-                        </div>
-                        <div>
-                          <h3 className="text-xl font-bold text-white">{feature.title}</h3>
-                          <p className="text-indigo-400 text-sm">{feature.subtitle}</p>
-                        </div>
-                      </div>
-                      <p className="text-zinc-400 leading-relaxed mb-4">{feature.description}</p>
-                      <div className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-indigo-400 mt-0.5 flex-shrink-0" />
-                        <p className="text-white text-sm font-medium">{feature.highlight}</p>
-                      </div>
+                    <div className="w-10 h-10 rounded-xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center mb-4">
+                      <Icon className="w-5 h-5 text-indigo-400" />
                     </div>
+                    <h3 className="text-white font-semibold mb-2">{cap.title}</h3>
+                    <p className="text-zinc-400 text-sm leading-relaxed">{cap.description}</p>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
 
-                    {/* Visual panel */}
-                    <div className="lg:w-80 xl:w-96 min-h-[180px] lg:min-h-0 bg-gradient-to-br from-indigo-900/20 to-zinc-900/40 border-t lg:border-t-0 border-zinc-800 flex items-center justify-center p-8">
-                      <div className="w-16 h-16 rounded-2xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center">
-                        <Icon className="w-8 h-8 text-indigo-400/60" />
-                      </div>
+        {/* ── DIFFERENTIATORS ──────────────────────────────────────────── */}
+        <section className="py-24 bg-[#0D0D10]">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="text-center mb-14">
+              <p className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-3">
+                Why This Is Different
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                Not another SaaS subscription.
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {differentiators.map((d) => {
+                const Icon = d.icon
+                return (
+                  <div
+                    key={d.title}
+                    className="flex items-start gap-4 rounded-xl border border-zinc-800 bg-zinc-900/20 p-6 hover:border-zinc-700 transition-colors"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-5 h-5 text-indigo-400" />
+                    </div>
+                    <div>
+                      <h3 className="text-white font-semibold mb-1">{d.title}</h3>
+                      <p className="text-zinc-400 text-sm leading-relaxed">{d.desc}</p>
                     </div>
                   </div>
                 )
@@ -379,181 +240,35 @@ export default function AiMpactOSPage() {
           </div>
         </section>
 
-        {/* ── HOW IT WORKS ─────────────────────────────────────────────── */}
-        <section id="how-it-works" className="py-28 bg-[#0D0D10]">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <p className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-3">
-                How It Works
-              </p>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-                Three Steps. Zero Manual Work.
-              </h2>
-              <p className="text-zinc-400 text-lg max-w-xl mx-auto">
-                From first inquiry to signed client — AiMpact OS handles every step between the cracks.
-              </p>
-            </div>
-
-            <div className="relative">
-              <div className="hidden md:block absolute top-16 left-[calc(16.67%+1rem)] right-[calc(16.67%+1rem)] h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent" />
-              <div className="grid md:grid-cols-3 gap-8">
-                {steps.map((step, i) => {
-                  const Icon = step.icon
-                  return (
-                    <div key={step.number} className="relative">
-                      <div className="flex items-center justify-center mb-8">
-                        <div className="relative">
-                          <div className="w-14 h-14 rounded-2xl bg-indigo-600/10 border border-indigo-500/30 flex items-center justify-center">
-                            <Icon className="w-6 h-6 text-indigo-400" />
-                          </div>
-                          <span className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-indigo-600 text-white text-[10px] font-bold flex items-center justify-center">
-                            {i + 1}
-                          </span>
-                        </div>
-                      </div>
-                      <div className="text-center">
-                        <p className="text-indigo-400/60 text-xs font-mono font-bold tracking-widest mb-2">
-                          {step.number}
-                        </p>
-                        <h3 className="text-xl font-semibold text-white mb-3">{step.title}</h3>
-                        <p className="text-zinc-400 text-sm leading-relaxed mb-5">{step.description}</p>
-                        <ul className="space-y-2">
-                          {step.details.map((d) => (
-                            <li key={d} className="text-xs text-zinc-500 flex items-center justify-center gap-2">
-                              <span className="w-1 h-1 rounded-full bg-indigo-500/60" />
-                              {d}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  )
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ── PRICING ──────────────────────────────────────────────────── */}
-        <section id="pricing" className="py-28 bg-[#09090B]">
-          <div className="max-w-5xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <p className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-3">
-                Pricing
-              </p>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-                Less Than the Cost of
-                <br />
-                <span className="text-gradient">One Missed Client.</span>
-              </h2>
-              <p className="text-zinc-400 text-lg max-w-xl mx-auto">
-                No long-term contracts. No bloated enterprise pricing. Cancel anytime.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* Starter */}
-              <div className="rounded-2xl border border-zinc-800 bg-zinc-900/20 p-8 flex flex-col">
-                <div className="mb-6">
-                  <h3 className="text-xl font-bold text-white mb-1">Starter</h3>
-                  <p className="text-zinc-500 text-sm mb-6">For solo professionals just getting started with AI</p>
-                  <div className="flex items-end gap-1 mb-1">
-                    <span className="text-5xl font-bold text-white">$97</span>
-                    <span className="text-zinc-400 mb-2">/month</span>
-                  </div>
-                  <p className="text-zinc-500 text-sm">+ $497 one-time onboarding</p>
-                </div>
-                <ul className="space-y-3 mb-8 flex-1">
-                  {pricingStarter.map((item) => (
-                    <li key={item} className="flex items-start gap-3">
-                      <CheckCircle className="w-4 h-4 text-indigo-400 mt-0.5 flex-shrink-0" />
-                      <span className="text-zinc-300 text-sm">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href={CAL_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-zinc-700 hover:border-indigo-500/50 text-zinc-300 hover:text-white font-semibold rounded-xl transition-all duration-200 text-center"
-                >
-                  Get Started
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-                </a>
-              </div>
-
-              {/* Growth */}
-              <div className="rounded-2xl border border-indigo-500/40 bg-indigo-500/5 p-8 flex flex-col relative overflow-hidden">
-                <div className="absolute top-4 right-4">
-                  <span className="px-2.5 py-1 rounded-full bg-indigo-600 text-white text-xs font-semibold">
-                    Most Popular
-                  </span>
-                </div>
-                <div className="mb-6">
-                  <h3 className="text-xl font-bold text-white mb-1">Growth</h3>
-                  <p className="text-zinc-400 text-sm mb-6">Full automation for coaches ready to scale</p>
-                  <div className="flex items-end gap-1 mb-1">
-                    <span className="text-5xl font-bold text-white">$197</span>
-                    <span className="text-zinc-400 mb-2">/month</span>
-                  </div>
-                  <p className="text-zinc-500 text-sm">+ $997 one-time white-glove onboarding</p>
-                </div>
-                <ul className="space-y-3 mb-8 flex-1">
-                  {pricingGrowth.map((item) => (
-                    <li key={item} className="flex items-start gap-3">
-                      <CheckCircle className="w-4 h-4 text-indigo-400 mt-0.5 flex-shrink-0" />
-                      <span className="text-zinc-300 text-sm">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href={CAL_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-indigo-600/20"
-                >
-                  Get Started
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-                </a>
-              </div>
-            </div>
-
-            {/* Guarantee banner */}
-            <div className="mt-8 rounded-xl border border-indigo-500/20 bg-indigo-500/5 p-6 flex items-start gap-4">
-              <div className="w-10 h-10 rounded-xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center flex-shrink-0">
-                <Shield className="w-5 h-5 text-indigo-400" />
-              </div>
-              <div>
-                <h4 className="text-white font-semibold mb-1">30-Day Qualified Lead Guarantee</h4>
-                <p className="text-zinc-400 text-sm leading-relaxed">
-                  If AiMpact OS doesn&apos;t book you a qualified lead in your first 30 days, we
-                  refund your setup fee. No questions asked. We&apos;re confident it will — but we
-                  want you to be too.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ── FAQ ──────────────────────────────────────────────────────── */}
-        <section className="py-24 bg-[#0D0D10]">
-          <div className="max-w-3xl mx-auto px-6">
+        {/* ── HOW IT'S DEPLOYED ────────────────────────────────────────── */}
+        <section className="py-24 bg-[#09090B]">
+          <div className="max-w-4xl mx-auto px-6">
             <div className="text-center mb-12">
               <p className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-3">
-                Common Questions
+                The Deployment Process
               </p>
-              <h2 className="text-4xl font-bold text-white tracking-tight">
-                Honest Answers.
+              <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                Your version. Live in 4–6 weeks.
               </h2>
             </div>
+
             <div className="space-y-4">
-              {faqs.map((faq) => (
+              {[
+                { n: '01', title: 'Discovery call', desc: 'We map your workflows, your team structure, and what the platform needs to do for your specific business.' },
+                { n: '02', title: 'Custom configuration', desc: 'We configure AiMpact OS to your processes — AI Front Desk scripted in your voice, pipeline stages mapped to your sales process, client stages matching how you work.' },
+                { n: '03', title: 'Integration & migration', desc: 'We connect your existing tools and migrate your data. Your calendar, your phone number, your CRM history — all pulled in.' },
+                { n: '04', title: 'Team onboarding', desc: 'We train your team on day one and stay available for questions during the first 30 days.' },
+                { n: '05', title: 'Ongoing support', desc: 'Monthly check-ins, platform updates, and a direct line to us when something needs adjusting. We\'re a build partner, not a ticket queue.' },
+              ].map((step) => (
                 <div
-                  key={faq.q}
-                  className="rounded-xl border border-zinc-800 bg-zinc-900/20 p-6 hover:border-zinc-700 transition-colors"
+                  key={step.n}
+                  className="flex items-start gap-5 rounded-xl border border-zinc-800 bg-zinc-900/20 p-5 hover:border-zinc-700 transition-colors"
                 >
-                  <h3 className="text-white font-semibold mb-2">{faq.q}</h3>
-                  <p className="text-zinc-400 text-sm leading-relaxed">{faq.a}</p>
+                  <span className="text-indigo-400/60 text-xs font-mono font-bold tracking-widest mt-0.5 flex-shrink-0">{step.n}</span>
+                  <div>
+                    <h3 className="text-white font-semibold mb-1">{step.title}</h3>
+                    <p className="text-zinc-400 text-sm leading-relaxed">{step.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -561,36 +276,49 @@ export default function AiMpactOSPage() {
         </section>
 
         {/* ── FINAL CTA ────────────────────────────────────────────────── */}
-        <section className="py-28 bg-[#09090B] relative overflow-hidden">
+        <section className="py-28 bg-[#0D0D10] relative overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none" />
           <div className="relative max-w-4xl mx-auto px-6 text-center">
-            <p className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-4">
-              Ready to stop losing leads?
-            </p>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-              The Leads Are Already Out There.
+              Ready to see it
               <br />
-              <span className="text-gradient">Let&apos;s Make Sure None of Them Slip Through.</span>
+              <span className="text-gradient">built for your business?</span>
             </h2>
-            <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-10">
-              Book a free 30-minute demo. We&apos;ll walk through the system, show you exactly how
-              it would work for your specific business, and answer every question you have. No
-              pressure. No pitch deck. Just a real conversation.
+            <p className="text-zinc-400 text-lg max-w-xl mx-auto mb-10">
+              Book a free discovery call. We&apos;ll walk through your operations and show you
+              exactly what an AiMpact OS deployment would look like for your team.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={CAL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-indigo-600/20"
               >
-                Book Your Free Demo
+                Book a Discovery Call
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
               </a>
+              <a
+                href={ASSESSMENT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white font-semibold rounded-xl transition-all duration-200"
+              >
+                Take the Free Exit Assessment
+              </a>
             </div>
-            <p className="text-zinc-600 text-sm">
-              Spots are limited — we only onboard a small number of clients each month to ensure quality setup.
-            </p>
+            <div className="mt-8 flex flex-wrap justify-center gap-6">
+              {[
+                { icon: CheckCircle, label: 'Custom configured for your team' },
+                { icon: CheckCircle, label: 'You own your data' },
+                { icon: CheckCircle, label: 'No vendor lock-in' },
+              ].map(({ icon: Icon, label }) => (
+                <div key={label} className="flex items-center gap-2 text-zinc-500 text-sm">
+                  <Icon className="w-4 h-4 text-indigo-400" />
+                  {label}
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

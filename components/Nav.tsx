@@ -1,20 +1,18 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X } from 'lucide-react'
-import Image from 'next/image'
+import { Menu, X, Zap } from 'lucide-react'
 
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
 
 const links = [
-  { label: 'Services', href: '/#services' },
-  { label: 'How It Works', href: '/#how-it-works' },
-  { label: 'Pricing', href: '/#services' },
-  { label: 'Contact', href: '/#contact' },
+  { label: 'What We Build', href: '#services' },
+  { label: 'How It Works', href: '#how-it-works' },
+  { label: 'DevOps Monthly', href: '/devops-monthly', external: false },
+  { label: 'AiMpact OS', href: '/aimpact-os', external: false },
+  { label: 'FactFinder', href: '/factfinder', external: false },
+  { label: 'Partner Program', href: '/affiliates#apply', external: false },
 ]
-
-const OS_HREF = '/aimpact-os'
-const EXIT_HREF = '/exit-ready'
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
@@ -36,50 +34,49 @@ export default function Nav() {
     >
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center">
-          <Image src="/aimpact-logo.png" alt="AiMpact Technology" width={140} height={40} className="h-10 w-auto" priority />
+        <a href="/" className="flex items-center gap-2">
+          <div className="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center">
+            <Zap className="w-3.5 h-3.5 text-white" />
+          </div>
+          <span className="font-bold text-white tracking-tight text-lg">
+            AiMpact<span className="text-indigo-400">.</span>
+          </span>
         </a>
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-7">
           {links.map((link) => (
             <a
-              key={link.href}
+              key={link.label}
               href={link.href}
-              className="text-sm text-zinc-400 hover:text-white transition-colors"
+              target={link.external ? '_blank' : undefined}
+              rel={link.external ? 'noopener noreferrer' : undefined}
+              className={`text-sm transition-colors ${
+                link.label === 'Partner Program'
+                  ? 'text-indigo-400 hover:text-indigo-300 font-medium'
+                  : 'text-zinc-400 hover:text-white'
+              }`}
             >
               {link.label}
             </a>
           ))}
-          <a
-            href={EXIT_HREF}
-            className="text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors"
-          >
-            Exit Planning
-          </a>
-          <a
-            href={OS_HREF}
-            className="text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors"
-          >
-            AiMpact OS
-          </a>
         </div>
 
         {/* Desktop CTA */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <a
             href={CAL_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold rounded-lg transition-colors"
           >
-            Book Free Call
+            Book Discovery Call
           </a>
         </div>
 
         {/* Mobile menu toggle */}
         <button
-          className="md:hidden text-zinc-400 hover:text-white"
+          className="lg:hidden text-zinc-400 hover:text-white"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -89,39 +86,31 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t border-zinc-800 bg-[#09090B]/95 backdrop-blur-md">
+        <div className="lg:hidden border-t border-zinc-800 bg-[#09090B]/95 backdrop-blur-md">
           <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-4">
             {links.map((link) => (
               <a
-                key={link.href}
+                key={link.label}
                 href={link.href}
+                target={link.external ? '_blank' : undefined}
+                rel={link.external ? 'noopener noreferrer' : undefined}
                 onClick={() => setOpen(false)}
-                className="text-zinc-300 hover:text-white py-1 transition-colors"
+                className={`py-1 transition-colors ${
+                  link.label === 'Partner Program'
+                    ? 'text-indigo-400 hover:text-indigo-300 font-medium'
+                    : 'text-zinc-300 hover:text-white'
+                }`}
               >
                 {link.label}
               </a>
             ))}
-            <a
-              href={EXIT_HREF}
-              onClick={() => setOpen(false)}
-              className="text-indigo-400 hover:text-indigo-300 py-1 font-semibold transition-colors"
-            >
-              Exit Planning
-            </a>
-            <a
-              href={OS_HREF}
-              onClick={() => setOpen(false)}
-              className="text-indigo-400 hover:text-indigo-300 py-1 font-semibold transition-colors"
-            >
-              AiMpact OS
-            </a>
             <a
               href={CAL_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 px-4 py-3 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold rounded-lg text-center transition-colors"
             >
-              Book Free Call
+              Book Discovery Call
             </a>
           </div>
         </div>
