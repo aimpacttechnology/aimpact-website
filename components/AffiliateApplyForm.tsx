@@ -190,7 +190,7 @@ export default function AffiliateApplyForm() {
       </button>
 
       <p className="text-zinc-600 text-xs text-center">
-        Free to join · No minimums · We'll follow up within 1–2 business days
+        Low-cost setup · No minimums · We'll follow up within 1–2 business days
       </p>
     </form>
   )

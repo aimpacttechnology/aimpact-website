@@ -29,7 +29,7 @@ const footerLinks = [
   { label: 'AiMpact OS', href: '/aimpact-os' },
   { label: 'FactFinder', href: '/factfinder' },
   { label: 'Exit Assessment', href: ASSESSMENT_URL, external: true },
-  { label: 'Partner Program', href: '/affiliates' },
+  { label: 'Partner Program', href: 'https://www.aimpacttechnology.com/affiliates', external: true },
   { label: 'Contact', href: '/#contact' },
 ]
 

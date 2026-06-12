@@ -5,9 +5,9 @@ import { ArrowRight, CheckCircle, Clock, Code2, MessageSquare, Shield, Zap } fro
 
 export const metadata: Metadata = {
   title: 'DevOps Monthly — Ongoing AI Dev Support | AiMpact Technology',
-  description: 'Four hours of dedicated AI development support every month for $1,400. Fix bugs, add features, maintain automations, and keep your tech stack running — without hiring.',
+  description: 'Four hours of dedicated AI development support every month for $2,000. Fix bugs, add features, maintain automations, and keep your tech stack running — without hiring.',
   openGraph: {
-    title: 'DevOps Monthly — $1,400/mo for 4 Hours of Dedicated Dev Support',
+    title: 'DevOps Monthly — $2,000/mo for 4 Hours of Dedicated Dev Support',
     description: 'A senior AI developer on retainer — without the headcount. Fix it, build it, or optimize it. Every month.',
     url: 'https://www.aimpacttechnology.com/devops-monthly',
     siteName: 'AiMpact Technology',
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 }
 
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
+const PAYMENT_URL = 'https://buy.stripe.com/3cI6oI9Ta7yRglPgI00ZW00'
 
 const included = [
   { icon: Code2, title: 'Bug fixes & maintenance', desc: 'Something broke? We fix it — same day for critical issues, within the week for everything else.' },
@@ -54,7 +55,7 @@ export default function DevOpsMonthlyPage() {
           <div className="relative max-w-4xl mx-auto px-6 pt-32 pb-20 text-center">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-sm font-medium mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
-              Retainer · $1,400/month
+              Retainer · $2,000/month
             </div>
 
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-[1.08] tracking-tight">
@@ -71,20 +72,28 @@ export default function DevOpsMonthlyPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <a
-                href={CAL_URL}
+                href={PAYMENT_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-indigo-600/20"
               >
-                Book a 15-Minute Intro Call
+                Get Started — $2,000/mo
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+              </a>
+              <a
+                href={CAL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white font-semibold rounded-xl transition-all duration-200"
+              >
+                Book a Call First
               </a>
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12">
               {[
                 { label: '4 hours / month' },
-                { label: '$1,400 flat — no overages' },
+                { label: '$2,000 flat — no overages' },
                 { label: 'Cancel anytime' },
               ].map(({ label }) => (
                 <div key={label} className="flex items-center gap-2 text-zinc-400">
@@ -160,7 +169,7 @@ export default function DevOpsMonthlyPage() {
             <div className="rounded-2xl border border-indigo-500/30 bg-indigo-500/5 p-8 text-center">
               <p className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-4">DevOps Monthly</p>
               <div className="flex items-end justify-center gap-1 mb-2">
-                <span className="text-6xl font-bold text-white">$1,400</span>
+                <span className="text-6xl font-bold text-white">$2,000</span>
                 <span className="text-zinc-400 mb-2">/month</span>
               </div>
               <p className="text-zinc-400 text-sm mb-6">4 hours · Billed monthly · Cancel anytime</p>
@@ -180,13 +189,21 @@ export default function DevOpsMonthlyPage() {
                 ))}
               </div>
               <a
-                href={CAL_URL}
+                href={PAYMENT_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-indigo-600/20"
               >
-                Get Started — Book a Call
+                Subscribe Now — $2,000/mo
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+              </a>
+              <a
+                href={CAL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center px-8 py-3 text-zinc-400 hover:text-white text-sm font-medium transition-colors"
+              >
+                Have questions? Book a call first
               </a>
               <p className="text-zinc-600 text-xs mt-4">
                 First month is prorated based on your start date.
@@ -202,7 +219,7 @@ export default function DevOpsMonthlyPage() {
             <div className="space-y-4">
               {[
                 { q: 'Do unused hours roll over?', a: 'Yes — up to 4 hours carry into the next month. They don\'t accumulate beyond that, so you won\'t bank up 40 hours and then use them all at once. The intent is steady monthly support, not a savings account.' },
-                { q: 'What if I need more than 4 hours one month?', a: 'We can scope additional hours at $350/hour, or roll into a larger project engagement if the scope warrants it. We\'ll always tell you before we go over.' },
+                { q: 'What if I need more than 4 hours one month?', a: 'We can scope additional hours at $500/hour, or roll into a larger project engagement if the scope warrants it. We\'ll always tell you before we go over.' },
                 { q: 'Do I need to have built something with AiMpact first?', a: 'No, but it helps. If you\'re coming in fresh, we\'ll spend the first call getting oriented to your stack and tools so we can hit the ground running in month one.' },
                 { q: 'What does "direct access" mean?', a: 'You get a dedicated Slack channel or a phone number to text directly. No support tickets. No waiting for a response from a shared inbox.' },
                 { q: 'Can I cancel anytime?', a: 'Yes. Cancel before your next billing date and you won\'t be charged again. You keep your remaining hours through the end of that month.' },

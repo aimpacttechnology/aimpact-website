@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import AffiliateApplyForm from '@/components/AffiliateApplyForm'
-import { ArrowRight, DollarSign, Users, Share2, Shield, Check } from 'lucide-react'
+import { ArrowRight, DollarSign, Users, Share2, Shield, Check, X } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Partner Program — AiMpact Technology',
@@ -32,12 +32,68 @@ const howItWorks = [
 ]
 
 const whoFits = [
-  'Marketing, branding, and growth agencies',
-  'Business consultants and fractional operators',
-  'Freelance developers and small dev shops',
-  'Business brokers and M&A advisors',
-  'CPAs, accountants, and financial planners',
-  'Anyone with a network of business owners',
+  {
+    title: 'Aspiring entrepreneurs',
+    desc: "Ever looked at buying a franchise or starting a business and balked at the $20,000–$100,000+ price tag? Get your own branded landing page and ownership-style upside for a small fraction of that cost.",
+  },
+  {
+    title: 'Parents',
+    desc: 'Build real income around school drop-offs, naptime, or evenings — on a schedule that works for your family, not the other way around.',
+  },
+  {
+    title: 'Retirees',
+    desc: "Stay sharp, stay connected to your network, and add income — without going back to a 9-to-5.",
+  },
+  {
+    title: 'Students',
+    desc: 'High school or college — build real business skills and real income, instead of (or alongside) a minimum-wage job.',
+  },
+  {
+    title: 'Active duty & veterans',
+    desc: "Run it around deployments, drills, or odd hours. It doesn't require being home, holding inventory, or punching a clock.",
+  },
+  {
+    title: 'Anyone done trading hours for minimum wage',
+    desc: "You're not selling another supplement, juice, or 'opportunity.' You're earning commission on custom solutions real businesses already need.",
+  },
+]
+
+const comparisonRows = [
+  {
+    label: 'Cost to join',
+    aimpact: 'A small one-time setup fee + low monthly fee for your own branded AiMpact OS landing page — a real asset you own',
+    mlm: 'Often $100s–$1,000s for a starter kit or "license" — and you own nothing',
+  },
+  {
+    label: 'What you offer',
+    aimpact: 'Custom software & automation — a real project a business actually needs',
+    mlm: 'The same supplements, skincare, insurance policies, or books as every other rep',
+  },
+  {
+    label: 'Inventory',
+    aimpact: 'None — you never buy, hold, or resell anything',
+    mlm: 'Often required to buy product monthly to stay "active"',
+  },
+  {
+    label: 'How you earn',
+    aimpact: 'Commission on real, closed engagements with paying clients',
+    mlm: 'Often driven more by recruiting reps than by product sales',
+  },
+  {
+    label: 'Recruiting',
+    aimpact: 'Optional — you can earn without ever recruiting anyone',
+    mlm: 'Central to the model — your income depends on your downline',
+  },
+  {
+    label: 'Commission structure',
+    aimpact: 'Published, flat tiers (12% / 15% / 18%) — same rules for everyone',
+    mlm: 'Multi-level overrides that mostly flow upward to the top of the pyramid',
+  },
+  {
+    label: 'Who pays whom',
+    aimpact: 'AiMpact pays you, from revenue on a project a client already paid for',
+    mlm: 'New reps often pay the company or their upline first',
+  },
 ]
 
 const faqs = [
@@ -55,11 +111,15 @@ const faqs = [
   },
   {
     q: 'Is there a cost to join?',
-    a: "No. The affiliate program is free to join. We only make money when a referred engagement closes — so we're aligned with your success.",
+    a: "There's a small one-time setup fee plus a low monthly fee to launch your own branded AiMpact OS landing page — your personal storefront for referrals, and a real business asset with your name on it. Partners also get a discounted rate on their AiMpact OS monthly fee. Beyond that, we only make money when a referred engagement closes — so we're aligned with your success.",
   },
   {
     q: 'What if my referral already knows AiMpact?',
     a: "If they haven't had a conversation with us yet, your referral still counts. We go by first contact — if your introduction is what starts the conversation, you get credit.",
+  },
+  {
+    q: 'Do you offer white-label or agency partnerships?',
+    a: "Yes — if you run a dev shop, agency, or consultancy and want to offer AiMpact OS and our build services under your own brand, we offer a higher-tier white-label partnership. These are scoped individually, so book a call to discuss fit and terms.",
   },
 ]
 
@@ -157,26 +217,107 @@ export default function AffiliatesPage() {
                 Who This Is For
               </p>
               <h2 className="text-4xl font-bold text-white tracking-tight mb-4">
-                Best Partners Already Have
+                An Opportunity,
                 <br />
-                <span className="text-gradient">a Network That Needs Building.</span>
+                <span className="text-gradient">At a Fraction of the Cost.</span>
               </h2>
-              <p className="text-zinc-400 text-lg max-w-xl mx-auto">
-                You don&apos;t need a big audience. You need the right relationships.
+              <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
+                No franchise fee, no inventory, no business degree required. For a small one-time
+                setup fee and low monthly cost, you get your own branded AiMpact OS landing page —
+                a real business, plus commission on custom solutions for real problems.
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-3">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {whoFits.map((item) => (
                 <div
-                  key={item}
-                  className="flex items-center gap-3 rounded-xl border border-zinc-800 bg-zinc-900/20 px-5 py-4"
+                  key={item.title}
+                  className="rounded-xl border border-zinc-800 bg-zinc-900/20 p-5"
                 >
-                  <Check className="w-4 h-4 text-indigo-400 flex-shrink-0" />
-                  <span className="text-zinc-300 text-sm">{item}</span>
+                  <h3 className="text-white font-semibold text-sm mb-2 flex items-center gap-2">
+                    <Check className="w-4 h-4 text-indigo-400 flex-shrink-0" />
+                    {item.title}
+                  </h3>
+                  <p className="text-zinc-400 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* ── NOT AN MLM ───────────────────────────────────────────────── */}
+        <section className="py-24 bg-[#0D0D10]">
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="text-center mb-14">
+              <p className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-3">
+                A Different Model
+              </p>
+              <h2 className="text-4xl font-bold text-white tracking-tight mb-4">
+                This Is Not
+                <br />
+                <span className="text-gradient">An MLM.</span>
+              </h2>
+              <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
+                We get it — "affiliate program" can sound like health, beauty, home care products,
+                life insurance, or a book-club multi-level marketing pitch. Here&apos;s how this is
+                actually different.
+              </p>
+            </div>
+
+            {/* Desktop table */}
+            <div className="hidden sm:block rounded-2xl border border-zinc-800 bg-zinc-900/20 overflow-hidden">
+              <div className="grid grid-cols-3 border-b border-zinc-800 bg-zinc-900/40">
+                <div className="px-5 py-4 text-xs font-semibold uppercase tracking-widest text-zinc-500">
+                  &nbsp;
+                </div>
+                <div className="px-5 py-4 text-sm font-semibold text-indigo-400 border-l border-zinc-800">
+                  AiMpact Partner Program
+                </div>
+                <div className="px-5 py-4 text-sm font-semibold text-zinc-500 border-l border-zinc-800">
+                  Typical MLM
+                </div>
+              </div>
+              {comparisonRows.map((row, i) => (
+                <div
+                  key={row.label}
+                  className={`grid grid-cols-3 ${i < comparisonRows.length - 1 ? 'border-b border-zinc-800' : ''}`}
+                >
+                  <div className="px-5 py-4 text-sm font-medium text-white flex items-center">
+                    {row.label}
+                  </div>
+                  <div className="px-5 py-4 text-sm text-zinc-300 border-l border-zinc-800 flex items-start gap-2">
+                    <Check className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />
+                    <span>{row.aimpact}</span>
+                  </div>
+                  <div className="px-5 py-4 text-sm text-zinc-500 border-l border-zinc-800 flex items-start gap-2">
+                    <X className="w-4 h-4 text-zinc-600 flex-shrink-0 mt-0.5" />
+                    <span>{row.mlm}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Mobile cards */}
+            <div className="sm:hidden space-y-4">
+              {comparisonRows.map((row) => (
+                <div key={row.label} className="rounded-xl border border-zinc-800 bg-zinc-900/20 p-5">
+                  <h3 className="text-sm font-semibold text-white mb-3">{row.label}</h3>
+                  <div className="flex items-start gap-2 mb-2">
+                    <Check className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-zinc-300">{row.aimpact}</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <X className="w-4 h-4 text-zinc-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-zinc-500">{row.mlm}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <p className="text-zinc-500 text-sm mt-6 max-w-2xl mx-auto text-center">
+              Every business is different, so this is a general comparison, not a description of any
+              specific company&apos;s current program.
+            </p>
           </div>
         </section>
 
@@ -222,7 +363,7 @@ export default function AffiliatesPage() {
             <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
               <div className="flex items-center gap-2 text-zinc-600 text-sm">
                 <Shield className="w-3.5 h-3.5" />
-                Free to join · No minimums · Paid within 30 days of project kickoff
+                Low-cost setup · Discounted AiMpact OS rate · Paid within 30 days of project kickoff
               </div>
               <span className="hidden sm:block text-zinc-700">·</span>
               <a
