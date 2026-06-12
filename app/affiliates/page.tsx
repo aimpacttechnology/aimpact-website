@@ -1,13 +1,14 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import AffiliateApplyForm from '@/components/AffiliateApplyForm'
 import { ArrowRight, DollarSign, Users, Share2, Shield, Check } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Affiliate Program — AiMpact Technology',
+  title: 'Partner Program — AiMpact Technology',
   description:
-    'Earn commissions by referring business owners to AiMpact Technology. Join our affiliate program and get paid for every client you send our way.',
+    'Become a PaaS dev partner with AiMpact Technology. Refer businesses and agencies that need custom AI agents, automations, and platforms — earn commission on every deal that closes.',
 }
 
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
@@ -15,42 +16,42 @@ const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
 const howItWorks = [
   {
     icon: Share2,
-    title: 'Refer a Business Owner',
-    desc: "Share your unique referral link or make a direct introduction. Anyone who runs a business and wants to improve their operations or prepare for an exit is a great fit.",
+    title: 'Refer a Business or Agency',
+    desc: "Share your unique referral link or make a direct introduction. Anyone running a business buried in disconnected tools — or an agency/consultant who needs a dev team — is a great fit.",
   },
   {
     icon: Users,
     title: 'We Handle the Rest',
-    desc: "We'll have a conversation with your referral, scope the engagement, and close the deal. You don't need to sell anything — just make the introduction.",
+    desc: "We'll run discovery, scope the right build — an AI agent, automation, custom app, or full AiMpact OS platform — and close the deal. You don't need to sell anything — just make the introduction.",
   },
   {
     icon: DollarSign,
     title: 'You Get Paid',
-    desc: "Earn a commission on every engagement that closes from your referral. Commissions are paid within 30 days of project kickoff.",
+    desc: "Earn a commission on every engagement that closes from your referral, plus recurring commission on any ongoing retainer. Paid net-30 after the client's payment clears.",
   },
 ]
 
 const whoFits = [
+  'Marketing, branding, and growth agencies',
+  'Business consultants and fractional operators',
+  'Freelance developers and small dev shops',
   'Business brokers and M&A advisors',
   'CPAs, accountants, and financial planners',
-  'Business coaches and consultants',
-  'Estate planning and retirement advisors',
-  'Commercial real estate professionals',
   'Anyone with a network of business owners',
 ]
 
 const faqs = [
   {
     q: 'How much do I earn per referral?',
-    a: "Commission rates are discussed during onboarding and depend on the type of engagement. Reach out to us directly and we'll walk you through the structure — we keep it simple and pay generously for quality introductions.",
+    a: "Partners start at 12% commission on closed deals, with tiers up to 18% as you close more business — plus 10% on ongoing retainers for 12 months and 5% on renewals. Full details are covered in our partner training once you're onboarded.",
   },
   {
     q: 'How do I track my referrals?',
-    a: "Once you're in the program, we set you up with a unique referral link and provide visibility into where your referrals stand. We're a small team — you'll always be able to reach us directly if you have questions.",
+    a: "Once you're approved, you get access to your own partner portal — referral links, deal registration, commission tracking, and training, all in one place.",
   },
   {
     q: 'What kinds of clients are the best fit?',
-    a: "Business owners who are thinking about selling in the next 1–5 years, want to reduce their workload, or are frustrated that their business can't run without them. Revenue range $500k–$10M+ is the sweet spot, though we work outside that range too.",
+    a: "Any business owner running their company across a pile of disconnected tools, or any agency/consultant who wants to offer clients custom software and automation without hiring developers. AiMpact builds custom AI agents, automations, full applications, and AiMpact OS — our own operations platform.",
   },
   {
     q: 'Is there a cost to join?',
@@ -77,19 +78,19 @@ export default function AffiliatesPage() {
           <div className="relative max-w-4xl mx-auto px-6 pt-32 pb-20 text-center">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-sm font-medium mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
-              Affiliate Program
+              Partner Program
             </div>
 
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-[1.08] tracking-tight">
-              Get Paid for Introductions
+              Become a PaaS
               <br />
-              <span className="text-gradient">That Change Businesses.</span>
+              <span className="text-gradient">Dev Partner.</span>
             </h1>
 
             <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-              If you work with business owners — as an advisor, broker, accountant, or coach — you
-              already know people who need what we do. Refer them, and earn a commission every time
-              we close.
+              You know businesses drowning in disconnected tools, and agencies who promise more than
+              they can build. Introduce them to AiMpact — we scope, build, and deliver custom AI agents,
+              automations, and full platforms — and you earn commission on every deal that closes.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -109,6 +110,13 @@ export default function AffiliatesPage() {
                 Book a Call First
               </a>
             </div>
+
+            <p className="mt-6 text-sm text-zinc-500">
+              Already a partner?{' '}
+              <Link href="/affiliates/login" className="text-indigo-400 hover:text-indigo-300">
+                Log in to your portal
+              </Link>
+            </p>
           </div>
         </section>
 
@@ -149,9 +157,9 @@ export default function AffiliatesPage() {
                 Who This Is For
               </p>
               <h2 className="text-4xl font-bold text-white tracking-tight mb-4">
-                Best Affiliates Already Have
+                Best Partners Already Have
                 <br />
-                <span className="text-gradient">a Network of Business Owners.</span>
+                <span className="text-gradient">a Network That Needs Building.</span>
               </h2>
               <p className="text-zinc-400 text-lg max-w-xl mx-auto">
                 You don&apos;t need a big audience. You need the right relationships.
