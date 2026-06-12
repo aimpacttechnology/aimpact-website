@@ -36,7 +36,7 @@ export default function Hero() {
 
         <p className="text-base text-zinc-500 max-w-2xl mx-auto mb-10 leading-relaxed">
           From reporting and scheduling to CRM workflows and field operations — we turn scattered
-          processes into one connected platform your business actually owns.
+          processes into one connected platform built around how your business actually runs.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">

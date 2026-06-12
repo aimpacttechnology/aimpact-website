@@ -12,6 +12,7 @@ ABOUT AIMPACT TECHNOLOGY:
 - Based in Austin TX
 - We replace fragmented legacy SaaS and manual processes with purpose-built platforms
 - Ongoing platform partnerships — we build, maintain, and evolve your system as your business grows
+- Client data stays in their own database — no vendor lock-in on their information
 
 WHAT WE BUILD (custom projects, every engagement is scoped individually):
 - AI Front Desk & Lead Systems — custom lead capture, qualification, and automated follow-up

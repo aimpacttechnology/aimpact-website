@@ -128,7 +128,7 @@ A generic SaaS tool gives a business a piece of software and says "make it work 
 Most small businesses can't afford a custom dev team, and off-the-shelf tools never quite fit — so they end up duct-taping together 4–5 subscriptions that don't talk to each other. AiMpact's PaaS model gives them the "custom build" experience at a price and timeline that's actually accessible.
 
 **Your one-line explanation to a prospect:**
-> "Instead of buying five different tools and hoping they work together, AiMpact builds you one platform — configured to how your business actually runs — and you own it from day one."`,
+> "Instead of buying five different tools and hoping they work together, AiMpact builds you one platform — configured to how your business actually runs, from day one."`,
       },
       {
         id: 'custom-beats-generic',
@@ -146,15 +146,15 @@ When a prospect says "we already have a CRM" or "we just need a better tool," th
 
 **A custom-built platform flips all of that:**
 - Configured around THIS business's exact workflow, team structure, and customers
-- AiMpact builds it once — the client owns the result (not a perpetual SaaS seat)
-- Data lives in the client's own database (Supabase) — no vendor lock-in
+- AiMpact builds it once, configured specifically for that business — not a perpetual SaaS seat
+- Data lives in the client's own database (Supabase) — no vendor lock-in on the data
 - It grows with the business — new modules, integrations, and automations get added as needed, because AiMpact is already inside the codebase
 
 **The "five tools into one" math:**
 Most small businesses are paying for a CRM, a scheduling tool, a forms tool, an email tool, and a reporting spreadsheet — often $300–$800/month combined, and none of it is connected. A single custom platform frequently costs less than that stack over time, and it actually fits.
 
 **Your framing:**
-> "You're not choosing between 'cheap SaaS' and 'expensive custom software.' You're choosing between five disconnected subscriptions you'll be paying forever, or one platform built around your business that you actually own."`,
+> "You're not choosing between 'cheap SaaS' and 'expensive custom software.' You're choosing between five disconnected subscriptions you'll be paying forever, or one platform built around how your business actually runs."`,
       },
       {
         id: 'aimpact-os-proof',

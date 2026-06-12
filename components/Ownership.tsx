@@ -1,10 +1,10 @@
 import { ShieldCheck } from 'lucide-react'
 
 const points = [
-  'Clients own the custom deliverables built for their operation — once the agreed project balance is paid in full.',
-  'AiMpact may continue using reusable frameworks, templates, internal tools, and implementation methods. Your business-specific workflows, data structure, and custom deliverables remain yours.',
+  'Your platform is configured around your specific workflows, data, and team — not a generic template you have to adapt to.',
+  'Your business data lives in your own database. You are never locked out of the information that runs your operation.',
   'Ongoing hosting, support, integrations, automations, and optimization are available through a monthly systems support agreement.',
-  'No vendor lock-in means you are not trapped. But ongoing value comes from having AiMpact as your long-term systems partner.',
+  'Specific ownership, licensing, and access terms are part of your project agreement and may vary by engagement — we will lay them out clearly before you sign anything.',
 ]
 
 export default function Ownership() {
@@ -17,18 +17,18 @@ export default function Ownership() {
               <ShieldCheck className="w-5 h-5 text-indigo-400" />
             </div>
             <p className="text-indigo-400 text-sm font-semibold uppercase tracking-widest">
-              Ownership & IP
+              How It Works
             </p>
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
             Built for Your Business.
             <br />
-            <span className="text-gradient">Owned by Your Business.</span>
+            <span className="text-gradient">Run by Your Team.</span>
           </h2>
 
           <p className="text-zinc-400 text-lg leading-relaxed mb-8 max-w-2xl">
-            Your platform should belong to your business — not trap you inside another vendor&apos;s
+            Your platform should fit how you operate — not trap you inside another vendor&apos;s
             black box. Here is how it works, plainly stated.
           </p>
 
