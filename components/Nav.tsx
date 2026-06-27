@@ -11,6 +11,7 @@ const links = [
   { label: 'DevOps Monthly', href: '/devops-monthly', external: false },
   { label: 'AiMpact OS', href: '/aimpact-os', external: false },
   { label: 'FactFinder', href: '/factfinder', external: false },
+  { label: 'Product Demos', href: '/demos', external: false },
   { label: 'Partner Program', href: 'https://www.aimpacttechnology.com/affiliates', external: true },
 ]
 
