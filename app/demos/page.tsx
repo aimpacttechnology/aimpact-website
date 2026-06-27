@@ -6,7 +6,7 @@ import { ArrowRight, Play } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Product Demos — AiMpact Technology',
   description:
-    'See AiMpact OS in action. Watch real walkthroughs of the custom platforms we build — quotes, invoices, expenses, AI assistant, and more.',
+    'See AiMpact OS in action. Watch real walkthroughs of the custom platforms we build — quotes, invoices, expenses, voice assistant, and more.',
   openGraph: {
     title: 'Product Demos — AiMpact Technology',
     description:
@@ -23,16 +23,16 @@ const demos = [
   {
     title: 'AiMpact OS — Carpet Cleaning Business',
     description:
-      'A full walkthrough of a custom AiMpact OS deployment for a carpet cleaning company. See how quotes, invoices, expense tracking, payment recording, and the AI voice assistant all live in one platform — no spreadsheets, no app switching.',
+      'A full walkthrough of a custom platform built for a carpet cleaning company. See how quotes, invoices, expense tracking, payment recording, and a built-in voice assistant all live in one place — no spreadsheets, no app switching.',
     src: '/carpet_demo_v4.mp4',
-    tags: ['Quotes', 'Invoicing', 'Expense Tracking', 'AI Assistant', 'Revenue Reports'],
+    tags: ['Quotes', 'Invoicing', 'Expense Tracking', 'Voice Assistant', 'Revenue Reports'],
   },
   {
-    title: 'AiMpact OS — AI Audio Tool & Campaign Dashboard',
+    title: 'RockHomeschool — Family Command Center',
     description:
-      'A walkthrough of AiMpact OS\'s AI Audio Tool — script generation, voice cloning, and audio recording built directly into the platform. Combined with the campaigns dashboard and command center, this shows how AI-powered outreach lives inside the same system as your leads, contacts, and projects.',
+      'A walkthrough of a custom platform built for homeschool families. Mom gets a personal command center that tracks each child\'s curriculum, progress, assignments, and grades — plus a smart tutor and personal assistant built in. One place to plan the week, manage lessons, and stay on top of the household without juggling five different tools.',
     src: '/final_ad_v5.mp4',
-    tags: ['AI Audio Tool', 'Voice Cloning', 'Campaigns', 'Command Center', 'Dashboard'],
+    tags: ['Curriculum Tracking', 'Smart Tutor', 'Personal Assistant', 'Homeschool Dashboard', 'Family Planning'],
   },
 ]
 
@@ -51,7 +51,7 @@ export default function DemosPage() {
           <div className="relative max-w-6xl mx-auto px-6 pt-32 pb-16 text-center">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-sm font-medium mb-8">
               <Play className="w-3 h-3" />
-              Real Platforms. Real Businesses.
+              Real Platforms. Real Results.
             </div>
 
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-[1.08] tracking-tight">
