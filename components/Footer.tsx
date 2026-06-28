@@ -90,8 +90,8 @@ export default function Footer() {
             © {new Date().getFullYear()} AiMpact Technology. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <a href="tel:5129100980" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">
-              512-910-0980
+            <a href="tel:18883354979" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">
+              (888) 335-4979
             </a>
             <span className="text-zinc-800">·</span>
             <a href="mailto:landon@aimpacttechnology.com" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">

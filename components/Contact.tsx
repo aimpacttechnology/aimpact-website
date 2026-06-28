@@ -72,7 +72,7 @@ export default function Contact() {
               <h3 className="text-white font-semibold mb-5">Contact Information</h3>
               <div className="space-y-4">
                 <a
-                  href="tel:5129100980"
+                  href="tel:18883354979"
                   className="flex items-center gap-3 text-zinc-400 hover:text-white transition-colors"
                 >
                   <div className="w-9 h-9 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center flex-shrink-0">
@@ -80,7 +80,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs text-zinc-600 mb-0.5">Phone</p>
-                    <p className="text-sm font-medium">512-910-0980</p>
+                    <p className="text-sm font-medium">(888) 335-4979</p>
                   </div>
                 </a>
                 <a
