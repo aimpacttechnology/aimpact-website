@@ -4,32 +4,32 @@ const pains = [
   {
     headline: 'One workbook runs your entire operation.',
     detail:
-      'Pricing logic, customer data, job history, formulas, reports — all of it lives in one file that started as a simple spreadsheet years ago.',
+      'Pricing logic, customer records, job history, compliance data, reporting — all of it lives in a file that started as a simple spreadsheet years ago.',
   },
   {
-    headline: 'Only one person truly understands how it works.',
+    headline: 'Only one person truly knows how it works.',
     detail:
-      'If that person retires, quits, or gets sick, the knowledge goes with them. No documentation. No backup person. No safety net.',
+      'There is no documentation. No backup person who understands the formulas. The knowledge exists in one employee\'s head, and only there.',
   },
   {
     headline: 'Broken formulas create silent errors.',
     detail:
-      'A cell gets overwritten. A tab gets moved. A formula breaks and nobody catches it — until a report goes out wrong or money is miscalculated.',
+      'A cell gets overwritten. A tab gets moved. A formula breaks and no one catches it — until a report goes out wrong or a client calls with a discrepancy.',
   },
   {
     headline: 'Reports take hours of manual work every time.',
     detail:
-      'Data gets copied between tabs. Numbers get formatted by hand. The same information gets entered in three different places. Every single time.',
+      'Data gets copied between tabs. Numbers are reformatted by hand. The same information gets entered in three different places. Every single week.',
   },
   {
     headline: 'Multiple versions get emailed around.',
     detail:
-      '"Use the one I sent Tuesday." Nobody knows which version is current, who changed what, or whether the numbers match the last version sent to the client.',
+      '"Use the one I sent on Tuesday." Nobody knows which file is current, who changed what, or whether the numbers match what was sent to the client.',
   },
   {
     headline: 'Retirement or turnover could erase years of process.',
     detail:
-      'An audit, a succession event, or a single crashed file could mean starting over — or paying someone a lot of money to reverse-engineer what used to work.',
+      'An audit, a succession event, or a single hard drive failure could mean starting from scratch — or paying someone a lot of money to reverse-engineer what used to work.',
   },
 ]
 
@@ -42,13 +42,13 @@ export default function RescueProblem() {
             Sound Familiar?
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight leading-[1.1]">
-            The Spreadsheet That Runs{' '}
+            The Spreadsheet That Runs Everything{' '}
             <br className="hidden md:block" />
-            <span className="text-amber-400">Everything Is Also Your Biggest Risk.</span>
+            <span className="text-amber-400">Is Also Your Biggest Risk.</span>
           </h2>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            These workbooks didn&apos;t start out dangerous. They grew into it — one tab, one formula,
-            one workaround at a time. Here&apos;s what we see in almost every business we work with.
+            These files did not start out dangerous. They grew into it — one tab, one formula,
+            one workaround at a time. Here is what we see in almost every business we work with.
           </p>
         </div>
 

@@ -9,20 +9,23 @@ export default function RescueFinalCTA() {
 
       <div className="relative max-w-4xl mx-auto px-6 text-center">
         <p className="text-amber-500 text-sm font-semibold uppercase tracking-widest mb-5">
-          Ready to Find Out What You Have?
+          One Decision
         </p>
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-[1.1]">
           Before You Rebuild Your Business,{' '}
           <br className="hidden md:block" />
-          <span className="text-amber-400">Let&apos;s Understand the Spreadsheet Running It.</span>
+          <span className="text-amber-400">Understand the Spreadsheet Running It.</span>
         </h2>
-        <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-          A Spreadsheet Health Check gives you a clear, written assessment of what you have,
-          what is at risk, and what it would take to protect it. You will know more about
-          your own system after this than you do right now — guaranteed.
+        <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-3 leading-relaxed">
+          The Health Check is not a commitment to change everything. It is a commitment
+          to finally know what you have — so you can decide what to do about it with
+          clear information instead of uncertainty.
+        </p>
+        <p className="text-zinc-500 text-base max-w-xl mx-auto mb-10">
+          Most clients tell us they wish they had done it sooner.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <a
             href={CAL_URL}
             target="_blank"
@@ -36,12 +39,12 @@ export default function RescueFinalCTA() {
             href="#contact"
             className="inline-flex items-center justify-center px-8 py-4 border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white font-semibold text-lg rounded-xl transition-all duration-200"
           >
-            Send Us Your Situation
+            Tell Us Your Situation First
           </a>
         </div>
 
         <p className="text-zinc-600 text-sm">
-          Not ready to book? Fill out the form below and Jaclyn will follow up personally within 24 hours.
+          Not ready to book? Write to us below. Jaclyn will respond personally within 24 hours.
         </p>
       </div>
     </section>

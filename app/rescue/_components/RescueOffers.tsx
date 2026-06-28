@@ -8,47 +8,49 @@ const offers = [
     price: '$497',
     priceNote: '– $1,500 depending on complexity',
     description:
-      'The right starting point for any business that depends on a spreadsheet they cannot afford to lose.',
+      'The right first step. Before you make any decisions about your spreadsheet, you need to understand exactly what you have.',
     featured: true,
     cta: 'Book a Health Check',
     ctaHref: CAL_URL,
     external: true,
     deliverables: [
       'Full review of your spreadsheet and workflow',
-      'Risk assessment — what happens if this file breaks',
-      'Broken formula and logic audit',
-      'Data structure and integrity review',
-      'Modernization roadmap with options and ballparks',
-      'PDF report delivered within 5 business days',
-      'Optional Loom video walkthrough',
+      'Risk assessment — what happens if this file breaks or walks out',
+      'Formula and logic audit by Jaclyn personally',
+      'Identification of manual bottlenecks and single points of failure',
+      'Clear PDF report with findings and options',
+      'Delivered within 5 business days',
+      'Optional Loom video walkthrough included',
     ],
+    footnote: 'Sometimes the report is all you need. We will tell you honestly.',
   },
   {
     name: 'Spreadsheet Rescue Build',
     price: '$3,000',
     priceNote: '– $15,000+ depending on scope',
     description:
-      'For businesses ready to move off the spreadsheet and into something that will not break, get lost, or walk out the door.',
+      'When the Health Check shows your operation needs more than a patch — we build the system that replaces it, without losing what made it work.',
     featured: false,
     cta: 'Schedule a Scoping Call',
     ctaHref: CAL_URL,
     external: true,
     deliverables: [
-      'Your workbook converted into a secure web application',
-      'User login and role-based permissions',
-      'Database with proper backup and recovery',
-      'Import and export tools for existing data',
-      'Dashboard, reporting, and filtering',
-      'Clean UI designed around your existing workflow',
-      'Training and handoff documentation',
+      'Your workbook converted into a secure, web-based system',
+      'User access with role-based permissions',
+      'Reliable database with backup and recovery',
+      'Import and export tools for your existing data',
+      'Dashboard and reporting built around your workflow',
+      'Training and written documentation',
+      'You own it — no monthly platform fees',
     ],
+    footnote: null,
   },
   {
     name: 'Monthly Support',
     price: '$99',
     priceNote: '– $500/month depending on scope',
     description:
-      'Ongoing maintenance, minor updates, and peace of mind for businesses that want someone watching their back.',
+      'Ongoing maintenance and peace of mind. Someone watching your back so you are not alone when something breaks.',
     featured: false,
     cta: 'Ask About Support',
     ctaHref: '#contact',
@@ -59,8 +61,9 @@ const offers = [
       'Monthly reporting assistance',
       'Data cleanup and normalization',
       'Priority response on issues',
-      'Ongoing modernization as your business evolves',
+      'Ongoing improvements as your needs evolve',
     ],
+    footnote: null,
   },
 ]
 
@@ -73,12 +76,12 @@ export default function RescueOffers() {
             How We Help
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight">
-            Start With a Health Check.{' '}
+            Start With Understanding.{' '}
             <span className="text-amber-400">Build From There.</span>
           </h2>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            You do not have to commit to a full rebuild to find out what you have.
-            Most clients start with the Health Check — and make a clear-eyed decision from there.
+            Most clients start with the Health Check. It is the fastest way to know
+            exactly what you have — and make a clear-eyed decision about what to do next.
           </p>
         </div>
 
@@ -119,6 +122,10 @@ export default function RescueOffers() {
                   </li>
                 ))}
               </ul>
+
+              {offer.footnote && (
+                <p className="text-amber-400/70 text-xs italic mb-5 text-center">{offer.footnote}</p>
+              )}
 
               <a
                 href={offer.ctaHref}

@@ -10,22 +10,19 @@ export default function RescueHero() {
       <div className="relative max-w-5xl mx-auto px-6 pt-32 pb-24 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-amber-500/25 bg-amber-500/8 mb-8">
           <FileSpreadsheet className="w-4 h-4 text-amber-400" />
-          <span className="text-amber-400 text-sm font-medium">Spreadsheet Rescue &amp; Business Modernization</span>
+          <span className="text-amber-400 text-sm font-medium">Spreadsheet Health Check &amp; Business Continuity</span>
         </div>
 
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.05] mb-6">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.05] mb-7">
           Your Business Should Not{' '}
           <br className="hidden md:block" />
           <span className="text-amber-400">Retire With Your Spreadsheet.</span>
         </h1>
 
-        <p className="text-zinc-400 text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mb-4">
-          AiMpact Technology rescues business-critical spreadsheets before they break,
-          disappear, or walk out the door with the person who built them.
-        </p>
-        <p className="text-zinc-500 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
-          We turn fragile Excel workbooks into secure, simple systems — without losing
-          the process that made your business work.
+        <p className="text-zinc-400 text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mb-10">
+          We help business owners understand, protect, and preserve the spreadsheets
+          their operations depend on — before retirement, turnover, or a single bad day
+          puts everything at risk.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -42,12 +39,12 @@ export default function RescueHero() {
             href="#contact"
             className="inline-flex items-center justify-center px-8 py-4 border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white font-semibold text-lg rounded-xl transition-all duration-200"
           >
-            Describe Your Situation
+            Tell Us Your Situation
           </a>
         </div>
 
         <p className="mt-6 text-sm text-zinc-600">
-          No tech pitch. No jargon. Just a clear look at what&apos;s at risk and what to do about it.
+          No obligation. No sales pitch. A clear report on what you have and what it would take to protect it.
         </p>
       </div>
     </section>
