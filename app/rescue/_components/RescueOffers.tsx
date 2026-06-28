@@ -1,6 +1,5 @@
 import { ArrowRight, CheckCircle } from 'lucide-react'
-
-const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
+import RescueCTAButton from './RescueCTAButton'
 
 const offers = [
   {
@@ -10,9 +9,9 @@ const offers = [
     description:
       'The right first step — and the best $200 you will spend on your business this year. Before anything else, you need to know exactly what you have.',
     featured: true,
-    cta: 'Book a Health Check',
-    ctaHref: CAL_URL,
-    external: true,
+    cta: null,
+    ctaHref: null,
+    external: false,
     deliverables: [
       'Full review of your spreadsheet and workflow',
       'Risk assessment — what happens if this file breaks or walks out',
@@ -128,19 +127,22 @@ export default function RescueOffers() {
                 <p className="text-teal-400/70 text-xs italic mb-5 text-center">{offer.footnote}</p>
               )}
 
-              <a
-                href={offer.ctaHref}
-                target={offer.external ? '_blank' : undefined}
-                rel={offer.external ? 'noopener noreferrer' : undefined}
-                className={`group inline-flex items-center justify-center gap-2 px-6 py-3.5 font-semibold text-sm rounded-xl transition-all duration-200 ${
-                  offer.featured
-                    ? 'bg-teal-600 hover:bg-teal-500 text-white shadow-lg shadow-teal-600/20'
-                    : 'border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white'
-                }`}
-              >
-                {offer.cta}
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-              </a>
+              {offer.featured ? (
+                <RescueCTAButton
+                  label="Book a Health Check"
+                  className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 font-semibold text-sm rounded-xl transition-all duration-200 bg-teal-600 hover:bg-teal-500 text-white shadow-lg shadow-teal-600/20"
+                />
+              ) : (
+                <a
+                  href={offer.ctaHref ?? '#contact'}
+                  target={offer.external ? '_blank' : undefined}
+                  rel={offer.external ? 'noopener noreferrer' : undefined}
+                  className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 font-semibold text-sm rounded-xl transition-all duration-200 border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white"
+                >
+                  {offer.cta}
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+                </a>
+              )}
             </div>
           ))}
         </div>

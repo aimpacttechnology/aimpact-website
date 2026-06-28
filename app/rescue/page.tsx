@@ -11,6 +11,7 @@ import RescueOffers from './_components/RescueOffers'
 import RescueIndustries from './_components/RescueIndustries'
 import RescueFinalCTA from './_components/RescueFinalCTA'
 import RescueContact from './_components/RescueContact'
+import RescueCheckoutModal from './_components/RescueCheckoutModal'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
@@ -45,6 +46,7 @@ export default function RescuePage() {
         <RescueContact />
       </main>
       <Footer />
+      <RescueCheckoutModal />
     </>
   )
 }

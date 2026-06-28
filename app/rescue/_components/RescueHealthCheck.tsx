@@ -1,6 +1,4 @@
-import { ArrowRight } from 'lucide-react'
-
-const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
+import RescueCTAButton from './RescueCTAButton'
 
 const steps = [
   {
@@ -76,15 +74,10 @@ export default function RescueHealthCheck() {
         </div>
 
         <div className="mt-8 text-center">
-          <a
-            href={CAL_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <RescueCTAButton
+            label="Book a Health Check — $200"
             className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-teal-600 hover:bg-teal-500 text-white font-semibold text-lg rounded-xl transition-all duration-200 shadow-lg shadow-teal-600/20"
-          >
-            Book a Health Check — $200
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
-          </a>
+          />
           <p className="mt-3 text-zinc-600 text-sm">
             Delivered within 5 business days. Includes a PDF report and optional video walkthrough.
           </p>

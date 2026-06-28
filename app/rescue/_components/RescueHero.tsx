@@ -1,6 +1,5 @@
-import { ArrowRight, FileSpreadsheet } from 'lucide-react'
-
-const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
+import { FileSpreadsheet } from 'lucide-react'
+import RescueCTAButton from './RescueCTAButton'
 
 export default function RescueHero() {
   return (
@@ -26,15 +25,10 @@ export default function RescueHero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href={CAL_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <RescueCTAButton
+            label="Book a $200 Health Check"
             className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-teal-600 hover:bg-teal-500 text-white font-semibold text-lg rounded-xl transition-all duration-200 shadow-lg shadow-teal-600/20"
-          >
-            Book a $200 Health Check
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
-          </a>
+          />
           <a
             href="#contact"
             className="inline-flex items-center justify-center px-8 py-4 border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white font-semibold text-lg rounded-xl transition-all duration-200"
