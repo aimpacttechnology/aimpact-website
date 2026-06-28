@@ -305,7 +305,7 @@ export default function KaileyPage() {
               Need Dependable Young Employees?
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '16px', lineHeight: 1.8, marginBottom: '36px' }}>
-              Create a free employer account and get connected with motivated students in your
+              Create an employer account and get connected with motivated students in your
               community who are ready to work. Stop sifting through unqualified applications —
               find the right hire faster.
             </p>
@@ -372,7 +372,7 @@ export default function KaileyPage() {
           {[
             { q: 'Do I need experience?', a: 'Nope! WorkDontChud is built specifically for first-time job seekers. Our tools help you show off your skills and personality even without work history.' },
             { q: 'Can parents help?', a: 'Absolutely. Parents can create an account alongside their student and help guide the process, review applications, or just cheer from the sidelines.' },
-            { q: 'Can businesses post jobs?', a: 'Yes! Local businesses can create a free employer account and start posting jobs directly to motivated students in their area.' },
+            { q: 'Can businesses post jobs?', a: 'Yes! Local businesses can create an employer account and start posting jobs directly to motivated students in their area.' },
             { q: "What if I don't have a resume?", a: "That's literally what we're here for. Our Resume Builder walks you through everything from scratch. You'll have a resume ready before you finish your lunch break." },
           ].map(({ q, a }) => (
             <div
@@ -463,9 +463,9 @@ export default function KaileyPage() {
       <footer style={{ borderTop: `1px solid ${G}25`, padding: '60px 48px 40px', maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '28px', marginBottom: '48px' }}>
           {[
-            { icon: '🎓', title: 'For Students', desc: 'Build a resume, practice interviews, and find real local jobs — all free.', cta: 'Get Started' },
+            { icon: '🎓', title: 'For Students', desc: 'Build a resume, practice interviews, and find real local jobs.', cta: 'Get Started' },
             { icon: '👪', title: 'For Parents', desc: 'Help your teen build confidence and land their first job with the right tools.', cta: 'Learn More' },
-            { icon: '🏢', title: 'For Employers', desc: 'Connect with motivated young workers in your community for free.', cta: 'Post a Job' },
+            { icon: '🏢', title: 'For Employers', desc: 'Connect with motivated young workers in your community.', cta: 'Post a Job' },
           ].map(({ icon, title, desc, cta }) => (
             <div
               key={title}
