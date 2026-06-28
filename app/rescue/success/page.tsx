@@ -30,7 +30,7 @@ export default function RescueSuccessPage() {
               icon: Mail,
               step: '1',
               title: 'We reach out within 1–2 business days',
-              body: 'To confirm how you want to share your file and whether you'd like an NDA signed first.',
+              body: "To confirm how you want to share your file and whether you'd like an NDA signed first.",
             },
             {
               icon: FileText,
