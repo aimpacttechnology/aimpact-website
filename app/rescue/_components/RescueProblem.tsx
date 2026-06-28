@@ -9,7 +9,7 @@ const pains = [
   {
     headline: 'Only one person truly knows how it works.',
     detail:
-      'There is no documentation. No backup person who understands the formulas. The knowledge exists in one employee\'s head, and only there.',
+      "There is no documentation. No backup person who understands the formulas. The knowledge exists in one employee's head, and only there.",
   },
   {
     headline: 'Broken formulas create silent errors.',
@@ -38,13 +38,13 @@ export default function RescueProblem() {
     <section className="py-28 bg-[#0D0D10]">
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-amber-500 text-sm font-semibold uppercase tracking-widest mb-3">
+          <p className="text-teal-500 text-sm font-semibold uppercase tracking-widest mb-3">
             Sound Familiar?
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight leading-[1.1]">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight leading-[1.1]">
             The Spreadsheet That Runs Everything{' '}
             <br className="hidden md:block" />
-            <span className="text-amber-400">Is Also Your Biggest Risk.</span>
+            <span className="text-teal-400">Is Also Your Biggest Risk.</span>
           </h2>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
             These files did not start out dangerous. They grew into it — one tab, one formula,
@@ -56,11 +56,11 @@ export default function RescueProblem() {
           {pains.map((pain) => (
             <div
               key={pain.headline}
-              className="rounded-2xl border border-zinc-800 bg-zinc-900/20 p-6 hover:border-zinc-700 transition-all duration-200"
+              className="rounded-2xl border border-zinc-800 bg-zinc-900/20 p-6 hover:border-teal-900/50 transition-all duration-200"
             >
               <div className="flex items-start gap-3 mb-3">
-                <div className="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <AlertTriangle className="w-4 h-4 text-amber-500" />
+                <div className="w-8 h-8 rounded-lg bg-teal-500/10 border border-teal-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <AlertTriangle className="w-4 h-4 text-teal-500" />
                 </div>
                 <h3 className="text-white font-semibold text-base leading-snug">{pain.headline}</h3>
               </div>

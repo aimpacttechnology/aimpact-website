@@ -14,12 +14,12 @@ export default function RescueIndustries() {
     <section className="py-28 bg-[#0D0D10]">
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center mb-14">
-          <p className="text-amber-500 text-sm font-semibold uppercase tracking-widest mb-3">
+          <p className="text-teal-500 text-sm font-semibold uppercase tracking-widest mb-3">
             Who We Work With
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight">
-            If Your Industry Runs on{' '}
-            <span className="text-amber-400">Excel, We Know Your Risk.</span>
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight">
+            If Your Industry Runs on Excel,{' '}
+            <span className="text-teal-400">We Know Your Risk.</span>
           </h2>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
             These are not hypothetical use cases. These are the businesses that call us —
@@ -32,7 +32,7 @@ export default function RescueIndustries() {
           {industries.map((industry) => (
             <div
               key={industry.name}
-              className="rounded-xl border border-zinc-800 bg-zinc-900/20 px-5 py-4 hover:border-zinc-700 transition-all duration-200"
+              className="rounded-xl border border-zinc-800 bg-zinc-900/20 px-5 py-4 hover:border-teal-900/50 transition-all duration-200"
             >
               <p className="text-white font-semibold text-sm mb-1">{industry.name}</p>
               <p className="text-zinc-500 text-xs leading-relaxed">{industry.note}</p>
@@ -43,7 +43,7 @@ export default function RescueIndustries() {
         <div className="mt-8 rounded-2xl border border-zinc-800 bg-zinc-900/20 p-6 text-center">
           <p className="text-zinc-400 text-sm">
             Don&apos;t see your industry?{' '}
-            <a href="#contact" className="text-amber-400 hover:text-amber-300 font-medium transition-colors">
+            <a href="#contact" className="text-teal-400 hover:text-teal-300 font-medium transition-colors">
               Describe your situation
             </a>{' '}
             — if your business runs on a spreadsheet, we can help.

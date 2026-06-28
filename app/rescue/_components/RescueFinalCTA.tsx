@@ -5,16 +5,16 @@ const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
 export default function RescueFinalCTA() {
   return (
     <section className="py-28 bg-[#09090B] relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-amber-600/8 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-teal-600/8 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="relative max-w-4xl mx-auto px-6 text-center">
-        <p className="text-amber-500 text-sm font-semibold uppercase tracking-widest mb-5">
+        <p className="text-teal-500 text-sm font-semibold uppercase tracking-widest mb-5">
           One Decision
         </p>
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-[1.1]">
+        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-[1.1]">
           Before You Rebuild Your Business,{' '}
           <br className="hidden md:block" />
-          <span className="text-amber-400">Understand the Spreadsheet Running It.</span>
+          <span className="text-teal-400">Understand the Spreadsheet Running It.</span>
         </h2>
         <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-3 leading-relaxed">
           The Health Check is not a commitment to change everything. It is a commitment
@@ -30,7 +30,7 @@ export default function RescueFinalCTA() {
             href={CAL_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-amber-600 hover:bg-amber-500 text-white font-semibold text-lg rounded-xl transition-all duration-200 shadow-lg shadow-amber-600/20"
+            className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-teal-600 hover:bg-teal-500 text-white font-semibold text-lg rounded-xl transition-all duration-200 shadow-lg shadow-teal-600/20"
           >
             Schedule a Health Check — $497
             <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />

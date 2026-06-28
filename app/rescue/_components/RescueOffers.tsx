@@ -20,7 +20,7 @@ const offers = [
       'Identification of manual bottlenecks and single points of failure',
       'Clear PDF report with findings and options',
       'Delivered within 5 business days',
-      'Optional Loom video walkthrough included',
+      'Optional video walkthrough included',
     ],
     footnote: 'Sometimes the report is all you need. We will tell you honestly.',
   },
@@ -72,12 +72,12 @@ export default function RescueOffers() {
     <section id="services" className="py-28 bg-[#09090B]">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-amber-500 text-sm font-semibold uppercase tracking-widest mb-3">
+          <p className="text-teal-500 text-sm font-semibold uppercase tracking-widest mb-3">
             How We Help
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight">
             Start With Understanding.{' '}
-            <span className="text-amber-400">Build From There.</span>
+            <span className="text-teal-400">Build From There.</span>
           </h2>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
             Most clients start with the Health Check. It is the fastest way to know
@@ -91,22 +91,22 @@ export default function RescueOffers() {
               key={offer.name}
               className={`rounded-2xl border p-8 flex flex-col relative ${
                 offer.featured
-                  ? 'border-amber-500/40 bg-amber-500/5 shadow-lg shadow-amber-600/10'
+                  ? 'border-teal-500/40 bg-teal-500/5 shadow-lg shadow-teal-600/10'
                   : 'border-zinc-800 bg-zinc-900/20'
               }`}
             >
               {offer.featured && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="inline-block px-4 py-1 bg-amber-600 text-white text-xs font-bold rounded-full tracking-wider uppercase">
+                  <span className="inline-block px-4 py-1 bg-teal-600 text-white text-xs font-bold rounded-full tracking-wider uppercase">
                     Start Here
                   </span>
                 </div>
               )}
 
               <div className="mb-6">
-                <h3 className="text-lg font-bold text-white mb-2">{offer.name}</h3>
+                <h3 className="font-playfair text-lg font-bold text-white mb-2">{offer.name}</h3>
                 <div className="flex items-baseline gap-1 mb-3">
-                  <span className={`text-3xl font-bold ${offer.featured ? 'text-amber-400' : 'text-white'}`}>
+                  <span className={`text-3xl font-bold ${offer.featured ? 'text-teal-400' : 'text-white'}`}>
                     {offer.price}
                   </span>
                   <span className="text-zinc-500 text-sm">{offer.priceNote}</span>
@@ -117,14 +117,14 @@ export default function RescueOffers() {
               <ul className="space-y-2.5 mb-8 flex-1">
                 {offer.deliverables.map((d) => (
                   <li key={d} className="flex items-start gap-2.5">
-                    <CheckCircle className={`w-4 h-4 flex-shrink-0 mt-0.5 ${offer.featured ? 'text-amber-400' : 'text-zinc-500'}`} />
+                    <CheckCircle className={`w-4 h-4 flex-shrink-0 mt-0.5 ${offer.featured ? 'text-teal-400' : 'text-zinc-500'}`} />
                     <span className="text-zinc-400 text-sm leading-relaxed">{d}</span>
                   </li>
                 ))}
               </ul>
 
               {offer.footnote && (
-                <p className="text-amber-400/70 text-xs italic mb-5 text-center">{offer.footnote}</p>
+                <p className="text-teal-400/70 text-xs italic mb-5 text-center">{offer.footnote}</p>
               )}
 
               <a
@@ -133,7 +133,7 @@ export default function RescueOffers() {
                 rel={offer.external ? 'noopener noreferrer' : undefined}
                 className={`group inline-flex items-center justify-center gap-2 px-6 py-3.5 font-semibold text-sm rounded-xl transition-all duration-200 ${
                   offer.featured
-                    ? 'bg-amber-600 hover:bg-amber-500 text-white shadow-lg shadow-amber-600/20'
+                    ? 'bg-teal-600 hover:bg-teal-500 text-white shadow-lg shadow-teal-600/20'
                     : 'border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white'
                 }`}
               >

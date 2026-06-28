@@ -64,16 +64,16 @@ export default function RescueContact() {
   }
 
   const inputClass =
-    'w-full px-4 py-3 bg-zinc-900 border border-zinc-700 rounded-xl text-white placeholder:text-zinc-600 text-sm focus:outline-none focus:border-amber-500 transition-colors'
+    'w-full px-4 py-3 bg-zinc-900 border border-zinc-700 rounded-xl text-white placeholder:text-zinc-600 text-sm focus:outline-none focus:border-teal-500 transition-colors'
 
   return (
     <section id="contact" className="py-28 bg-[#0D0D10]">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-amber-500 text-sm font-semibold uppercase tracking-widest mb-3">
+          <p className="text-teal-500 text-sm font-semibold uppercase tracking-widest mb-3">
             Get in Touch
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
             Tell Us About Your Spreadsheet.
           </h2>
           <p className="text-zinc-400 text-lg max-w-xl mx-auto">
@@ -93,7 +93,7 @@ export default function RescueContact() {
                   className="flex items-center gap-3 text-zinc-400 hover:text-white transition-colors"
                 >
                   <div className="w-9 h-9 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-4 h-4 text-amber-400" />
+                    <Phone className="w-4 h-4 text-teal-400" />
                   </div>
                   <div>
                     <p className="text-xs text-zinc-600 mb-0.5">Phone</p>
@@ -105,7 +105,7 @@ export default function RescueContact() {
                   className="flex items-center gap-3 text-zinc-400 hover:text-white transition-colors"
                 >
                   <div className="w-9 h-9 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-4 h-4 text-amber-400" />
+                    <Mail className="w-4 h-4 text-teal-400" />
                   </div>
                   <div>
                     <p className="text-xs text-zinc-600 mb-0.5">Email</p>
@@ -114,7 +114,7 @@ export default function RescueContact() {
                 </a>
                 <div className="flex items-center gap-3 text-zinc-400">
                   <div className="w-9 h-9 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-4 h-4 text-amber-400" />
+                    <Clock className="w-4 h-4 text-teal-400" />
                   </div>
                   <div>
                     <p className="text-xs text-zinc-600 mb-0.5">Response time</p>
@@ -124,10 +124,8 @@ export default function RescueContact() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-amber-500/20 bg-amber-500/5 p-6">
-              <p className="text-amber-300 text-sm font-semibold mb-2">
-                What to send us
-              </p>
+            <div className="rounded-2xl border border-teal-500/20 bg-teal-500/5 p-6">
+              <p className="text-teal-300 text-sm font-semibold mb-2">What to send us</p>
               <ul className="space-y-1.5 text-zinc-400 text-sm">
                 <li>— A description of what the spreadsheet does</li>
                 <li>— Who uses it and how often</li>
@@ -146,8 +144,8 @@ export default function RescueContact() {
             <div className="rounded-2xl border border-zinc-800 bg-zinc-900/20 p-8">
               {status === 'success' ? (
                 <div className="flex flex-col items-center justify-center py-16 text-center">
-                  <CheckCircle className="w-14 h-14 text-amber-400 mb-4" />
-                  <h3 className="text-2xl font-bold text-white mb-2">Got it. Thank you.</h3>
+                  <CheckCircle className="w-14 h-14 text-teal-400 mb-4" />
+                  <h3 className="font-playfair text-2xl font-bold text-white mb-2">Got it. Thank you.</h3>
                   <p className="text-zinc-400 text-base max-w-xs">
                     Jaclyn will review this and reach out within 24 hours.
                   </p>
@@ -157,7 +155,7 @@ export default function RescueContact() {
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-medium text-zinc-400 mb-1.5">
-                        Your Name <span className="text-amber-500">*</span>
+                        Your Name <span className="text-teal-500">*</span>
                       </label>
                       <input
                         type="text"
@@ -187,7 +185,7 @@ export default function RescueContact() {
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-medium text-zinc-400 mb-1.5">
-                        Email <span className="text-amber-500">*</span>
+                        Email <span className="text-teal-500">*</span>
                       </label>
                       <input
                         type="email"
@@ -233,7 +231,7 @@ export default function RescueContact() {
 
                   <div>
                     <label className="block text-xs font-medium text-zinc-400 mb-1.5">
-                      What does your spreadsheet manage? <span className="text-amber-500">*</span>
+                      What does your spreadsheet manage? <span className="text-teal-500">*</span>
                     </label>
                     <textarea
                       name="description"
@@ -272,7 +270,7 @@ export default function RescueContact() {
                   <button
                     type="submit"
                     disabled={status === 'loading'}
-                    className="group w-full inline-flex items-center justify-center gap-2 py-4 bg-amber-600 hover:bg-amber-500 disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-amber-600/20"
+                    className="group w-full inline-flex items-center justify-center gap-2 py-4 bg-teal-600 hover:bg-teal-500 disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-teal-600/20"
                   >
                     {status === 'loading' ? 'Sending...' : 'Send to Jaclyn'}
                     {status !== 'loading' && (

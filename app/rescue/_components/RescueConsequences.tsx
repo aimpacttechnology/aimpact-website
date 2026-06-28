@@ -22,7 +22,7 @@ const scenarios = [
   {
     trigger: 'You decide to sell.',
     story:
-      'A buyer\'s due diligence team asks how your operation works. You show them the spreadsheet. They ask for documentation. There is none. They ask who else can run it. Nobody. The deal gets complicated.',
+      "A buyer's due diligence team asks how your operation works. You show them the spreadsheet. They ask for documentation. There is none. They ask who else can run it. Nobody. The deal gets complicated.",
   },
 ]
 
@@ -31,12 +31,12 @@ export default function RescueConsequences() {
     <section className="py-28 bg-[#09090B]">
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-amber-500 text-sm font-semibold uppercase tracking-widest mb-3">
+          <p className="text-teal-500 text-sm font-semibold uppercase tracking-widest mb-3">
             What This Looks Like When It Goes Wrong
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight leading-[1.1]">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight leading-[1.1]">
             These Are Not Hypotheticals.{' '}
-            <span className="text-amber-400">These Are Phone Calls We Get.</span>
+            <span className="text-teal-400">These Are Phone Calls We Get.</span>
           </h2>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
             The businesses that call us are usually not in crisis yet. But one of these
@@ -61,8 +61,8 @@ export default function RescueConsequences() {
           ))}
         </div>
 
-        <div className="mt-10 rounded-2xl border border-amber-500/20 bg-amber-500/5 p-7 text-center">
-          <p className="text-amber-300 text-lg font-semibold mb-2">
+        <div className="mt-10 rounded-2xl border border-teal-500/20 bg-teal-500/5 p-7 text-center">
+          <p className="text-teal-300 text-lg font-semibold mb-2">
             None of these require a disaster to prevent.
           </p>
           <p className="text-zinc-400 text-base leading-relaxed max-w-2xl mx-auto">
