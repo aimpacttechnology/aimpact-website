@@ -29,10 +29,12 @@ export default function RescueFinalCTA() {
             className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-teal-600 hover:bg-teal-500 text-white font-semibold text-lg rounded-xl transition-all duration-200 shadow-lg shadow-teal-600/20"
           />
           <a
-            href="#contact"
+            href="https://cal.com/landon-aimpacttechnology.com/discovery-call"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white font-semibold text-lg rounded-xl transition-all duration-200"
           >
-            Tell Us Your Situation First
+            Schedule a Free Call First
           </a>
         </div>
 

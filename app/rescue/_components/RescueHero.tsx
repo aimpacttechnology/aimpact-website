@@ -25,20 +25,22 @@ export default function RescueHero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="https://cal.com/landon-aimpacttechnology.com/discovery-call"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-teal-600 hover:bg-teal-600/10 text-teal-400 hover:text-teal-300 font-semibold text-lg rounded-xl transition-all duration-200"
+          >
+            Schedule a Free Call
+          </a>
           <RescueCTAButton
-            label="Book a $200 Health Check"
+            label="Get Started — $200"
             className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-teal-600 hover:bg-teal-500 text-white font-semibold text-lg rounded-xl transition-all duration-200 shadow-lg shadow-teal-600/20"
           />
-          <a
-            href="#contact"
-            className="inline-flex items-center justify-center px-8 py-4 border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white font-semibold text-lg rounded-xl transition-all duration-200"
-          >
-            Tell Us Your Situation
-          </a>
         </div>
 
         <p className="mt-6 text-sm text-zinc-600">
-          No obligation. No sales pitch. A clear report on what you have and what it would take to protect it.
+          Not sure yet? The call is free. The Health Check is $200 flat with a full written report.
         </p>
       </div>
     </section>
