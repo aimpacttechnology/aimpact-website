@@ -49,7 +49,7 @@ export async function POST(req: NextRequest) {
         })
         .eq('id', lead_id)
         .then(() => {})
-        .catch(console.error)
+        .then(undefined, console.error)
     }
 
     // Confirmation email to client
