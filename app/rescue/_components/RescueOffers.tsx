@@ -5,10 +5,10 @@ const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
 const offers = [
   {
     name: 'Spreadsheet Health Check',
-    price: '$497',
-    priceNote: '– $1,500 depending on complexity',
+    price: '$200',
+    priceNote: 'flat fee',
     description:
-      'The right first step. Before you make any decisions about your spreadsheet, you need to understand exactly what you have.',
+      'The right first step — and the best $200 you will spend on your business this year. Before anything else, you need to know exactly what you have.',
     featured: true,
     cta: 'Book a Health Check',
     ctaHref: CAL_URL,
@@ -18,30 +18,31 @@ const offers = [
       'Risk assessment — what happens if this file breaks or walks out',
       'Formula and logic audit by Jaclyn personally',
       'Identification of manual bottlenecks and single points of failure',
-      'Clear PDF report with findings and options',
+      'Clear PDF report with findings',
+      'Estimated hours and scope for a Rescue Build, if needed',
       'Delivered within 5 business days',
       'Optional video walkthrough included',
     ],
-    footnote: 'Sometimes the report is all you need. We will tell you honestly.',
+    footnote: 'Sometimes the report is all you need. We will tell you honestly. The build estimate is included either way.',
   },
   {
     name: 'Spreadsheet Rescue Build',
-    price: '$3,000',
-    priceNote: '– $15,000+ depending on scope',
+    price: 'Hourly',
+    priceNote: '— rate & estimated hours quoted after your Health Check',
     description:
-      'When the Health Check shows your operation needs more than a patch — we build the system that replaces it, without losing what made it work.',
+      'When the Health Check shows your operation needs more than a patch. We build the replacement system — without losing what made the original work.',
     featured: false,
     cta: 'Schedule a Scoping Call',
     ctaHref: CAL_URL,
     external: true,
     deliverables: [
+      'Scope, rate, and timeline defined in your Health Check report',
       'Your workbook converted into a secure, web-based system',
       'User access with role-based permissions',
       'Reliable database with backup and recovery',
-      'Import and export tools for your existing data',
-      'Dashboard and reporting built around your workflow',
+      'Dashboard and reporting built around your existing workflow',
       'Training and written documentation',
-      'You own it — no monthly platform fees',
+      'No ongoing platform fees — you own it outright',
     ],
     footnote: null,
   },
@@ -50,7 +51,7 @@ const offers = [
     price: '$99',
     priceNote: '– $500/month depending on scope',
     description:
-      'Ongoing maintenance and peace of mind. Someone watching your back so you are not alone when something breaks.',
+      'Ongoing maintenance and peace of mind. Someone watching your back so you are not alone when something breaks or needs updating.',
     featured: false,
     cta: 'Ask About Support',
     ctaHref: '#contact',
@@ -76,12 +77,12 @@ export default function RescueOffers() {
             How We Help
           </p>
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight">
-            Start With Understanding.{' '}
-            <span className="text-teal-400">Build From There.</span>
+            Start With the Health Check.{' '}
+            <span className="text-teal-400">Everything Else Follows From There.</span>
           </h2>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            Most clients start with the Health Check. It is the fastest way to know
-            exactly what you have — and make a clear-eyed decision about what to do next.
+            The Health Check tells you what you have, what is at risk, and what a fix
+            would cost. You make every decision from there with full information.
           </p>
         </div>
 
@@ -105,11 +106,11 @@ export default function RescueOffers() {
 
               <div className="mb-6">
                 <h3 className="font-playfair text-lg font-bold text-white mb-2">{offer.name}</h3>
-                <div className="flex items-baseline gap-1 mb-3">
+                <div className="flex items-baseline gap-2 mb-3 flex-wrap">
                   <span className={`text-3xl font-bold ${offer.featured ? 'text-teal-400' : 'text-white'}`}>
                     {offer.price}
                   </span>
-                  <span className="text-zinc-500 text-sm">{offer.priceNote}</span>
+                  <span className="text-zinc-500 text-sm leading-snug">{offer.priceNote}</span>
                 </div>
                 <p className="text-zinc-400 text-sm leading-relaxed">{offer.description}</p>
               </div>

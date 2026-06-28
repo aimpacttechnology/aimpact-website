@@ -4,6 +4,7 @@ import RescueHero from './_components/RescueHero'
 import RescueProblem from './_components/RescueProblem'
 import RescueConsequences from './_components/RescueConsequences'
 import RescueStory from './_components/RescueStory'
+import RescuePrivacy from './_components/RescuePrivacy'
 import RescueHealthCheck from './_components/RescueHealthCheck'
 import RescueMeetSpreadsheet from './_components/RescueMeetSpreadsheet'
 import RescueOffers from './_components/RescueOffers'
@@ -35,6 +36,7 @@ export default function RescuePage() {
         <RescueProblem />
         <RescueConsequences />
         <RescueStory />
+        <RescuePrivacy />
         <RescueHealthCheck />
         <RescueMeetSpreadsheet />
         <RescueOffers />

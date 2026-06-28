@@ -134,7 +134,7 @@ export default function RescueContact() {
               </ul>
               <p className="text-zinc-600 text-xs mt-4">
                 You do not need to attach your file. We will request it after we connect.
-                Everything is treated as confidential.
+                NDA available on request before anything is shared.
               </p>
             </div>
           </div>
