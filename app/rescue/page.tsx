@@ -6,6 +6,7 @@ import RescueConsequences from './_components/RescueConsequences'
 import RescueStory from './_components/RescueStory'
 import RescuePrivacy from './_components/RescuePrivacy'
 import RescueHealthCheck from './_components/RescueHealthCheck'
+import RescueHealthScore from './_components/RescueHealthScore'
 import RescueMeetSpreadsheet from './_components/RescueMeetSpreadsheet'
 import RescueOffers from './_components/RescueOffers'
 import RescueIndustries from './_components/RescueIndustries'
@@ -39,6 +40,7 @@ export default function RescuePage() {
         <RescueStory />
         <RescuePrivacy />
         <RescueHealthCheck />
+        <RescueHealthScore />
         <RescueMeetSpreadsheet />
         <RescueOffers />
         <RescueIndustries />

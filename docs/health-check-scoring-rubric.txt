@@ -1,0 +1,300 @@
+SPREADSHEET HEALTH SCORE™ — SCORING RUBRIC
+AiMpact Technology | Internal Use — Jaclyn McDuff
+================================================
+Total possible: 100 points across 7 categories
+Updated: June 2026
+
+
+HOW TO USE THIS RUBRIC
+-----------------------
+After completing your review of the client's spreadsheet, score each
+category using the criteria below. Add up the totals. Assign the
+overall label based on the final score. Include the score card in
+the PDF report with a one-sentence note per category.
+
+Total Score → Label:
+  80 – 100  🟢 Excellent
+  55 – 79   🟡 Moderate Risk
+  0  – 54   🔴 High Risk
+
+
+════════════════════════════════════════════════════════════════
+CATEGORY 1: FORMULA INTEGRITY                         (0 – 20)
+════════════════════════════════════════════════════════════════
+Are the formulas accurate, traceable, and free of critical errors?
+
+  18 – 20   All formulas are clean. No errors. Logic is traceable.
+            No hardcoded values where formulas should be.
+            No circular references. No unexplained output.
+
+  14 – 17   Minor issues only. Core logic is sound. A few hardcoded
+            values or redundant formulas. No errors that affect output.
+
+  8  – 13   Multiple hardcoded values. Some #REF!, #N/A, or #VALUE!
+            errors — not all affect output but risk exists. Dependencies
+            between tabs not clearly documented.
+
+  4  – 7    Significant formula problems. Results cannot be fully
+            trusted without manual verification. Multiple error cells.
+            Circular references present.
+
+  0  – 3    Critical failures. Formulas producing incorrect output.
+            Business decisions based on this data are at risk.
+
+What to look for:
+  - Error cells (#REF!, #N/A, #DIV/0!, #VALUE!)
+  - Formulas referencing external files that may have moved
+  - Hardcoded numbers where calculations should be
+  - VLOOKUP/INDEX-MATCH referencing ranges that could shift
+  - Formulas that produce plausible-looking but incorrect results
+  - Circular references
+
+
+════════════════════════════════════════════════════════════════
+CATEGORY 2: KNOWLEDGE TRANSFER                        (0 – 20)
+════════════════════════════════════════════════════════════════
+If the person who built this left today, could anyone else run it?
+
+  18 – 20   At least 2 people fully understand the system.
+            It has been documented and successfully handed off before.
+            A new user could get up to speed in under a week.
+
+  14 – 17   2 people understand it at different levels.
+            Minimal documentation but the second person could manage
+            with guidance.
+
+  8  – 13   Only 1 person fully understands it. A second person knows
+            parts. No documentation. A gap would cause disruption
+            but not total failure.
+
+  4  – 7    Only 1 person understands it. That person built it and
+            nobody else has ever used it independently.
+            No documentation exists.
+
+  0  – 3    Only 1 person understands it AND that person is
+            retiring, transitioning, or has already left.
+            Institutional knowledge is at immediate risk of loss.
+
+What to look for:
+  - "Only I know how this works" language from the client
+  - Custom functions or macros with no explanation
+  - Undocumented decision rules ("we just know to do it this way")
+  - Tabs that nobody on the team opens or understands
+
+
+════════════════════════════════════════════════════════════════
+CATEGORY 3: SUCCESSION READINESS                      (0 – 15)
+════════════════════════════════════════════════════════════════
+Is there a plan for what happens to this system when ownership or
+management changes?
+
+  13 – 15   Written succession plan exists. Training materials or
+            documentation are in place. A named successor has been
+            identified and trained on the system.
+
+  9  – 12   Succession is being actively planned. Some documentation
+            exists. Successor identified but not fully trained.
+
+  5  – 8    Owner is aware of the risk and has thought about it but
+            no formal plan or documentation in place.
+
+  2  – 4    No plan. No documentation. No named successor.
+            Owner has not yet seriously considered the transition risk.
+
+  0  – 1    No plan AND the triggering event (retirement, sale,
+            health event) is imminent or has already begun.
+
+What to look for:
+  - Upcoming retirement, sale, or ownership change
+  - Whether any training materials exist
+  - Whether a successor has been named and trained
+  - Whether the business could survive a 30-day absence of the owner
+
+
+════════════════════════════════════════════════════════════════
+CATEGORY 4: PROCESS DOCUMENTATION                     (0 – 15)
+════════════════════════════════════════════════════════════════
+Are the steps for using and maintaining this spreadsheet written down?
+
+  13 – 15   All major processes are documented. Written SOPs or
+            instructions exist for data entry, monthly updates,
+            reporting, and version control. Documentation is current.
+
+  9  – 12   Most processes are documented. A few gaps in less
+            critical areas. Documentation is reasonably current.
+
+  5  – 8    Some documentation exists but significant gaps. Critical
+            steps (month-end close, data entry rules) are undocumented.
+
+  2  – 4    Minimal documentation. A few notes or comments in cells
+            but no structured instructions.
+
+  0  – 1    No documentation of any kind. Everything is tribal
+            knowledge held by one person.
+
+What to look for:
+  - Cell comments that explain processes (good sign)
+  - A separate instruction document or README
+  - Version history or change log
+  - Manual steps that only happen in someone's head
+  - Data entry validation rules (or lack of them)
+
+
+════════════════════════════════════════════════════════════════
+CATEGORY 5: DATA BACKUP                               (0 – 15)
+════════════════════════════════════════════════════════════════
+What happens if the file is lost, corrupted, or accidentally overwritten?
+
+  13 – 15   Automated backup runs on a schedule. File is stored in at
+            least two locations (e.g. local + cloud). Backup has been
+            tested and verified to restore. Version history is maintained.
+
+  9  – 12   Regular backups exist but are manual or not tested.
+            Cloud storage is used but versioning may be limited.
+
+  5  – 8    Backups are inconsistent. The file is sometimes backed up
+            but not reliably. No documented backup schedule.
+
+  2  – 4    File exists in only one location. Manual saves only.
+            Previous versions are not retained.
+
+  0  – 1    No backup. Single file on one computer or drive.
+            Loss of that device = loss of the file.
+
+What to look for:
+  - Where the file is stored (local drive vs. shared/cloud)
+  - Whether OneDrive/SharePoint/Google Drive auto-versioning is on
+  - When they last tested a restore
+  - Whether "FINAL_v3_USE THIS ONE" naming convention suggests no versioning
+
+
+════════════════════════════════════════════════════════════════
+CATEGORY 6: REPORTING                                 (0 – 10)
+════════════════════════════════════════════════════════════════
+Are the reports this spreadsheet generates accurate, reproducible,
+and auditable?
+
+  9 – 10   Reports run automatically or with minimal steps. Output
+           is consistent and auditable. Results can be traced back
+           to source data. Someone else could reproduce the report.
+
+  7 – 8    Reports work reliably but require a few manual steps.
+           Mostly reproducible. Minor risk of human error in the process.
+
+  4 – 6    Reports exist but require significant manual work or
+           judgment to produce. Accuracy depends on who runs them.
+
+  2 – 3    Reports are inconsistent or unreliable. Numbers sometimes
+           don't match between versions or periods.
+
+  0 – 1    No reliable reporting. Numbers cannot be independently
+           verified. Reports are produced ad hoc with no consistent method.
+
+What to look for:
+  - How many manual steps are required to generate a report
+  - Whether the output is consistent run-to-run
+  - Whether there is a data source that can be audited
+  - Manual copy-paste steps that could introduce error
+
+
+════════════════════════════════════════════════════════════════
+CATEGORY 7: SECURITY                                  (0 – 5)
+════════════════════════════════════════════════════════════════
+Who can access, edit, or delete this file and its data?
+
+  5       File is password protected or access-controlled. Only
+          authorized users can edit. Sensitive data is appropriately
+          restricted. No unnecessary sharing.
+
+  3 – 4   Limited sharing. Most users who have access should have it.
+          Minor exposure (a few extra people have access who don't
+          need it). No sensitive data fully exposed.
+
+  1 – 2   File is shared broadly. Multiple people can edit without
+          restriction. Shared folder with no access control.
+          Sensitive data (client names, financials) visible to all.
+
+  0       No security. File is on a shared drive, emailed as an
+          attachment, or accessible to anyone with the link.
+          No edit controls. History cannot be audited.
+
+What to look for:
+  - Is the file password protected?
+  - Where is it stored and who can access that location?
+  - Is it emailed around as an attachment?
+  - Does it contain PII, financials, or confidential client data?
+
+
+════════════════════════════════════════════════════════════════
+SCORING SUMMARY SHEET
+════════════════════════════════════════════════════════════════
+
+Client: ______________________________
+Date:   ______________________________
+File:   ______________________________
+
+  Category                  Score    Max    Notes
+  -----------------------   -----    ---    --------------------------------
+  Formula Integrity         ___      20
+  Knowledge Transfer        ___      20
+  Succession Readiness      ___      15
+  Process Documentation     ___      15
+  Data Backup               ___      15
+  Reporting                 ___      10
+  Security                  ___       5
+  -----------------------   -----    ---
+  TOTAL                     ___      100
+
+  Overall Label:
+    [ ] 🟢 Excellent (80-100)
+    [ ] 🟡 Moderate Risk (55-79)
+    [ ] 🔴 High Risk (0-54)
+
+
+WRITING THE ONE-LINE CATEGORY NOTES
+-------------------------------------
+Keep each note to one sentence. Focus on the specific finding, not
+the score. The score tells them HOW BAD. The note tells them WHY.
+
+  Good:  "Two broken #REF! errors found in the Line 7 allocation tab."
+  Bad:   "Formula integrity needs improvement."
+
+  Good:  "Only one person knows how to run the month-end close."
+  Bad:   "Knowledge transfer is limited."
+
+  Good:  "File is saved to a local C: drive with no cloud backup."
+  Bad:   "Backup practices are inadequate."
+
+The note should be something the client could read aloud to their
+business partner and immediately understand the risk.
+
+
+WHAT TO INCLUDE IN THE REPORT
+-------------------------------
+The PDF report should include:
+
+  1. Cover page with client name, date, file name reviewed
+  2. The score card (total score, label, all 7 categories with bars)
+  3. One-paragraph executive summary ("Here is what we found overall")
+  4. Section for each category:
+       - Score and label
+       - What we looked at
+       - What we found (specific — name the tabs, cells, issues)
+       - Risk if unaddressed
+       - Recommended next step (if any)
+  5. Closing section: "What this means for your business"
+  6. Appendix: build cost estimate (if remediation is warranted)
+
+The score card visually should appear on page 1 or 2 so the client
+sees their number before reading the details.
+
+
+TRADEMARK NOTE
+---------------
+"Spreadsheet Health Score™" is a service mark of AiMpact Technology.
+Use the ™ symbol in all client-facing materials.
+
+================================================
+Internal document — AiMpact Technology
+Not for distribution to clients
+================================================
