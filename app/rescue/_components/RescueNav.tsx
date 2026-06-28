@@ -21,7 +21,7 @@ export default function RescueNav() {
           rel="noopener noreferrer"
           className="group inline-flex items-center gap-2 px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-white font-semibold text-sm rounded-xl transition-all duration-200"
         >
-          Book a $497 Health Check
+          Book a $200 Health Check
           <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
         </a>
       </div>

@@ -77,7 +77,7 @@ export default function RescueContact() {
             Tell Us About Your Spreadsheet.
           </h2>
           <p className="text-zinc-400 text-lg max-w-xl mx-auto">
-            Jaclyn will review your submission personally and respond within 24 hours.
+            We review every submission and respond within 1–2 business days.
             No sales team. No form letter. A real answer.
           </p>
         </div>
@@ -147,7 +147,7 @@ export default function RescueContact() {
                   <CheckCircle className="w-14 h-14 text-teal-400 mb-4" />
                   <h3 className="font-playfair text-2xl font-bold text-white mb-2">Got it. Thank you.</h3>
                   <p className="text-zinc-400 text-base max-w-xs">
-                    Jaclyn will review this and reach out within 24 hours.
+                    We will review this and be in touch within 1–2 business days.
                   </p>
                 </div>
               ) : (

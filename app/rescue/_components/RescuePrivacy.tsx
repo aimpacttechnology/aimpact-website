@@ -3,8 +3,8 @@ import { Lock, Shield, UserCheck, Trash2, FileX, Eye } from 'lucide-react'
 const commitments = [
   {
     icon: UserCheck,
-    title: 'Jaclyn reviews it. Nobody else.',
-    body: 'Your file is seen by Jaclyn personally. It is not passed to a team, a contractor, or an AI system for processing. One person. The one you hired.',
+    title: 'Reviewed by our team. Not passed around.',
+    body: 'Your file stays within AiMpact Technology. It is not shared with outside contractors, third-party vendors, or AI systems for processing. A small team. A clear commitment.',
   },
   {
     icon: Shield,
@@ -81,8 +81,8 @@ export default function RescuePrivacy() {
           </p>
           <p className="text-zinc-400 text-base leading-relaxed max-w-2xl mx-auto">
             Start by describing what your spreadsheet does in the form below.
-            Jaclyn will respond within 24 hours, and we can discuss what you are
-            comfortable sharing before anything changes hands.
+            We will be in touch to discuss what you are comfortable sharing
+            before anything changes hands.
           </p>
         </div>
       </div>
