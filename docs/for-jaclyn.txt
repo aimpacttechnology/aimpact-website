@@ -1,0 +1,252 @@
+SPREADSHEET RESCUE — FOR JACLYN
+AiMpact Technology | Internal Overview
+================================================
+Written for: Jaclyn McDuff, CFO & Co-Founder
+Last updated: June 2026
+
+
+WHAT THIS BUSINESS IS
+---------------------
+We help businesses that are quietly running on a fragile Excel spreadsheet
+they cannot afford to lose. We audit it, document it, and either protect it
+or replace it with something safer — at a price that is a fraction of what
+this service has historically cost.
+
+Traditional spreadsheet management and bookkeeping consultants charge
+$800/month or more for this kind of work. We charge $200 for a Health
+Check and $100/month for ongoing support. We can do that because Landon
+handles the technical platform side, which removes most of the manual
+labor that made the old model expensive.
+
+You are not a bookkeeper. You are not a consultant. You are the person
+who has actually done this work at scale — multiple pipeline clients,
+federal regulatory filings, allocation systems — and who understands
+what is at risk when a business depends on a spreadsheet only one person
+understands.
+
+That credential is real and it is rare. Nobody else selling this service
+in our market has it.
+
+
+YOUR BACKGROUND AND WHY IT MATTERS
+-----------------------------------
+You spent five years as an Allocation Analyst at Southern Petroleum
+Laboratories. That means:
+
+  - You maintained ledgers and financial records for multiple oil and
+    gas pipeline clients at the same time
+  - You generated financial statements and allocation reports
+  - You audited allocation systems to find errors and discrepancies
+  - You filed regulatory reports with MMS/BOEMRE
+  - You resolved client account discrepancies
+
+You have a Bachelor of Mathematical Science from UH-Clear Lake.
+
+None of this is being embellished on the website. It is your actual
+history. When a landman or pipeline operator hears that background,
+they recognize someone who has been on the inside of their world.
+That is why you are the face of this service and not Landon.
+
+
+HOW THE SERVICE WORKS — START TO FINISH
+-----------------------------------------
+
+Step 1: Client reaches out via aimpacttechnology.com/rescue
+  - They fill out the contact form describing their spreadsheet
+  - OR they book a $200 Health Check directly on the calendar
+  - You or Landon receives an email notification immediately
+
+Step 2: Initial conversation (Landon handles this by default)
+  - 20-30 minute call to understand the situation
+  - What does the spreadsheet do?
+  - Who built it and who uses it?
+  - What are they worried about?
+  - Is there a time pressure (retirement, audit, sale)?
+  - You can sit in on these calls as much or as little as you want
+
+Step 3: The Health Check — $200 flat fee
+  - Client sends you the spreadsheet (or a redacted version)
+  - You review it: formulas, tab dependencies, manual processes,
+    data structure, broken links, hidden logic, audit risks
+  - You document what you find in plain language
+  - Landon formats it into the PDF report
+  - Deliverables: risk assessment, findings, and a scope/hour
+    estimate if they want a Rescue Build
+  - Turnaround: 5 business days
+  - Optional: short Loom video walking through your findings
+
+Step 4: Client decides what to do next
+  - Option A: The report is enough. They now understand their risk
+    and can make decisions with full information. Done.
+  - Option B: They want a Rescue Build. Landon scopes and builds it
+    at the hourly rate quoted in the Health Check report.
+  - Option C: They want ongoing support. $100/month.
+
+Step 5: Monthly Support (if they sign on)
+  - Backups, minor updates, reporting help, data cleanup
+  - Most of this is Landon on the technical side
+  - Your role: review accuracy, answer client questions about their
+    data, flag anything that looks off
+
+
+WHAT YOUR ROLE ACTUALLY IS
+----------------------------
+Your core job is the Health Check review. That is the center of this
+business. Everything else flows from that.
+
+Specifically, during a Health Check you are looking for:
+
+  FORMULA RISKS
+  - Formulas that reference other tabs or files (if those move, it breaks)
+  - Circular references
+  - Hardcoded values where a formula should be
+  - VLOOKUP or INDEX/MATCH pointing to ranges that could shift
+  - Division by zero risks
+
+  DATA RISKS
+  - No data validation (anyone can type anything anywhere)
+  - Duplicate entries
+  - Inconsistent formatting (dates stored as text, numbers stored as text)
+  - Mixed data types in the same column
+
+  PROCESS RISKS
+  - Manual steps that depend on one person (copy/paste from email,
+    manual entry every Monday, etc.)
+  - No version control (multiple copies floating around)
+  - No backup process
+  - Single-user dependency (only one person knows the system)
+
+  AUDIT RISKS
+  - Records that could be questioned in a compliance review
+  - Data that cannot be traced back to a source
+  - Calculations that cannot be independently verified
+
+  TRIBAL KNOWLEDGE
+  - Anything that only works because the person who built it is there
+  - Undocumented rules ("don't touch column G")
+  - Hidden sheets or named ranges that the client does not know exist
+
+You write up what you find. Landon formats the report. The client
+gets a document they can act on.
+
+
+HOW YOU CAN SELL THIS (ON YOUR OWN TERMS)
+------------------------------------------
+You are introverted and that is fine. This service does not require
+you to do cold calls or live demos. Here are ways you can be involved
+in sales that fit how you work:
+
+  OPTION 1: Discovery by email
+  - When someone fills out the contact form, you respond personally
+  - A short email asking 3-4 follow-up questions about their situation
+  - This builds trust faster than a phone call for many clients
+  - You are already the "expert who reviewed my form" before you ever speak
+
+  OPTION 2: LinkedIn
+  - Share one post about a type of problem you commonly see
+    (example: "Here is what a broken VLOOKUP actually costs a business")
+  - You do not have to pitch. Describe the problem. People will ask.
+  - Landon can help draft these if you want
+
+  OPTION 3: The consultation call (for when you are ready)
+  - Landon runs the intro call. You join for the technical part.
+  - You ask about the spreadsheet. You speak their language.
+  - Clients in oil & gas and industrial services will recognize
+    immediately that you have been in their world.
+
+  OPTION 4: Referrals
+  - The strongest sales channel for this service is word of mouth
+  - One happy client in a landman network or pipeline operator community
+    will send three more
+  - You do not have to sell to the network. You just have to do the
+    work well for the first one.
+
+  WHAT YOU DO NOT HAVE TO DO
+  - Cold calls
+  - High-pressure demos
+  - Explain the tech stack
+  - Handle contracts or billing (Landon has that)
+
+
+THE FINANCIAL PICTURE
+----------------------
+Traditional comparison: $800/month for this type of work
+Our pricing:
+  - Health Check: $200 (one time)
+  - Monthly support: $100/month
+  - Rescue Build: hourly (quoted after Health Check)
+
+What this looks like at small scale:
+
+  5 active monthly support clients = $500/month recurring
+  2 Health Checks/month         = $400
+  1 small Rescue Build/month    = varies by hours
+
+At 10 support clients: $1,000/month recurring before any builds.
+At 20 support clients: $2,000/month recurring.
+
+The support clients are the foundation. Health Checks bring them in.
+Rescue Builds are the high-value projects that fund the business
+while the recurring base grows.
+
+Your cut of this business is whatever you and Landon decide is right.
+That is a conversation between the two of you, not something that
+belongs in a document. What matters is that this is your name on
+the page, your work on the report, and your credential that closes
+the deal.
+
+
+WHAT LANDON HANDLES
+--------------------
+So you know what is NOT on your plate:
+
+  - Website and marketing
+  - Booking system and calendar
+  - Contract templates
+  - Payment processing and invoicing
+  - Technical build work (when a Rescue Build is scoped)
+  - The platform infrastructure (database, backups, hosting)
+  - Email automation and CRM
+  - Report formatting and design
+
+Your job is the work that only you can do: understand the spreadsheet,
+assess the risk, and give the client a clear picture of where they stand.
+
+
+WHERE WE ARE RIGHT NOW
+-----------------------
+The website is live at aimpacttechnology.com/rescue. It has:
+  - Your headshot and story
+  - The $200 Health Check as the primary offer
+  - A data privacy section that explains exactly how we handle files
+  - An NDA option for clients who are not ready to share the real file
+  - A contact form that goes directly to Landon's email
+  - A booking link for clients who are ready to schedule
+
+The AI phone system is also live at (888) 335-4979. If someone calls,
+an AI assistant collects their information and Landon gets an email
+with the call details. You do not have to manage that.
+
+The first thing to do is send this page to one person who might know
+someone who needs it. That is how this starts.
+
+
+A NOTE ON THE WORK ITSELF
+--------------------------
+You have done this work before. Not something like it — this exact work.
+You maintained ledgers for pipeline operators. You found discrepancies
+in allocation systems. You filed the reports that depended on those
+numbers being right.
+
+The difference now is that the client is the business owner, not the
+company you worked for. And instead of being an employee, you are the
+expert they are hiring.
+
+The skill is the same. The credential is the same.
+The business is yours.
+
+
+================================================
+Questions or changes to this document:
+landon@aimpacttechnology.com | (888) 335-4979
+================================================

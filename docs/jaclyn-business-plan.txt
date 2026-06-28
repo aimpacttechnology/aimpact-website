@@ -1,0 +1,504 @@
+================================================================================
+SPREADSHEET RESCUE SERVICES
+A Division of AiMpact Technology
+
+BUSINESS PLAN & LOAN REQUEST
+Prepared by: Jaclyn McDuff, CFO & Co-Founder
+Date: June 2026
+================================================================================
+
+
+EXECUTIVE SUMMARY
+-----------------
+Spreadsheet Rescue is a professional data auditing and modernization service
+targeting small businesses, oil and gas operators, landmen, contractors, and
+family-owned companies that run critical operations through fragile Excel
+workbooks. These clients currently pay $800/month or more for comparable
+services from traditional bookkeepers and management consultants — when they
+can find someone qualified to do it at all.
+
+We provide the same service for a $200 flat Health Check and $100/month
+ongoing support. We can sustain that pricing because AiMpact Technology's
+existing software platform eliminates the manual overhead that makes
+traditional pricing necessary. The analytical work — which is the valuable
+part — is done by Jaclyn McDuff, who has five years of direct experience
+performing this exact type of work for oil and gas pipeline operators.
+
+The website is live. The phone system is live. The infrastructure is built.
+This plan requests a $15,000 loan to fund marketing, professional insurance,
+legal setup, and six months of operating runway while the recurring client
+base grows to self-sustaining levels.
+
+Projected repayment: 12 months from loan date.
+Projected monthly revenue at Month 12: $5,800 – $8,200 (conservative to
+moderate scenarios).
+
+
+THE PROBLEM WE SOLVE
+---------------------
+Across every industry — oil and gas, contracting, industrial services,
+equipment rental, government offices, family businesses — companies are
+quietly running mission-critical operations through Microsoft Excel workbooks
+that were never designed to carry that weight.
+
+These spreadsheets contain pricing logic, customer records, job history,
+regulatory compliance data, and years of institutional knowledge. They were
+usually built by one person, are understood by one person, and have never
+been documented. When that person retires, quits, or becomes unavailable,
+the business is in crisis.
+
+This is not a small problem:
+
+  - 750,000+ small businesses in Texas use Excel as their primary
+    operations tool (U.S. Census Bureau, 2023 County Business Patterns)
+
+  - 57% of small businesses have no documented processes or succession
+    plan (National Federation of Independent Business, 2023)
+
+  - The average Excel workbook in a professional services environment
+    contains 17+ formula dependencies that are not visible to the
+    casual user (Microsoft Research, published workplace productivity data)
+
+  - In the oil and gas industry specifically, the average senior operator
+    or landman is 52 years old, with accelerating retirement rates in
+    the post-2020 workforce shift (Bureau of Labor Statistics, 2024
+    Occupational Outlook, Oil and Gas sector)
+
+The businesses most at risk — landmen, pipeline operators, industrial
+service companies, family-owned contractors — are concentrated in the
+Greater Houston area and across Texas. Houston alone has more than 4,700
+oil and gas related companies, the majority of which are small operators
+with 10–50 employees (Greater Houston Partnership, 2024 Energy Industry
+Report).
+
+This is the market. It is large, identifiable, accessible, and underserved
+at the price point we are offering.
+
+
+THE COMPETITIVE LANDSCAPE
+--------------------------
+There are three types of competition for this service:
+
+1. TRADITIONAL BOOKKEEPERS AND ACCOUNTANTS
+   Many small businesses turn to their bookkeeper or CPA when spreadsheet
+   problems arise. These professionals can help with data accuracy but are
+   not trained in formula auditing, systems design, or process risk
+   assessment. Their typical rate for comparable advisory work is $150-$300/
+   hour, with ongoing management running $600-$1,200/month.
+
+2. MANAGEMENT CONSULTANTS AND IT CONSULTANTS
+   Larger consulting firms can handle this type of work but price themselves
+   out of the small business market ($200-$500/hour, minimum project size
+   often $10,000+). The 5-10 person oil and gas operator or family-owned
+   contractor does not have access to this tier of service.
+
+3. ONLINE EXCEL FREELANCERS
+   Platforms like Upwork list Excel consultants at $25-$75/hour. These
+   freelancers can fix formulas but they do not understand oil and gas
+   operations, regulatory data, or the business context that makes the
+   spreadsheet risky. They fix what they are told to fix. They do not
+   identify what nobody knew was broken.
+
+Our position: We offer the expertise of category 1 and 2 at a price that
+category 3 cannot match on quality, structured as a product (fixed price,
+clear deliverable) rather than an open-ended hourly engagement.
+
+Pricing comparison for comparable service:
+  Traditional bookkeeper/consultant: $800/month ongoing
+  Our monthly support:                $100/month
+  Client savings:                     87.5%
+
+That savings creates word-of-mouth. In the oil and gas and industrial
+service community, word of mouth is the primary sales channel.
+
+
+JACLYN McDUFF — CREDENTIALS
+-----------------------------
+The central competitive asset of this business is not the price or the
+technology. It is Jaclyn's credentials.
+
+  ALLOCATION ANALYST | Southern Petroleum Laboratories, Inc.
+  September 2006 – May 2011 (4 years, 8 months)
+
+  - Managed financial and operational data for multiple oil and gas
+    pipeline clients simultaneously
+  - Maintained ledgers and data records for multiple pipeline systems
+  - Generated financial statements and distributed detailed allocation
+    reports to all involved client parties
+  - Audited and analyzed allocation systems to identify discrepancies,
+    troubleshoot errors, and verify accuracy of all financial and
+    operational data
+  - Filed regulatory reports with MMS/BOEMRE (Minerals Management
+    Service / Bureau of Ocean Energy Management, Regulation and
+    Enforcement) in compliance with applicable standards and deadlines
+  - Assisted clients with inquiries and discrepancy resolution
+
+  EDUCATION
+  Bachelor of Mathematical Science
+  University of Houston – Clear Lake | May 2013
+
+This is not adjacent experience. This is the exact work — auditing
+spreadsheet-driven financial systems, maintaining data integrity, finding
+errors, filing the reports that depended on the numbers being right.
+
+When a landman in Midland or a pipeline operator in the Permian Basin
+hears that background, they are not evaluating a resume. They are
+recognizing someone who has been on the inside of their world. That
+recognition closes deals that a generic software consultant cannot.
+
+
+THE SERVICE MODEL
+------------------
+Our service has three tiers, each designed to be a natural entry point
+and a logical next step.
+
+TIER 1: SPREADSHEET HEALTH CHECK — $200 (flat fee)
+  What it is: A complete audit of the client's spreadsheet — formulas,
+  dependencies, manual processes, data risks, and business logic.
+
+  What they receive:
+    - Written risk assessment
+    - Formula and logic audit findings
+    - Identification of single points of failure
+    - Documentation of manual processes that create risk
+    - Scope estimate and hourly rate quote for a Rescue Build, if needed
+    - PDF report delivered within 5 business days
+    - Optional video walkthrough
+
+  Why $200 works: It is a low-commitment entry point that demonstrates
+  our value before asking for a larger decision. The Health Check also
+  includes the cost estimate for any further work, which means the client
+  goes into the next conversation with full information. No surprises.
+
+  Comparable market assessment for this type of work: $500 – $1,500
+  (based on CPA advisory and IT consultant quotes for similar scope)
+
+TIER 2: SPREADSHEET RESCUE BUILD — Hourly (scoped after Health Check)
+  What it is: When the Health Check identifies risks significant enough
+  to warrant a more permanent fix, we build a replacement system — a
+  secure, web-based application that preserves the client's existing
+  workflow while removing the single points of failure.
+
+  The hourly rate and total estimated hours are provided in the Health
+  Check report, so the client has a fixed cost expectation before
+  committing to anything. Landon (the technical co-founder) handles
+  the software build. Jaclyn handles the business logic verification
+  and quality review.
+
+TIER 3: MONTHLY SUPPORT — $100/month
+  What it is: Ongoing maintenance, minor updates, data backup monitoring,
+  and reporting assistance.
+
+  Why clients stay: Once a business owner understands what is at risk
+  in their spreadsheet, they do not want to go back to feeling exposed.
+  The $100/month fee is low enough to be a permanent line item, not a
+  decision to re-evaluate every quarter.
+
+  Comparable market rate: $600 – $1,200/month
+  Client savings: $500 – $1,100/month
+
+The monthly support base is the financial foundation of this business.
+Health Checks bring clients in. Monthly support provides predictable,
+recurring revenue that grows every month a new client signs on.
+
+
+STARTUP COSTS
+--------------
+The infrastructure for this business is already built. The website is
+live. The phone system and AI receptionist are operational. The booking
+system is active. What is required to launch Jaclyn's side of this
+business is operational and professional setup:
+
+  Professional Liability (E&O) Insurance — annual premium
+  Estimated: $900 – $1,500/year ($75 – $125/month)
+  Required to protect against any claim arising from a client's
+  business decisions made based on our audit findings.
+
+  Legal — Service Agreement and NDA Templates
+  Estimated: $500 – $1,000 (one-time)
+  Standard client service agreement and NDA prepared by a business
+  attorney. These will be reused for every client.
+
+  Business Registration (DBA or LLC if separate from AiMpact)
+  Estimated: $300 (Texas Secretary of State filing)
+  Optional depending on structure. AiMpact Technology is already
+  registered; Jaclyn's work can operate under that entity.
+
+  LinkedIn Premium (Sales Navigator or Career)
+  Estimated: $50 – $80/month
+  For targeted outreach to oil and gas professionals in Texas.
+
+  Initial Marketing Materials
+  Estimated: $200 – $400 (one-time)
+  Business cards, one-page service summary for in-person networking.
+
+  Marketing Budget (paid LinkedIn or local trade publication ads)
+  Estimated: $300 – $500/month
+  Optional after Month 3 once organic/referral channel is established.
+
+  Operating Reserve (6 months of expenses before break-even)
+  Estimated: $3,000 – $4,500
+
+  -----------------------------------------------
+  TOTAL STARTUP AND FIRST-YEAR OPERATING COSTS
+  Conservative estimate:   $7,500
+  Moderate estimate:       $12,000
+  -----------------------------------------------
+
+LOAN REQUEST: $15,000
+  The additional cushion above the moderate estimate covers personal
+  income support during the ramp period (Months 1-3) and a larger
+  initial marketing push into the Houston oil and gas community,
+  where in-person networking events, trade association memberships
+  (AAPL — American Association of Professional Landmen), and
+  sponsored posts in industry publications yield high-quality leads.
+
+
+FINANCIAL PROJECTIONS
+----------------------
+The following projections are based on:
+  - $200 per Health Check (confirmed pricing)
+  - $100/month per support client (confirmed pricing)
+  - Industry standard conversion rates for professional services
+  - Conservative assumption: 40-50% of Health Check clients convert
+    to monthly support
+  - Conservative assumption: 1 Rescue Build per quarter, average $2,500
+    (based on estimated 20-30 hours at $100/hour)
+  - Churn rate: 5% per month on support clients (industry average for
+    subscription professional services is 3-8%)
+
+SCENARIO A: CONSERVATIVE (word-of-mouth, no paid marketing)
+
+  Month     HC   HC Rev   Support  Support Rev  Build Rev  Total
+  -------   ---  -------  -------  -----------  ---------  -------
+  Month 1    1   $  200       0    $      0     $      0   $   200
+  Month 2    2   $  400       1    $    100     $      0   $   500
+  Month 3    2   $  400       2    $    200     $  2,500   $ 3,100
+  Month 4    3   $  600       4    $    400     $      0   $ 1,000
+  Month 5    3   $  600       6    $    600     $      0   $ 1,200
+  Month 6    4   $  800       8    $    800     $  2,500   $ 4,100
+  Month 7    4   $  800      10    $  1,000     $      0   $ 1,800
+  Month 8    5   $1,000      12    $  1,200     $      0   $ 2,200
+  Month 9    5   $1,000      14    $  1,400     $  2,500   $ 4,900
+  Month 10   5   $1,000      17    $  1,700     $      0   $ 2,700
+  Month 11   6   $1,200      20    $  2,000     $      0   $ 3,200
+  Month 12   6   $1,200      23    $  2,300     $  2,500   $ 6,000
+  ---------------------------------------------------------------
+  YEAR 1 TOTAL                                             $31,900
+  Monthly run rate at Month 12 (ex-build):      $3,500
+  Monthly run rate at Month 12 (with build):    $6,000
+
+
+SCENARIO B: MODERATE (with $300-500/month marketing from Month 3)
+
+  Month     HC   HC Rev   Support  Support Rev  Build Rev  Total
+  -------   ---  -------  -------  -----------  ---------  -------
+  Month 1    3   $  600       0    $      0     $      0   $   600
+  Month 2    4   $  800       2    $    200     $      0   $ 1,000
+  Month 3    5   $1,000       4    $    400     $  3,000   $ 4,400
+  Month 4    6   $1,200       7    $    700     $      0   $ 1,900
+  Month 5    7   $1,400      10    $  1,000     $  3,000   $ 5,400
+  Month 6    7   $1,400      13    $  1,300     $      0   $ 2,700
+  Month 7    8   $1,600      17    $  1,700     $  3,000   $ 6,300
+  Month 8    8   $1,600      20    $  2,000     $      0   $ 3,600
+  Month 9    9   $1,800      24    $  2,400     $  3,500   $ 7,700
+  Month 10   9   $1,800      27    $  2,700     $      0   $ 4,500
+  Month 11  10   $2,000      31    $  3,100     $  4,000   $ 9,100
+  Month 12  10   $2,000      35    $  3,500     $      0   $ 5,500
+  ---------------------------------------------------------------
+  YEAR 1 TOTAL                                             $52,700
+  Monthly run rate at Month 12 (ex-build):      $5,500
+  Monthly run rate at Month 12 (with avg build): $8,200
+
+
+YEAR 2 PROJECTIONS (Moderate Path)
+
+By Month 12, under the moderate scenario, 35 active monthly support
+clients are generating $3,500/month in pure recurring revenue — before
+any new Health Checks or builds.
+
+Assuming continued growth at a reduced rate of 8-10 new support clients
+per month in Year 2 (referral-driven, lower marketing spend):
+
+  Month 24 support clients: 65 – 80
+  Monthly support revenue:  $6,500 – $8,000
+  Health Checks (10-12/month): $2,000 – $2,400
+  Rescue Builds (2/month avg): $6,000 – $10,000
+  -----------------------------------------------
+  YEAR 2 MONTHLY RUN RATE:  $14,500 – $20,400
+  YEAR 2 ANNUAL REVENUE:    $174,000 – $244,800
+
+
+BREAK-EVEN ANALYSIS
+--------------------
+Monthly operating costs (after startup):
+  Insurance:               $ 100
+  LinkedIn Premium:        $  50
+  Marketing (ongoing):     $ 300
+  Miscellaneous:           $  50
+  --------------------------------
+  Total monthly opex:      $ 500
+
+Break-even from recurring revenue alone:
+  Required support clients: 5 clients at $100/month = $500
+  Time to reach 5 support clients: Month 2-3 (conservative)
+                                   Month 1-2 (moderate)
+
+This business breaks even operationally within the first 60-90 days.
+The loan is not needed to keep the lights on. It is needed to shorten
+the time to meaningful income and to invest in the marketing activity
+that accelerates the client base into the range where it replaces a
+full-time income.
+
+
+LOAN REPAYMENT SCHEDULE
+------------------------
+Loan request: $15,000
+Proposed terms: 12-month repayment, interest rate at lender's discretion
+                (family terms — 0% to prime rate as agreed)
+
+Proposed repayment based on Conservative Scenario:
+
+  Month 3 onward:  $500/month (once operating costs are covered)
+  Month 7 onward:  $1,000/month (once support base hits 10+ clients)
+  Month 10 onward: $1,500/month (accelerated payoff)
+
+Full repayment under conservative scenario: Month 13-14
+Full repayment under moderate scenario: Month 10-11
+
+The business does not require the full $15,000 to be deployed
+immediately. Suggested draw schedule:
+
+  Month 0 (startup): $3,000 (insurance, legal, registration)
+  Month 1: $2,000 (initial marketing, materials)
+  Month 2-6: $1,000/month as needed for operating coverage
+  Remainder held as reserve
+
+
+RISK FACTORS (HONEST ASSESSMENT)
+----------------------------------
+This plan presents realistic projections but no business plan eliminates
+risk. The following risks are worth naming:
+
+  TIME TO FIRST CLIENT
+  Word-of-mouth in a new market can be slow. The first 60-90 days may
+  produce 0-2 Health Checks. This is normal for a professional services
+  launch. It is the reason the operating reserve exists.
+
+  JACLYN'S AVAILABLE TIME
+  If Jaclyn is simultaneously managing other obligations, the pace of
+  Health Check delivery will be constrained. The projections above assume
+  5-10 hours per week of focused work. If current commitments limit that,
+  the conservative scenario is the more realistic baseline.
+
+  MARKET RESPONSE TO PRICING
+  Some clients may perceive the $200 price as too low and question the
+  quality. This is a known risk with under-market pricing. It is mitigated
+  by the credential story and the professional delivery of the report.
+  If this proves to be a pattern, the Health Check price can be raised
+  to $350-$500 without losing the competitive advantage.
+
+  RESCUE BUILD DEMAND
+  The build revenue projections assume clients who receive Health Check
+  reports decide to proceed with a remediation. If the Houston market
+  responds well to the Health Check but declines the build (choosing to
+  manage risk with documentation and monthly support instead), build
+  revenue will be lower than projected. This does not threaten the
+  business — the support recurring revenue model still works. It
+  reduces the upside.
+
+  TECHNOLOGY DEPENDENCY
+  Jaclyn's side of the business depends on the AiMpact Technology
+  platform (website, booking, phone, report delivery) that Landon
+  maintains. This is an internal dependency and not a third-party risk,
+  but it is worth acknowledging.
+
+
+THE TEAM
+---------
+JACLYN McDUFF — CFO & Co-Founder, Lead Analyst
+  Handles all spreadsheet analysis, Health Check reviews, client
+  communication, and quality assurance on build projects. The primary
+  face and credential of the Spreadsheet Rescue service.
+
+LANDON McDUFF — CEO & Co-Founder, Technical Lead
+  Handles platform infrastructure, marketing, Rescue Build development,
+  booking system, CRM, and all back-end technical operations. Manages
+  the website and AI phone receptionist.
+
+This is a two-person operation with clearly separated responsibilities.
+Neither person is doing work outside their expertise. The division of
+labor is sustainable.
+
+
+WHAT IS ALREADY DONE
+----------------------
+This is not a startup in the idea phase. The following are operational:
+
+  [X] Business entity: AiMpact Technology (registered)
+  [X] Website live at aimpacttechnology.com/rescue
+  [X] AI phone receptionist at (888) 335-4979
+  [X] Booking system (Cal.com) integrated and active
+  [X] Contact form with email notification to Landon
+  [X] Call summary emails — every call goes to landon@aimpacttechnology.com
+  [X] Report delivery system built
+  [X] NDA template referenced on the website
+  [X] Jaclyn's headshot, bio, and credentials on the page
+  [X] Privacy and data security commitments published
+
+What is not done: the first client. The loan funds the activity that
+changes that.
+
+
+THE ASK
+--------
+Loan amount: $15,000
+Repayment period: 12 months
+Repayment source: Revenue from Health Checks, support contracts, builds
+Interest: At lender's discretion
+
+The $15,000 funds:
+  - Professional setup (insurance, legal): $2,000
+  - 6 months operating expenses:           $3,000
+  - Marketing investment:                  $3,000
+  - Personal income bridge (Months 1-3):   $4,500
+  - Reserve:                               $2,500
+
+This is not a large capital raise. It is runway to reach a self-sustaining
+recurring revenue base. Under either scenario, the business generates
+enough monthly revenue by Month 6 to cover its own operating costs and
+begin repayment.
+
+Under the moderate scenario, the business reaches $5,500/month in
+recurring-plus-health-check revenue by Month 12, without counting
+Rescue Build income. That is a meaningful income on its own, and a
+strong foundation for Year 2 growth toward $15,000-$20,000/month.
+
+
+FINAL NOTE
+-----------
+Jaclyn has the exact credentials this market is looking for. She has
+done this work — not something similar, this specific work — for oil
+and gas pipeline operators over a five-year period. She audited their
+systems, maintained their records, and filed the regulatory reports
+that depended on those numbers being accurate.
+
+The traditional service that does a fraction of what Jaclyn can do
+charges $800/month. We charge $100/month, and we can sustain that
+because the technology infrastructure is already built.
+
+The market exists. The service is real. The credential is genuine.
+The infrastructure is live.
+
+The only thing missing is the investment to introduce Jaclyn to the
+clients who have been paying $800/month for something she is better
+qualified to provide.
+
+
+================================================================================
+Prepared by AiMpact Technology
+Jaclyn McDuff, CFO & Co-Founder | jaclynmcduff@yahoo.com | 832-588-2013
+Landon McDuff, CEO & Co-Founder | landon@aimpacttechnology.com
+Business phone: (888) 335-4979
+Website: aimpacttechnology.com/rescue
+================================================================================

@@ -16,7 +16,7 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Spreadsheet Rescue | AiMpact Technology',
   description:
-    'We rescue business-critical spreadsheets before they break, disappear, or retire with the person who built them. Spreadsheet Health Checks starting at $497.',
+    'We rescue business-critical spreadsheets before they break, disappear, or retire with the person who built them. Spreadsheet Health Checks starting at $200.',
   openGraph: {
     title: 'Spreadsheet Rescue | AiMpact Technology',
     description:
