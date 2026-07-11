@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   title: 'Partner Program — AiMpact Technology',
   description:
     'Become a PaaS dev partner with AiMpact Technology. Refer businesses and agencies that need custom AI agents, automations, and platforms — earn commission on every deal that closes.',
+  openGraph: {
+    title: 'Partner Program — AiMpact Technology',
+    description:
+      'Become a PaaS dev partner with AiMpact Technology. Refer businesses and agencies that need custom AI agents, automations, and platforms — earn commission on every deal that closes.',
+    url: 'https://aimpacttechnology.com/affiliates',
+    siteName: 'AiMpact Technology',
+    type: 'website',
+  },
 }
 
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'

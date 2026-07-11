@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   title: 'WorkDontChud — Stop Doomscrolling. Start Paychecking.',
   description:
     "Your first job doesn't have to be complicated. Build your resume, prep for interviews, and find local jobs that are actually hiring — all in one place.",
+  openGraph: {
+    title: 'WorkDontChud — Stop Doomscrolling. Start Paychecking.',
+    description:
+      "Your first job doesn't have to be complicated. Build your resume, prep for interviews, and find local jobs that are actually hiring — all in one place.",
+    url: 'https://aimpacttechnology.com/kailey',
+    siteName: 'WorkDontChud',
+    type: 'website',
+  },
 }
 
 const G = '#1a5c3a'

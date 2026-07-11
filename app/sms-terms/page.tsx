@@ -1,5 +1,18 @@
+import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+
+export const metadata: Metadata = {
+  title: 'SMS Terms of Service — AiMpact Technology',
+  description: 'Terms governing SMS communications from AiMpact Technology.',
+  openGraph: {
+    title: 'SMS Terms of Service — AiMpact Technology',
+    description: 'Terms governing SMS communications from AiMpact Technology.',
+    url: 'https://aimpacttechnology.com/sms-terms',
+    siteName: 'AiMpact Technology',
+    type: 'website',
+  },
+}
 
 export default function SmsTermsPage() {
   return (

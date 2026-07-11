@@ -1,6 +1,4 @@
-import { Zap } from 'lucide-react'
-
-const ASSESSMENT_URL = 'https://aimpactos.vercel.app/assessment'
+import Image from 'next/image'
 
 const socials = [
   {
@@ -24,11 +22,9 @@ const socials = [
 ]
 
 const footerLinks = [
-  { label: 'What We Build', href: '/#services' },
-  { label: 'How It Works', href: '/#how-it-works' },
-  { label: 'AiMpact OS', href: '/aimpact-os' },
-  { label: 'FactFinder', href: '/factfinder' },
-  { label: 'Exit Assessment', href: ASSESSMENT_URL, external: true },
+  { label: 'What We Design', href: '/#capabilities' },
+  { label: 'Our Methodology', href: '/#methodology' },
+  { label: 'Product Demos', href: '/demos' },
   { label: 'Partner Program', href: 'https://www.aimpacttechnology.com/affiliates', external: true },
   { label: 'Contact', href: '/#contact' },
 ]
@@ -41,15 +37,13 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <div className="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center">
-                <Zap className="w-3.5 h-3.5 text-white" />
-              </div>
+              <Image src="/aimpact-logo.png" alt="AiMpact Technology" width={28} height={28} className="h-7 w-7" />
               <span className="font-bold text-white tracking-tight">
                 AiMpact<span className="text-indigo-400">.</span>
               </span>
             </div>
             <p className="text-zinc-500 text-sm max-w-xs">
-              Build the platform your business runs on.
+              Designing how work works.
             </p>
           </div>
 

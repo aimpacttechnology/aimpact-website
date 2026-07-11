@@ -17,24 +17,24 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'AiMpact Technology — Custom Operational Platforms for Small Businesses',
+  title: 'AiMpact Technology — Designing How Work Works',
   description:
-    'AiMpact Technology builds custom operational platforms for small businesses, helping owners centralize workflows, automate reporting, reduce admin work, and scale without vendor lock-in.',
+    'AiMpact Technology is an Operational Architecture practice. We study how your organization actually works — people, processes, information, technology, and decisions — before recommending any technology.',
   keywords: [
-    'custom business platform',
-    'operational systems',
-    'workflow automation',
-    'small business platform',
-    'custom PaaS',
-    'business process automation',
-    'operations dashboard',
-    'field reporting platform',
-    'custom business portal',
+    'operational architecture',
+    'operational intelligence',
+    'workflow design',
+    'information architecture',
+    'technology strategy',
+    'systems integration',
+    'decision support systems',
+    'operational assessment',
+    'business process design',
   ],
   openGraph: {
-    title: 'AiMpact Technology — Custom Operational Platforms for Small Businesses',
+    title: 'AiMpact Technology — Designing How Work Works',
     description:
-      'We build the operational platform your small business has been missing — centralized workflows, automated reporting, and systems your team actually owns.',
+      'Every organization has people, processes, information, technology, and decisions. Few were intentionally designed to work together. We design the operating system first — technology follows.',
     url: 'https://aimpacttechnology.com',
     siteName: 'AiMpact Technology',
     type: 'website',

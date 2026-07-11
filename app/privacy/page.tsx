@@ -1,5 +1,18 @@
+import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy — AiMpact Technology',
+  description: 'How AiMpact Technology collects, uses, and protects your information.',
+  openGraph: {
+    title: 'Privacy Policy — AiMpact Technology',
+    description: 'How AiMpact Technology collects, uses, and protects your information.',
+    url: 'https://aimpacttechnology.com/privacy',
+    siteName: 'AiMpact Technology',
+    type: 'website',
+  },
+}
 
 export default function PrivacyPage() {
   return (

@@ -1,16 +1,14 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X, Zap } from 'lucide-react'
+import Image from 'next/image'
+import { Menu, X } from 'lucide-react'
 
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'
 
 const links = [
-  { label: 'What We Build', href: '#services' },
-  { label: 'How It Works', href: '#how-it-works' },
-  { label: 'DevOps Monthly', href: '/devops-monthly', external: false },
-  { label: 'AiMpact OS', href: '/aimpact-os', external: false },
-  { label: 'FactFinder', href: '/factfinder', external: false },
+  { label: 'What We Design', href: '#capabilities' },
+  { label: 'Our Methodology', href: '#methodology' },
   { label: 'Product Demos', href: '/demos', external: false },
   { label: 'Partner Program', href: 'https://www.aimpacttechnology.com/affiliates', external: true },
 ]
@@ -33,26 +31,24 @@ export default function Nav() {
           : 'bg-transparent'
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between gap-6">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center">
-            <Zap className="w-3.5 h-3.5 text-white" />
-          </div>
+        <a href="/" className="flex items-center gap-2.5 flex-shrink-0">
+          <Image src="/aimpact-logo.png" alt="AiMpact Technology" width={48} height={48} className="h-12 w-12" priority />
           <span className="font-bold text-white tracking-tight text-lg">
             AiMpact<span className="text-indigo-400">.</span>
           </span>
         </a>
 
         {/* Desktop links */}
-        <div className="hidden lg:flex items-center gap-7">
+        <div className="hidden lg:flex items-center gap-5">
           {links.map((link) => (
             <a
               key={link.label}
               href={link.href}
               target={link.external ? '_blank' : undefined}
               rel={link.external ? 'noopener noreferrer' : undefined}
-              className={`text-sm transition-colors ${
+              className={`text-sm whitespace-nowrap transition-colors ${
                 link.label === 'Partner Program'
                   ? 'text-indigo-400 hover:text-indigo-300 font-medium'
                   : 'text-zinc-400 hover:text-white'
@@ -64,14 +60,14 @@ export default function Nav() {
         </div>
 
         {/* Desktop CTA */}
-        <div className="hidden lg:block">
+        <div className="hidden lg:block flex-shrink-0">
           <a
             href={CAL_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold rounded-lg transition-colors"
+            className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold rounded-lg whitespace-nowrap transition-colors"
           >
-            Book Discovery Call
+            Start a Conversation
           </a>
         </div>
 
@@ -111,7 +107,7 @@ export default function Nav() {
               rel="noopener noreferrer"
               className="mt-2 px-4 py-3 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold rounded-lg text-center transition-colors"
             >
-              Book Discovery Call
+              Start a Conversation
             </a>
           </div>
         </div>

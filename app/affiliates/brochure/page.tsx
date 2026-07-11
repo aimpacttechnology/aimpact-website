@@ -17,6 +17,14 @@ export const metadata: Metadata = {
   title: 'Partner Program Brochure — AiMpact Technology',
   description:
     'A one-page overview of the AiMpact Technology PaaS dev partner program — how it works, who fits, and commission tiers.',
+  openGraph: {
+    title: 'Partner Program Brochure — AiMpact Technology',
+    description:
+      'A one-page overview of the AiMpact Technology PaaS dev partner program — how it works, who fits, and commission tiers.',
+    url: 'https://aimpacttechnology.com/affiliates/brochure',
+    siteName: 'AiMpact Technology',
+    type: 'website',
+  },
 }
 
 const CAL_URL = 'https://cal.com/landon-aimpacttechnology.com'

@@ -6,11 +6,9 @@ import { Phone, Mail, Clock, Send, CheckCircle } from 'lucide-react'
 type Status = 'idle' | 'loading' | 'success' | 'error'
 
 const services = [
-  'AI Opportunity Assessment ($2,500)',
-  'Guided Implementation ($9,500)',
-  'Complete Transformation ($25,000)',
-  'Enterprise / Custom',
-  'Not sure yet',
+  'Operational Assessment',
+  'Operational Architecture Engagement',
+  'Just exploring — not sure yet',
 ]
 
 export default function Contact() {
@@ -56,12 +54,12 @@ export default function Contact() {
             Get In Touch
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-            Let's Talk About Your
+            Tell Us How Work Moves
             <br />
-            Workflow Challenges
+            Through Your Organization
           </h2>
           <p className="text-zinc-400 text-lg max-w-xl mx-auto">
-            Tell us what's slowing your team down. We'll respond within 24 hours.
+            No pitch, no pricing over email. We&apos;ll respond within 24 hours to set up a conversation.
           </p>
         </div>
 
@@ -112,7 +110,7 @@ export default function Contact() {
                 Prefer to skip the form?
               </p>
               <p className="text-sm text-zinc-400 mb-4">
-                Book a free 30-minute consultation directly on our calendar.
+                Start a conversation directly on our calendar — no obligation.
               </p>
               <a
                 href="https://cal.com/landon-aimpacttechnology.com"
@@ -133,7 +131,7 @@ export default function Contact() {
                   <CheckCircle className="w-12 h-12 text-indigo-400 mb-4" />
                   <h3 className="text-xl font-semibold text-white mb-2">Message Sent!</h3>
                   <p className="text-zinc-400 text-sm">
-                    We'll get back to you within 24 hours.
+                    We&apos;ll get back to you within 24 hours.
                   </p>
                 </div>
               ) : (
@@ -200,7 +198,7 @@ export default function Contact() {
 
                   <div>
                     <label className="block text-xs font-medium text-zinc-400 mb-1.5">
-                      I'm interested in
+                      What brings you here
                     </label>
                     <select
                       name="service"
@@ -208,7 +206,7 @@ export default function Contact() {
                       onChange={handleChange}
                       className="w-full px-4 py-3 bg-zinc-900 border border-zinc-700 rounded-xl text-white text-sm focus:outline-none focus:border-indigo-500 transition-colors appearance-none"
                     >
-                      <option value="" disabled>Select a service...</option>
+                      <option value="" disabled>Select one...</option>
                       {services.map((s) => (
                         <option key={s} value={s}>{s}</option>
                       ))}
@@ -217,7 +215,7 @@ export default function Contact() {
 
                   <div>
                     <label className="block text-xs font-medium text-zinc-400 mb-1.5">
-                      Tell us about your workflow challenges
+                      Tell us how work moves through your organization today
                     </label>
                     <textarea
                       name="message"
@@ -225,7 +223,7 @@ export default function Contact() {
                       value={form.message}
                       onChange={handleChange}
                       rows={4}
-                      placeholder="What's slowing your team down? What processes feel manual and repetitive?"
+                      placeholder="What feels fragmented? Where do decisions stall or information get lost?"
                       className="w-full px-4 py-3 bg-zinc-900 border border-zinc-700 rounded-xl text-white placeholder:text-zinc-600 text-sm focus:outline-none focus:border-indigo-500 transition-colors resize-none"
                     />
                   </div>

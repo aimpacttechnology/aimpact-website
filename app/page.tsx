@@ -1,12 +1,13 @@
 import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
+import SelfCheck from '@/components/SelfCheck'
 import Problem from '@/components/Problem'
-import Services from '@/components/Services'
-import HowItWorks from '@/components/HowItWorks'
+import Discipline from '@/components/Discipline'
+import Capabilities from '@/components/Capabilities'
+import Methodology from '@/components/Methodology'
 import BeforeAfter from '@/components/BeforeAfter'
-import Ownership from '@/components/Ownership'
-import Examples from '@/components/Examples'
-import CTA from '@/components/CTA'
+import TrackRecord from '@/components/TrackRecord'
+import OrganizingPrinciple from '@/components/OrganizingPrinciple'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
@@ -16,13 +17,14 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <SelfCheck />
         <Problem />
-        <Services />
-        <HowItWorks />
+        <Discipline />
+        <Capabilities />
+        <Methodology />
         <BeforeAfter />
-        <Ownership />
-        <Examples />
-        <CTA />
+        <TrackRecord />
+        <OrganizingPrinciple />
         <Contact />
       </main>
       <Footer />
