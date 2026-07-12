@@ -9,3 +9,8 @@ build/
 
 .vercel
 .env*
+
+docs/
+legal/
+supabase/.temp/
+undefined/
