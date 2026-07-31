@@ -38,6 +38,7 @@
     "node_modules",
     "aimpact-os",
     "aimpact-factfinder-v2",
-    "MarketingOS"
+    "MarketingOS",
+    "archive"
   ]
 }
